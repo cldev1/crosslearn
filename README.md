@@ -1,5 +1,6 @@
 # Learnfeed
 
-Study canvas and lesson pages for Sandesh. Open [`index.html`](index.html) to retain the lessons in one board.
+Study canvas and lesson pages for Sandesh.
 
-Lessons live in [`learnfeed-lessons/`](learnfeed-lessons/).
+- Open [`index.html`](index.html) for the study canvas (one board of all lessons).
+- Lesson pages live in [`learnfeed-lessons/`](learnfeed-lessons/).
