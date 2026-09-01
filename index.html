@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Learnfeed</title>
+<style>
+  :root {
+    --paper: #f4efe6;
+    --ink: #1c1915;
+    --muted: #6b6458;
+    --line: #e4d9c8;
+    --teal: #1f6f64;
+    --teal-2: #e6f1ef;
+    --amber: #c47a2c;
+    --card: #fffcf7;
+    --shadow: 0 10px 30px rgba(40, 30, 10, .08);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .app { display: grid; grid-template-columns: 240px 1fr; height: 100%; }
+  aside {
+    border-right: 1px solid var(--line);
+    padding: 28px 20px;
+    display: flex; flex-direction: column; gap: 28px;
+  }
+  .brand { font-size: 22px; letter-spacing: -0.03em; }
+  .brand span { display: block; font-size: 12px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; margin-top: 4px; letter-spacing: .04em; text-transform: uppercase; }
+  .stat { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; color: var(--muted); }
+  .stat b { color: var(--ink); font-size: 20px; font-weight: 600; display: block; }
+  .topics { display: flex; flex-direction: column; gap: 6px; }
+  .topics button {
+    appearance: none; border: 0; background: transparent; text-align: left;
+    font: 13px ui-sans-serif, system-ui, sans-serif; padding: 8px 10px; border-radius: 8px;
+    color: var(--muted); cursor: pointer;
+  }
+  .topics button.on, .topics button:hover { background: var(--teal-2); color: var(--teal); }
+  main { overflow: auto; padding: 28px 32px 80px; }
+  h1 { font-size: 28px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.03em; }
+  .lede { color: var(--muted); margin: 0 0 24px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14px; }
+  .board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 18px;
+  }
+  article.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    display: flex; flex-direction: column;
+    transition: transform .15s ease;
+  }
+  article.card:hover { transform: translateY(-3px); }
+  article.card img { width: 100%; height: 148px; object-fit: cover; background: #efe8dc; display: block; }
+  .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .tag {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--teal); font-weight: 600;
+  }
+  .card h2 { font-size: 17px; line-height: 1.25; margin: 0; font-weight: 600; }
+  .meta { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12px; color: var(--muted); }
+  .done {
+    margin-top: auto; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12px;
+    color: var(--amber);
+  }
+  .done.yes { color: var(--teal); }
+  .overlay {
+    position: fixed; inset: 0; background: rgba(28,25,21,.45);
+    display: none; align-items: stretch; justify-content: center; padding: 24px;
+    z-index: 10;
+  }
+  .overlay.show { display: flex; }
+  .sheet {
+    background: var(--card); width: min(860px, 100%); max-height: 100%; overflow: auto;
+    border-radius: 18px; box-shadow: 0 20px 60px rgba(0,0,0,.2);
+  }
+  .sheet img { width: 100%; max-height: 280px; object-fit: cover; }
+  .sheet .pad { padding: 24px 28px 40px; }
+  .sheet h2 { margin: 0 0 6px; font-size: 26px; letter-spacing: -0.03em; }
+  .sheet a { color: var(--teal); }
+  section { margin: 18px 0; }
+  section h3 { font-size: 13px; font-family: ui-sans-serif, system-ui, sans-serif; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 8px; }
+  section p, section li { font-size: 16px; line-height: 1.5; margin: 0 0 8px; }
+  ol { padding-left: 18px; }
+  .row { display: flex; gap: 12px; align-items: center; margin-top: 18px; flex-wrap: wrap; }
+  .row button, .row label {
+    font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14px;
+    border-radius: 999px; padding: 8px 14px; border: 1px solid var(--line); background: #fff; cursor: pointer;
+  }
+  .row button.primary { background: var(--teal); color: #fff; border-color: var(--teal); }
+  .close { float: right; border: 0; background: transparent; font-size: 22px; cursor: pointer; color: var(--muted); }
+  @media (max-width: 800px) {
+    .app { grid-template-columns: 1fr; }
+    aside { flex-direction: row; flex-wrap: wrap; gap: 12px; border-right: 0; border-bottom: 1px solid var(--line); }
+    .topics { flex-direction: row; flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="brand">Learnfeed<span>Study canvas</span></div>
+    <div class="stat"><b id="progress">0 / 8</b>practiced</div>
+    <div class="topics" id="topics"></div>
+  </aside>
+  <main>
+    <h1>Keep the ideas, not the feed.</h1>
+    <p class="lede">One board. Open a card, do the practice, mark it. Progress stays on this device.</p>
+    <div class="board" id="board"></div>
+  </main>
+</div>
+<div class="overlay" id="overlay"></div>
+<script>
+const LESSONS = [
+  {id:"01", tag:"PO craft", title:"Ship incomplete bets, then wait for the model",
+   source:"Lenny Rachitsky · 23 Apr 2026", link:"https://x.com/lennysan/status/2047377335406694431", img:"learnfeed-lessons/01-ship-incomplete-bets/illustration.png",
+   claims:"Anthropic’s cadence went months → weeks → days. Cat Wu’s punchline: build products that don’t fully work yet, then wait for the model to catch up. Hiring is shifting away from classic PM skills toward taste, evals, and being the right amount of AGI-pilled. 95% automation is not automation.",
+   why:"Your job stops being backlog admin. You pick the bet, define “good enough to ship,” and write the eval — not the 18-month roadmap of features the model will make free.",
+   takeaways:["Cadence is a product decision. If discovery still takes a quarter, you are the bottleneck.","Ship the shape of the product before the capability exists. The model is the delivery team.","A leftover 5% of manual work is still a full product, with full cost."],
+   practice:"Pick one backlog item that only works if a model/API gets better. Write a 5-line eval of “done,” ship a v0 that fails it on purpose, and date when you’ll re-run the eval."},
+  {id:"02", tag:"PO craft", title:"Delivery includes deprecation",
+   source:"Cat Wu · 28 May 2026", link:"https://x.com/_catwu/status/2060054180379689074", img:"learnfeed-lessons/02-delivery-includes-deprecation/illustration.png",
+   claims:"Claude Code “dynamic workflows” let you name a workflow and get an orchestration plan that actually runs in order — including across hundreds of agents. Cat used it to catalogue hundreds of A/B flags, find the ones stuck at 0% or 100%, and deprecate them in under 10 minutes in parallel.",
+   why:"Shipping is the easy half. Stale experiments, leftover flags, and zombie configs are silent product. Using AI to remove work is a PO skill, not an engineering side quest.",
+   takeaways:["0% and 100% flags are decisions you already made. Leaving them in the system is new risk.","Parallelise the hygiene, not just the build.","Trust comes from a plan the tool cannot skip — not from a longer prompt."],
+   practice:"List every experiment, feature flag, or “temporary” config you know of. Mark each 0 / partial / 100. Kill or schedule one stale 0% or 100% item by Friday."},
+  {id:"03", tag:"EV charging", title:"Corridor megawatt vs depot CCS is the product split",
+   source:"Sawyer Merritt · 17 Jul 2026", link:"https://x.com/SawyerMerritt/status/2077964549123170309", img:"learnfeed-lessons/03-megawatt-vs-depot/illustration.png",
+   claims:"Tesla opened the first public Megacharger in Bloomington, CA: 6 stalls, 1.2 MW peak each, Tesla Semi customers. Public, corridor, minutes — not overnight depot.",
+   why:"Fleets do not buy “a charger.” They buy a day in the life: depot fill at night (CCS, hours) vs en-route top-up (MCS-class, minutes). Once public megawatt exists, the customer question changes from “will this exist?” to “when is it on our corridors?” Treat this as a market fact to explain, not a Siemens-internal roadmap.",
+   takeaways:["Spec the job, not the plug: minutes on a highway vs hours at a yard.","Six stalls is a product too: queueing, uptime, who can use it.","Official map drops are sparse and still move buyers. Your comms can be short if the artifact is real."],
+   practice:"Draw one fleet’s Tuesday: depot overnight + one public top-up. Write the two jobs in one sentence each (power, time, who pays). Take that to your next stakeholder chat instead of a feature list."},
+  {id:"04", tag:"Stakeholders", title:"Name the level before you argue the ticket",
+   source:"Shreyas Doshi · 12 Mar 2021", link:"https://x.com/shreyas/status/1370248637842812936", img:"learnfeed-lessons/04-three-levels-of-product-work/illustration.png",
+   claims:"Product work has three levels: Execution, Impact, Optics. Conflict is usually two people stuck on different levels — PM on impact vs team on execution, or PM on optics vs team on impact.",
+   why:"Fleet ops lives in execution (“did the charger come up”). Leadership lives in impact (“did uptime move”). Sales/comms lives in optics (“can I say we launched”). If you litigate story points, you never notice you’re in different rooms.",
+   takeaways:["Start reviews with “which level are we on?” It ends half the fights.","Optics is not fake — it’s a different job. Don’t moralise it; schedule it.","If you only reward on-time sprints, you trained the room for execution."],
+   practice:"In one meeting, write Execution / Impact / Optics on a notepad. Tick where each speaker is. If two ticks disagree, say that out loud before discussing the ticket."},
+  {id:"05", tag:"Stakeholders", title:"Find the eigenquestion before the options",
+   source:"Shreyas Doshi · Aug 2020", link:"https://x.com/shreyas/status/1293973551167373312", img:"learnfeed-lessons/05-eigenquestion/illustration.png",
+   claims:"For a high-stakes decision, most debate is downstream. The eigenquestion (from Shishir Mehrotra) is the one answer that makes the other questions easy. Netflix example: TVOD vs SVOD wasn’t “how big is the catalog?” — it was “do we care more about catalog size or consumption friction?” Spend half the time on the question.",
+   why:"Steering committees love three options and a recommendation. You end up litigating details. Corridor vs depot, interoperability vs time-to-market, custom vs standard — those only resolve if you name the one tradeoff that matches strategy.",
+   takeaways:["A beautiful options slide with the wrong question still ships the wrong thing.","The eigenquestion must be answerable from vision, not from last week’s metric.","It feels slow. It’s faster than reconvening."],
+   practice:"Take one live decision. Write every question on the table. Circle the one that, if answered, kills most of the others. Open the next review with only that sentence."},
+  {id:"06", tag:"PO craft", title:"Don’t mix Explore with Extract",
+   source:"Shreyas Doshi · May 2021", link:"https://x.com/shreyas/status/1399042778613485578", img:"learnfeed-lessons/06-explore-expand-extract/illustration.png",
+   claims:"A product is in Explore, Expand, or Extract. Almost every important decision should account for the stage. Frameworks don’t save you — they name the context so you stop using extract-stage process on explore-stage work.",
+   why:"A pilot and a scale-out need different evidence, different WIP, different stakeholder promises. If you run a new corridor behaviour through a mature-depot playbook (or the reverse), the team looks slow and the exec looks reckless. Same people, wrong stage.",
+   takeaways:["Explore: cheap tests, kill rate is a feature. Extract: reliability is the product.","Expand is the messy middle — process has to grow with volume, not copy extract too early.","Say the stage in the first line of a review. It licenses the plan that follows."],
+   practice:"Label three things in your world Explore / Expand / Extract. For the Explore one, cut one “scale” requirement (SLA, full i18n, extra report) that only belongs in Extract."},
+  {id:"07", tag:"PO craft", title:"Steering, not rowing",
+   source:"Lenny Rachitsky · 31 Aug 2026", link:"https://x.com/lennysan/status/2094444052204998908", img:"learnfeed-lessons/07-steering-not-rowing/illustration.png",
+   claims:"OpenAI’s ChatGPT Work lead Tara: the future of work is steering (taste, next call), not rowing. Build for where models will be in 2–3 months. PMs elevate ambition. Share mocks not docs. Never automate writing-as-thinking. Someone still has to be the DRI. Speed without a hypothesis compounds error.",
+   why:"As execution gets cheaper, the PO job is hypothesis, taste, and a name on the outcome. Long docs stop being a signal of rigor. A 70% artifact plus a DRI beats a perfect spec with no owner.",
+   takeaways:["Build 2–3 months ahead of the model, not 12.","Mocks and A/B results communicate better than strategy novels.","Never outsource the writing you think with; automate the reporting."],
+   practice:"This week, replace one status doc with a mock or a 70% note. Put a DRI on the outcome in the first line."},
+  {id:"08", tag:"Scrum / PSPO", title:"PO is not a backlog secretary",
+   source:"Scrum.org · 31 Aug 2026", link:"https://x.com/Scrumdotorg/status/2094576068724158861", img:"learnfeed-lessons/08-po-not-backlog-secretary/illustration.png",
+   claims:"How a candidate defines the product role names the operating model they came from, not their skill. Missing problem framing, solution choice, and viability together is the tell. Role behaviour follows the funding model. POs are not backlog secretaries; they are strategic leaders.",
+   why:"If your week is “supplying ready work,” you inherited an order-taker model. PSPO-level work is finding worthwhile problems and solutions customers choose — including whether the thing is viable.",
+   takeaways:["The Rorschach test: backlog vs worthwhile problems.","Problem + solution + viability must sit with the PO, not get split away.","Funding model trains the behaviour; name it if you’re stuck supplying tickets."],
+   practice:"In one sentence, write your job this sprint as either “owning the backlog” or “choosing a worthwhile problem.” If it’s the first, pick one problem this week you will frame before any story is written."}
+];
+
+const KEY = "learnfeed-practiced-v1";
+const practiced = new Set(JSON.parse(localStorage.getItem(KEY) || "[]"));
+let filter = "All";
+
+function save(){ localStorage.setItem(KEY, JSON.stringify([...practiced])); }
+
+function topics(){
+  const tags = ["All", ...new Set(LESSONS.map(l => l.tag))];
+  document.getElementById("topics").innerHTML = tags.map(t =>
+    `<button data-tag="${t}" class="${t===filter?"on":""}">${t}</button>`
+  ).join("");
+  document.getElementById("topics").onclick = e => {
+    const b = e.target.closest("button"); if(!b) return;
+    filter = b.dataset.tag; render();
+  };
+}
+
+function progress(){
+  document.getElementById("progress").textContent = practiced.size + " / " + LESSONS.length;
+}
+
+function render(){
+  topics(); progress();
+  const list = LESSONS.filter(l => filter==="All" || l.tag===filter);
+  document.getElementById("board").innerHTML = list.map(l => `
+    <article class="card" data-id="${l.id}">
+      <img src="${l.img}" alt="">
+      <div class="body">
+        <div class="tag">${l.tag}</div>
+        <h2>${l.title}</h2>
+        <div class="meta">${l.source}</div>
+        <div class="done ${practiced.has(l.id)?"yes":""}">${practiced.has(l.id)?"Practiced":"Practice waiting"}</div>
+      </div>
+    </article>`).join("");
+  document.getElementById("board").onclick = e => {
+    const c = e.target.closest("article"); if(c) open(c.dataset.id);
+  };
+}
+
+function open(id){
+  const l = LESSONS.find(x => x.id===id);
+  const ov = document.getElementById("overlay");
+  ov.className = "overlay show";
+  ov.innerHTML = `
+    <div class="sheet">
+      <img src="${l.img}" alt="">
+      <div class="pad">
+        <button class="close" id="x">×</button>
+        <div class="tag">${l.tag}</div>
+        <h2>${l.title}</h2>
+        <p class="meta">${l.source} · <a href="${l.link}" target="_blank" rel="noopener">original post</a></p>
+        <section><h3>What it claims</h3><p>${l.claims}</p></section>
+        <section><h3>Why it matters for a PO</h3><p>${l.why}</p></section>
+        <section><h3>3 takeaways</h3><ol>${l.takeaways.map(t=>"<li>"+t+"</li>").join("")}</ol></section>
+        <section><h3>Practice this week</h3><p>${l.practice}</p></section>
+        <div class="row">
+          <button class="primary" id="mark">${practiced.has(l.id)?"Mark unpracticed":"I did the practice"}</button>
+          <a href="${l.link}" target="_blank" rel="noopener"><button>Open post</button></a>
+        </div>
+      </div>
+    </div>`;
+  ov.onclick = e => { if(e.target===ov || e.target.id==="x"){ ov.className="overlay"; ov.innerHTML=""; } };
+  document.getElementById("mark").onclick = () => {
+    if(practiced.has(id)) practiced.delete(id); else practiced.add(id);
+    save(); render(); open(id);
+  };
+}
+render();
+</script>
+</body>
+</html>
