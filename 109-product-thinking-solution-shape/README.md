@@ -1,0 +1,24 @@
+# Product thinking is the shape of the solution, not only the process
+
+![Illustration](illustration.png)
+
+**Source:** Melissa Perri (@lissijean)
+**Post:** https://x.com/lissijean/status/1446151027401674763
+
+## What it claims
+
+Talking about product management only as a process does it a disservice. Dialogues about good PMs almost always end on how we build (talk to customers, iterate, test, success metrics, concentrate on problems) rather than what we build. Those practices are essential, but you can still create a crap product while doing the process right. Perri has taught companies to nail the process and still seen them struggle — they are missing thinking in “products.” The best product people look at a problem and figure out how to solve it through scalable software solutions. Experienced software PMs treat this as obvious; it should not be overlooked. By second nature they ask: is this a platform? Can we open it to third parties so we do not build everything? How do we reduce services cost through automation? How do we deliver this so it scales? Bank example: a product division that did accounting and finance applications for the rest of the bank; she said “you’re like the financial data platform and your applications need to scale across the other 8 business lines.” They stared blankly — they could not see a platform, only the 45 apps, “that’s the way it’s always been — build new software for each problem.” This is related to projects vs product thinking but goes deeper: types of product — platforms, marketplaces, e-commerce, data algorithms. The PM plays a big role in defining that direction. A process is only as good as the solutions it produces. Product is about making scalable software to solve a problem.
+
+## Why it matters for a PO
+
+A PO can run textbook discovery and still commission the 46th app. The higher-leverage question is the shape: platform vs one-off, automation vs more services, third parties vs build-everything.
+
+## 3 takeaways
+
+1. Process quality does not save a one-app-per-problem portfolio.
+2. Ask platform / third-party / automation / scale questions as soon as the problem is named.
+3. “That’s how we’ve always built it” is a product-shape decision, not a given.
+
+## Practice this week
+
+Take one problem on the backlog. Write two solution shapes: (A) another app/feature, (B) a platform, shared service, or automation that would serve more than this request. Share with the trio which one you are actually funding and why.

@@ -1,244 +1,1089 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Learnfeed</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Learnfeed — 200/200</title>
 <style>
-  :root {
-    --paper: #f4efe6;
-    --ink: #1c1915;
-    --muted: #6b6458;
-    --line: #e4d9c8;
-    --teal: #1f6f64;
-    --teal-2: #e6f1ef;
-    --amber: #c47a2c;
-    --card: #fffcf7;
-    --shadow: 0 10px 30px rgba(40, 30, 10, .08);
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; height: 100%; }
-  body {
-    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-    background: var(--paper);
-    color: var(--ink);
-  }
-  .app { display: grid; grid-template-columns: 240px 1fr; height: 100%; }
-  aside {
-    border-right: 1px solid var(--line);
-    padding: 28px 20px;
-    display: flex; flex-direction: column; gap: 28px;
-  }
-  .brand { font-size: 22px; letter-spacing: -0.03em; }
-  .brand span { display: block; font-size: 12px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; margin-top: 4px; letter-spacing: .04em; text-transform: uppercase; }
-  .stat { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; color: var(--muted); }
-  .stat b { color: var(--ink); font-size: 20px; font-weight: 600; display: block; }
-  .topics { display: flex; flex-direction: column; gap: 6px; }
-  .topics button {
-    appearance: none; border: 0; background: transparent; text-align: left;
-    font: 13px ui-sans-serif, system-ui, sans-serif; padding: 8px 10px; border-radius: 8px;
-    color: var(--muted); cursor: pointer;
-  }
-  .topics button.on, .topics button:hover { background: var(--teal-2); color: var(--teal); }
-  main { overflow: auto; padding: 28px 32px 80px; }
-  h1 { font-size: 28px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.03em; }
-  .lede { color: var(--muted); margin: 0 0 24px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14px; }
-  .board {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 18px;
-  }
-  article.card {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    cursor: pointer;
-    display: flex; flex-direction: column;
-    transition: transform .15s ease;
-  }
-  article.card:hover { transform: translateY(-3px); }
-  article.card img { width: 100%; height: 148px; object-fit: cover; background: #efe8dc; display: block; }
-  .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
-  .tag {
-    font-family: ui-sans-serif, system-ui, sans-serif;
-    font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
-    color: var(--teal); font-weight: 600;
-  }
-  .card h2 { font-size: 17px; line-height: 1.25; margin: 0; font-weight: 600; }
-  .meta { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12px; color: var(--muted); }
-  .done {
-    margin-top: auto; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12px;
-    color: var(--amber);
-  }
-  .done.yes { color: var(--teal); }
-  .overlay {
-    position: fixed; inset: 0; background: rgba(28,25,21,.45);
-    display: none; align-items: stretch; justify-content: center; padding: 24px;
-    z-index: 10;
-  }
-  .overlay.show { display: flex; }
-  .sheet {
-    background: var(--card); width: min(860px, 100%); max-height: 100%; overflow: auto;
-    border-radius: 18px; box-shadow: 0 20px 60px rgba(0,0,0,.2);
-  }
-  .sheet img { width: 100%; max-height: 280px; object-fit: cover; }
-  .sheet .pad { padding: 24px 28px 40px; }
-  .sheet h2 { margin: 0 0 6px; font-size: 26px; letter-spacing: -0.03em; }
-  .sheet a { color: var(--teal); }
-  section { margin: 18px 0; }
-  section h3 { font-size: 13px; font-family: ui-sans-serif, system-ui, sans-serif; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 8px; }
-  section p, section li { font-size: 16px; line-height: 1.5; margin: 0 0 8px; }
-  ol { padding-left: 18px; }
-  .row { display: flex; gap: 12px; align-items: center; margin-top: 18px; flex-wrap: wrap; }
-  .row button, .row label {
-    font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14px;
-    border-radius: 999px; padding: 8px 14px; border: 1px solid var(--line); background: #fff; cursor: pointer;
-  }
-  .row button.primary { background: var(--teal); color: #fff; border-color: var(--teal); }
-  .close { float: right; border: 0; background: transparent; font-size: 22px; cursor: pointer; color: var(--muted); }
-  @media (max-width: 800px) {
-    .app { grid-template-columns: 1fr; }
-    aside { flex-direction: row; flex-wrap: wrap; gap: 12px; border-right: 0; border-bottom: 1px solid var(--line); }
-    .topics { flex-direction: row; flex-wrap: wrap; }
-  }
+  body { margin:0; font-family: Georgia, "Iowan Old Style", serif; background:#f4efe6; color:#1c1915; }
+  header { padding:40px 28px 12px; max-width:1100px; margin:auto; }
+  header p { color:#6b6458; font-family: ui-sans-serif, system-ui, sans-serif; }
+  .board { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:18px;
+            max-width:1100px; margin:0 auto; padding:12px 28px 80px; }
+  .card { background:#fffcf7; border:1px solid #e4d9c8; border-radius:14px; overflow:hidden;
+           text-decoration:none; color:inherit; box-shadow:0 8px 24px rgba(40,30,10,.07); }
+  .card img { width:100%; height:140px; object-fit:cover; display:block; background:#efe8dc; }
+  .card h2 { font-size:17px; margin:0; padding:0 14px 14px; }
+  .meta { font-family: ui-sans-serif, system-ui, sans-serif; font-size:11px; letter-spacing:.06em;
+           text-transform:uppercase; color:#1f6f64; padding:12px 14px 6px; }
 </style>
 </head>
 <body>
-<div class="app">
-  <aside>
-    <div class="brand">Learnfeed<span>Study canvas</span></div>
-    <div class="stat"><b id="progress">0 / 8</b>practiced</div>
-    <div class="topics" id="topics"></div>
-  </aside>
-  <main>
-    <h1>Keep the ideas, not the feed.</h1>
-    <p class="lede">One board. Open a card, do the practice, mark it. Progress stays on this device.</p>
-    <div class="board" id="board"></div>
-  </main>
+<header>
+  <h1>Learnfeed</h1>
+  <p>200 illustrated product lessons from Lenny, Shreyas, Torres, Cutler, and others.</p>
+</header>
+<div class="board">
+    <a class="card" href="01-ship-incomplete-bets/">
+      <img src="01-ship-incomplete-bets/illustration.png" alt="">
+      <div class="meta">PO craft · Lenny Rachitsky</div>
+      <h2>Ship incomplete bets, then wait for the model</h2>
+    </a>
+    <a class="card" href="02-delivery-includes-deprecation/">
+      <img src="02-delivery-includes-deprecation/illustration.png" alt="">
+      <div class="meta">PO craft · Cat Wu</div>
+      <h2>Delivery includes deprecation</h2>
+    </a>
+    <a class="card" href="03-megawatt-vs-depot/">
+      <img src="03-megawatt-vs-depot/illustration.png" alt="">
+      <div class="meta">EV charging · Sawyer Merritt</div>
+      <h2>Corridor megawatt vs depot CCS is the product split</h2>
+    </a>
+    <a class="card" href="04-three-levels-of-product-work/">
+      <img src="04-three-levels-of-product-work/illustration.png" alt="">
+      <div class="meta">Stakeholders · Shreyas Doshi</div>
+      <h2>Name the level before you argue the ticket</h2>
+    </a>
+    <a class="card" href="05-eigenquestion/">
+      <img src="05-eigenquestion/illustration.png" alt="">
+      <div class="meta">Stakeholders · Shreyas Doshi</div>
+      <h2>Find the eigenquestion before the options</h2>
+    </a>
+    <a class="card" href="06-explore-expand-extract/">
+      <img src="06-explore-expand-extract/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Don’t mix Explore with Extract</h2>
+    </a>
+    <a class="card" href="07-steering-not-rowing/">
+      <img src="07-steering-not-rowing/illustration.png" alt="">
+      <div class="meta">PO craft · Lenny Rachitsky</div>
+      <h2>Steering, not rowing</h2>
+    </a>
+    <a class="card" href="08-po-not-backlog-secretary/">
+      <img src="08-po-not-backlog-secretary/illustration.png" alt="">
+      <div class="meta">Scrum / PSPO · Scrum.org</div>
+      <h2>PO is not a backlog secretary</h2>
+    </a>
+    <a class="card" href="09-roadmap-70-20-10/">
+      <img src="09-roadmap-70-20-10/illustration.png" alt="">
+      <div class="meta">PO craft · Lenny Rachitsky</div>
+      <h2>Build a roadmap in three phases (70/20/10)</h2>
+    </a>
+    <a class="card" href="10-fourteen-pm-habits/">
+      <img src="10-fourteen-pm-habits/illustration.png" alt="">
+      <div class="meta">PO craft · Lenny Rachitsky</div>
+      <h2>14 habits of highly effective PMs</h2>
+    </a>
+    <a class="card" href="11-strategy-between-vision-and-goals/">
+      <img src="11-strategy-between-vision-and-goals/illustration.png" alt="">
+      <div class="meta">PO craft · Lenny Rachitsky</div>
+      <h2>Strategy sits between vision and goals</h2>
+    </a>
+    <a class="card" href="12-ten-tests-for-pmf/">
+      <img src="12-ten-tests-for-pmf/illustration.png" alt="">
+      <div class="meta">PO craft · Lenny Rachitsky</div>
+      <h2>Ten tests for product/market fit</h2>
+    </a>
+    <a class="card" href="13-one-growth-lane/">
+      <img src="13-one-growth-lane/illustration.png" alt="">
+      <div class="meta">PO craft · Lenny Rachitsky</div>
+      <h2>Win one of three consumer growth lanes</h2>
+    </a>
+    <a class="card" href="14-seven-lenses-for-an-idea/">
+      <img src="14-seven-lenses-for-an-idea/illustration.png" alt="">
+      <div class="meta">PO craft · Lenny Rachitsky</div>
+      <h2>Seven lenses for evaluating a product idea</h2>
+    </a>
+    <a class="card" href="15-premortem-tigers/">
+      <img src="15-premortem-tigers/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Pre-mortems: Tigers, Paper Tigers, Elephants</h2>
+    </a>
+    <a class="card" href="16-first-30-60-90/">
+      <img src="16-first-30-60-90/illustration.png" alt="">
+      <div class="meta">PO craft · Lenny Rachitsky</div>
+      <h2>First 30-60-90 days as a new PM</h2>
+    </a>
+    <a class="card" href="17-seven-discovery-paths/">
+      <img src="17-seven-discovery-paths/illustration.png" alt="">
+      <div class="meta">PO craft · Lenny Rachitsky</div>
+      <h2>Seven ways people discover products</h2>
+    </a>
+    <a class="card" href="18-ic-to-pm-manager/">
+      <img src="18-ic-to-pm-manager/illustration.png" alt="">
+      <div class="meta">PO craft · Lenny Rachitsky</div>
+      <h2>IC PM → manager of PMs</h2>
+    </a>
+    <a class="card" href="19-ost-specific-stories/">
+      <img src="19-ost-specific-stories/illustration.png" alt="">
+      <div class="meta">Discovery · Teresa Torres</div>
+      <h2>Opportunity mapping fails until opportunities are specific and story-sourced</h2>
+    </a>
+    <a class="card" href="20-okrs-vs-outcomes/">
+      <img src="20-okrs-vs-outcomes/illustration.png" alt="">
+      <div class="meta">Outcomes · Teresa Torres</div>
+      <h2>OKRs are a format; the work is choosing the right outcome</h2>
+    </a>
+    <a class="card" href="21-assumption-tests/">
+      <img src="21-assumption-tests/illustration.png" alt="">
+      <div class="meta">Discovery · Teresa Torres</div>
+      <h2>Compare 3–4 solutions by testing assumptions, not by marrying idea #1</h2>
+    </a>
+    <a class="card" href="22-eight-metric-questions/">
+      <img src="22-eight-metric-questions/illustration.png" alt="">
+      <div class="meta">Metrics · Julie Zhuo</div>
+      <h2>Eight questions before you accept “move Metric X up Y%”</h2>
+    </a>
+    <a class="card" href="23-intuition-calendar/">
+      <img src="23-intuition-calendar/illustration.png" alt="">
+      <div class="meta">PO craft · Julie Zhuo</div>
+      <h2>Product intuition is a calendar habit, not a talent</h2>
+    </a>
+    <a class="card" href="24-prioritize-until-it-hurts/">
+      <img src="24-prioritize-until-it-hurts/illustration.png" alt="">
+      <div class="meta">Prioritization · Julie Zhuo</div>
+      <h2>Prioritize until it hurts: pick a customer, kill the dream, hunt the rest</h2>
+    </a>
+    <a class="card" href="25-gem-force-rank/">
+      <img src="25-gem-force-rank/illustration.png" alt="">
+      <div class="meta">Strategy · Gibson Biddle</div>
+      <h2>GEM: force-rank Growth, Engagement, Monetization and give each a metric</h2>
+    </a>
+    <a class="card" href="26-dhm-stack/">
+      <img src="26-dhm-stack/illustration.png" alt="">
+      <div class="meta">Strategy · Gibson Biddle</div>
+      <h2>DHM (and the rest of the stack): Delight, Hard-to-copy, Margin</h2>
+    </a>
+    <a class="card" href="27-goals-then-evidence/">
+      <img src="27-goals-then-evidence/illustration.png" alt="">
+      <div class="meta">Discovery · Itamar Gilad</div>
+      <h2>Start with goals, not approved ideas; invest only where evidence appears</h2>
+    </a>
+    <a class="card" href="28-three-feature-buckets/">
+      <img src="28-three-feature-buckets/illustration.png" alt="">
+      <div class="meta">Prioritization · Adam Nash</div>
+      <h2>Don’t rank all ideas on one formula: three buckets</h2>
+    </a>
+    <a class="card" href="29-deconstruct-assumptions/">
+      <img src="29-deconstruct-assumptions/illustration.png" alt="">
+      <div class="meta">Discovery · Teresa Torres</div>
+      <h2>Deconstruct every idea into hidden assumptions (even in a feature factory)</h2>
+    </a>
+    <a class="card" href="30-five-data-values/">
+      <img src="30-five-data-values/illustration.png" alt="">
+      <div class="meta">Metrics · Julie Zhuo</div>
+      <h2>Internalize five values, not a dashboard, to be data-informed</h2>
+    </a>
+    <a class="card" href="31-advisor-vs-solver/">
+      <img src="31-advisor-vs-solver/illustration.png" alt="">
+      <div class="meta">Stakeholders · Julie Zhuo</div>
+      <h2>Match advisor vs solver to the relationship, not your habit</h2>
+    </a>
+    <a class="card" href="32-glee-vision/">
+      <img src="32-glee-vision/illustration.png" alt="">
+      <div class="meta">Strategy · Gibson Biddle</div>
+      <h2>Write a GLEE vision, then debate the investment mix</h2>
+    </a>
+    <a class="card" href="33-dhm-consumer-vs-b2b/">
+      <img src="33-dhm-consumer-vs-b2b/illustration.png" alt="">
+      <div class="meta">Strategy · Gibson Biddle</div>
+      <h2>Apply DHM on both sides; don’t copy consumer playbooks into B2B</h2>
+    </a>
+    <a class="card" href="34-invisible-product-work/">
+      <img src="34-invisible-product-work/illustration.png" alt="">
+      <div class="meta">PO craft · Gibson Biddle</div>
+      <h2>Fund the invisible work that makes the product “just work”</h2>
+    </a>
+    <a class="card" href="35-reward-killing-ideas/">
+      <img src="35-reward-killing-ideas/illustration.png" alt="">
+      <div class="meta">Discovery · Itamar Gilad</div>
+      <h2>If you only reward shipping, you punish the person who kills a bad idea</h2>
+    </a>
+    <a class="card" href="36-po-not-full-time-backlog/">
+      <img src="36-po-not-full-time-backlog/illustration.png" alt="">
+      <div class="meta">Scrum / PSPO · Itamar Gilad</div>
+      <h2>Don’t split strategy from tactics; don’t make “PO” a full-time backlog job</h2>
+    </a>
+    <a class="card" href="37-false-predictability/">
+      <img src="37-false-predictability/illustration.png" alt="">
+      <div class="meta">Stakeholders · Itamar Gilad</div>
+      <h2>Refuse the contract of false predictability</h2>
+    </a>
+    <a class="card" href="38-discard-one-right-way/">
+      <img src="38-discard-one-right-way/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Discard “the one right way”; context beats dogma</h2>
+    </a>
+    <a class="card" href="39-execution-as-wounds/">
+      <img src="39-execution-as-wounds/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Treat execution failures as strategy, culture, or interpersonal wounds</h2>
+    </a>
+    <a class="card" href="40-opposite-can-be-good/">
+      <img src="40-opposite-can-be-good/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Unlearn school: the opposite of a good idea can also be good</h2>
+    </a>
+    <a class="card" href="41-roadmaps-never-stand-alone/">
+      <img src="41-roadmaps-never-stand-alone/illustration.png" alt="">
+      <div class="meta">Roadmaps · John Cutler</div>
+      <h2>Roadmaps never stand alone; feature lists force premature convergence</h2>
+    </a>
+    <a class="card" href="42-timeline-is-assumptions/">
+      <img src="42-timeline-is-assumptions/illustration.png" alt="">
+      <div class="meta">Roadmaps · Janna Bastow</div>
+      <h2>A timeline roadmap is a pile of assumptions; prototype strategy instead</h2>
+    </a>
+    <a class="card" href="43-enterprise-pm-cost-center/">
+      <img src="43-enterprise-pm-cost-center/illustration.png" alt="">
+      <div class="meta">Career · Melissa Perri</div>
+      <h2>Enterprise PM stalls as IT cost-center with no path to CPO</h2>
+    </a>
+    <a class="card" href="44-okrs-need-strategy/">
+      <img src="44-okrs-need-strategy/illustration.png" alt="">
+      <div class="meta">Outcomes · John Cutler</div>
+      <h2>OKRs are easy only when strategy exists; they fail as “the thing”</h2>
+    </a>
+    <a class="card" href="45-product-then-project/">
+      <img src="45-product-then-project/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Product Thinking before Project Thinking, then iterate both</h2>
+    </a>
+    <a class="card" href="46-strategy-names-tradeoffs/">
+      <img src="46-strategy-names-tradeoffs/illustration.png" alt="">
+      <div class="meta">Strategy · Shreyas Doshi</div>
+      <h2>Good product strategy names segments, trade-offs, and leading indicators</h2>
+    </a>
+    <a class="card" href="47-smuggle-outcome-language/">
+      <img src="47-smuggle-outcome-language/illustration.png" alt="">
+      <div class="meta">Outcomes · John Cutler</div>
+      <h2>Smuggle outcome language in; don’t wait for permission</h2>
+    </a>
+    <a class="card" href="48-no-discovery-delivery-kingdoms/">
+      <img src="48-no-discovery-delivery-kingdoms/illustration.png" alt="">
+      <div class="meta">Discovery · John Cutler</div>
+      <h2>Don’t let “discovery” and “delivery” become kingdoms</h2>
+    </a>
+    <a class="card" href="49-operator-craftsperson-visionary/">
+      <img src="49-operator-craftsperson-visionary/illustration.png" alt="">
+      <div class="meta">Career · Shreyas Doshi</div>
+      <h2>Wear the Operator / Craftsperson / Visionary hat the company actually needs</h2>
+    </a>
+    <a class="card" href="50-builder-tuner-innovator/">
+      <img src="50-builder-tuner-innovator/illustration.png" alt="">
+      <div class="meta">Career · Shreyas Doshi</div>
+      <h2>Name the PM type in the job: Builder, Tuner, or Innovator</h2>
+    </a>
+    <a class="card" href="51-data-not-trust-proxy/">
+      <img src="51-data-not-trust-proxy/illustration.png" alt="">
+      <div class="meta">Metrics · John Cutler</div>
+      <h2>Data is not a trust proxy; connect learning to a human-relatable mission</h2>
+    </a>
+    <a class="card" href="52-map-shapes-of-work/">
+      <img src="52-map-shapes-of-work/illustration.png" alt="">
+      <div class="meta">PO craft · John Cutler</div>
+      <h2>Don’t start with role/process fixes; map 15+ shapes of work first</h2>
+    </a>
+    <a class="card" href="53-branching-roadmaps/">
+      <img src="53-branching-roadmaps/illustration.png" alt="">
+      <div class="meta">Roadmaps · Pavel Samsonov</div>
+      <h2>Honest roadmaps branch; park pet features behind learning criteria</h2>
+    </a>
+    <a class="card" href="54-dual-track-not-cherry-pick/">
+      <img src="54-dual-track-not-cherry-pick/illustration.png" alt="">
+      <div class="meta">Discovery · Paweł Huryn</div>
+      <h2>Lean Startup, Agile, and Discovery fail when cherry-picked; combine as dual-track</h2>
+    </a>
+    <a class="card" href="55-stories-3cs-invest/">
+      <img src="55-stories-3cs-invest/illustration.png" alt="">
+      <div class="meta">Scrum / PSPO · Paweł Huryn</div>
+      <h2>User stories are Card, Conversation, Confirmation + INVEST — not requirement containers</h2>
+    </a>
+    <a class="card" href="56-cpsr-the-problem/">
+      <img src="56-cpsr-the-problem/illustration.png" alt="">
+      <div class="meta">Discovery · Shreyas Doshi</div>
+      <h2>Customers will endorse a problem; stack-rank to find the problem (CPSR)</h2>
+    </a>
+    <a class="card" href="57-seven-things-you-know/">
+      <img src="57-seven-things-you-know/illustration.png" alt="">
+      <div class="meta">Discovery · Shreyas Doshi</div>
+      <h2>You already know how to discover, test, and ship — stop forgetting it</h2>
+    </a>
+    <a class="card" href="58-research-refine-loop/">
+      <img src="58-research-refine-loop/illustration.png" alt="">
+      <div class="meta">Discovery · Shreyas Doshi</div>
+      <h2>Discovery is a Research–Refine loop; progress theater slows it down</h2>
+    </a>
+    <a class="card" href="59-one-process-cannot-cover/">
+      <img src="59-one-process-cannot-cover/illustration.png" alt="">
+      <div class="meta">PO craft · John Cutler</div>
+      <h2>One process cannot cover 15+ shapes of work</h2>
+    </a>
+    <a class="card" href="60-fewer-pdms-more-thinking/">
+      <img src="60-fewer-pdms-more-thinking/illustration.png" alt="">
+      <div class="meta">Career · John Cutler</div>
+      <h2>Fewer PdMs, more product thinking</h2>
+    </a>
+    <a class="card" href="61-boat-go-faster/">
+      <img src="61-boat-go-faster/illustration.png" alt="">
+      <div class="meta">Prioritization · Shreyas Doshi</div>
+      <h2>Will it make the boat go faster?</h2>
+    </a>
+    <a class="card" href="62-why-where-when/">
+      <img src="62-why-where-when/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>Don’t skip WHY / WHERE / WHEN</h2>
+    </a>
+    <a class="card" href="63-proxies-not-research/">
+      <img src="63-proxies-not-research/illustration.png" alt="">
+      <div class="meta">Discovery · Pavel Samsonov</div>
+      <h2>Sales/CS are user proxies, not research</h2>
+    </a>
+    <a class="card" href="64-skier-lags-double-diamond/">
+      <img src="64-skier-lags-double-diamond/illustration.png" alt="">
+      <div class="meta">Stakeholders · Pavel Samsonov</div>
+      <h2>Stakeholder momentum lags the double diamond</h2>
+    </a>
+    <a class="card" href="65-prio-is-strategy/">
+      <img src="65-prio-is-strategy/illustration.png" alt="">
+      <div class="meta">Strategy · Shreyas Doshi</div>
+      <h2>Prioritization problems are strategy problems</h2>
+    </a>
+    <a class="card" href="66-good-vs-great-pm/">
+      <img src="66-good-vs-great-pm/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Good PMs deliver; great PMs change trajectory</h2>
+    </a>
+    <a class="card" href="67-b2b-strategy-tests/">
+      <img src="67-b2b-strategy-tests/illustration.png" alt="">
+      <div class="meta">Strategy · Shreyas Doshi</div>
+      <h2>B2B strategy: three questions, eight tests</h2>
+    </a>
+    <a class="card" href="68-visualize-work-power/">
+      <img src="68-visualize-work-power/illustration.png" alt="">
+      <div class="meta">Stakeholders · John Cutler</div>
+      <h2>Visualizing work threatens how power currently works</h2>
+    </a>
+    <a class="card" href="69-impact-execution-strategy-market/">
+      <img src="69-impact-execution-strategy-market/illustration.png" alt="">
+      <div class="meta">Strategy · Shreyas Doshi</div>
+      <h2>Impact ≈ (Execution ^ Strategy) × Market; hire execution-strong early</h2>
+    </a>
+    <a class="card" href="70-ten-pm-commandments/">
+      <img src="70-ten-pm-commandments/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Ten PM commandments, plus don’t blindly follow them</h2>
+    </a>
+    <a class="card" href="71-sell-doing-research/">
+      <img src="71-sell-doing-research/illustration.png" alt="">
+      <div class="meta">Discovery · Pavel Samsonov</div>
+      <h2>Sell doing research; UX is a power struggle</h2>
+    </a>
+    <a class="card" href="72-hero-culture-spare-capacity/">
+      <img src="72-hero-culture-spare-capacity/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>Hero culture is brittle; spare capacity is resilience</h2>
+    </a>
+    <a class="card" href="73-earn-team-trust/">
+      <img src="73-earn-team-trust/illustration.png" alt="">
+      <div class="meta">Stakeholders · John Cutler</div>
+      <h2>How PMs earn team trust (don’t shield, do work, IDD)</h2>
+    </a>
+    <a class="card" href="74-bets-you-can-cut-short/">
+      <img src="74-bets-you-can-cut-short/illustration.png" alt="">
+      <div class="meta">PO craft · John Cutler</div>
+      <h2>Feature factories; frame work as bets you can cut short</h2>
+    </a>
+    <a class="card" href="75-observe-first-research/">
+      <img src="75-observe-first-research/illustration.png" alt="">
+      <div class="meta">Discovery · Pavel Samsonov</div>
+      <h2>Research ≠ asking what they want; observe first</h2>
+    </a>
+    <a class="card" href="76-pm-work-is-private/">
+      <img src="76-pm-work-is-private/illustration.png" alt="">
+      <div class="meta">Stakeholders · John Cutler</div>
+      <h2>Eng/design shade at PM because too much PM work is private</h2>
+    </a>
+    <a class="card" href="77-preventable-problem-paradox/">
+      <img src="77-preventable-problem-paradox/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>The preventable problem paradox: orgs reward rescue, not prevention</h2>
+    </a>
+    <a class="card" href="78-sprints-for-learning/">
+      <img src="78-sprints-for-learning/illustration.png" alt="">
+      <div class="meta">Scrum / PSPO · John Cutler</div>
+      <h2>Hire sprints for learning, not as a delivery hamster wheel</h2>
+    </a>
+    <a class="card" href="79-strategy-culture-execution-questions/">
+      <img src="79-strategy-culture-execution-questions/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Answer the Strategy / Culture / Execution questions you already know matter</h2>
+    </a>
+    <a class="card" href="80-messy-local-experiments/">
+      <img src="80-messy-local-experiments/illustration.png" alt="">
+      <div class="meta">PO craft · John Cutler</div>
+      <h2>Real-world continuous improvement is messy local experiments</h2>
+    </a>
+    <a class="card" href="81-north-star-thirty-percent/">
+      <img src="81-north-star-thirty-percent/illustration.png" alt="">
+      <div class="meta">Discovery · Pavel Samsonov</div>
+      <h2>North-star artifacts are conversation catalysts; leave them ~30% done</h2>
+    </a>
+    <a class="card" href="82-measure-under-uncertainty/">
+      <img src="82-measure-under-uncertainty/illustration.png" alt="">
+      <div class="meta">Metrics · John Cutler</div>
+      <h2>Measurement is not a maturity stage; start under uncertainty</h2>
+    </a>
+    <a class="card" href="83-drivers-constraints-floats/">
+      <img src="83-drivers-constraints-floats/illustration.png" alt="">
+      <div class="meta">Prioritization · John Cutler</div>
+      <h2>Minimize drivers and constraints; increase floats</h2>
+    </a>
+    <a class="card" href="84-we-might-be-wrong/">
+      <img src="84-we-might-be-wrong/illustration.png" alt="">
+      <div class="meta">Discovery · Pavel Samsonov</div>
+      <h2>Iteration without “we might be wrong” becomes a linear roadmap</h2>
+    </a>
+    <a class="card" href="85-produce-organize-self-promote/">
+      <img src="85-produce-organize-self-promote/illustration.png" alt="">
+      <div class="meta">Stakeholders · Shreyas Doshi</div>
+      <h2>Diagnose conflict as Produce / Organize / Self-promote</h2>
+    </a>
+    <a class="card" href="86-crossover-x-pattern/">
+      <img src="86-crossover-x-pattern/illustration.png" alt="">
+      <div class="meta">Career · Shreyas Doshi</div>
+      <h2>Watch the crossover: when the company becomes its own largest customer</h2>
+    </a>
+    <a class="card" href="87-ten-health-signals/">
+      <img src="87-ten-health-signals/illustration.png" alt="">
+      <div class="meta">PO craft · John Cutler</div>
+      <h2>Ten signals of a healthier product team</h2>
+    </a>
+    <a class="card" href="88-ceo-test/">
+      <img src="88-ceo-test/illustration.png" alt="">
+      <div class="meta">Stakeholders · Shreyas Doshi</div>
+      <h2>Apply The CEO Test before you settle on an ugly compromise</h2>
+    </a>
+    <a class="card" href="89-gorilla-taxes/">
+      <img src="89-gorilla-taxes/illustration.png" alt="">
+      <div class="meta">Strategy · Shreyas Doshi</div>
+      <h2>Gorilla taxes: compete against the incumbent’s structural costs</h2>
+    </a>
+    <a class="card" href="90-product-vs-Product/">
+      <img src="90-product-vs-Product/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Optimize for The Product, not only the product you were assigned</h2>
+    </a>
+    <a class="card" href="91-ten-cognitive-biases/">
+      <img src="91-ten-cognitive-biases/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Ten product-team cognitive biases (name them to observe them)</h2>
+    </a>
+    <a class="card" href="92-start-with-principles/">
+      <img src="92-start-with-principles/illustration.png" alt="">
+      <div class="meta">Decision-making · Shreyas Doshi</div>
+      <h2>Start-with-Principles (Stripe): debate principles before solutions</h2>
+    </a>
+    <a class="card" href="93-four-team-modes/">
+      <img src="93-four-team-modes/illustration.png" alt="">
+      <div class="meta">Teams · Shreyas Doshi</div>
+      <h2>Four product-team modes: Assemble, Produce, Differentiate, Replicate</h2>
+    </a>
+    <a class="card" href="94-execution-is-often-strategy/">
+      <img src="94-execution-is-often-strategy/illustration.png" alt="">
+      <div class="meta">Strategy · Shreyas Doshi</div>
+      <h2>Most “Execution problems” are Strategy, Interpersonal, or Culture</h2>
+    </a>
+    <a class="card" href="95-direction-plus-autonomy/">
+      <img src="95-direction-plus-autonomy/illustration.png" alt="">
+      <div class="meta">Leadership · Pavel Samsonov</div>
+      <h2>Leadership is direction plus autonomy (both, or decisions do not stick)</h2>
+    </a>
+    <a class="card" href="96-hostile-pm-environment/">
+      <img src="96-hostile-pm-environment/illustration.png" alt="">
+      <div class="meta">Teams · John Cutler</div>
+      <h2>“Impossible to find qualified PMs” often means a hostile environment</h2>
+    </a>
+    <a class="card" href="97-less-x-more-y/">
+      <img src="97-less-x-more-y/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Nineteen present less-X / more-Y shifts (item 13 absent in source)</h2>
+    </a>
+    <a class="card" href="98-inputs-execution-outputs-outcomes/">
+      <img src="98-inputs-execution-outputs-outcomes/illustration.png" alt="">
+      <div class="meta">Diagnosis · Shreyas Doshi</div>
+      <h2>Team diagnosis: Inputs, Execution, Outputs, then Outcomes</h2>
+    </a>
+    <a class="card" href="99-pm-team-member-not-mini-ceo/">
+      <img src="99-pm-team-member-not-mini-ceo/illustration.png" alt="">
+      <div class="meta">PO craft · John Cutler</div>
+      <h2>Ten PM tips: you are a team member, not a mini-CEO</h2>
+    </a>
+    <a class="card" href="100-proxy-delusion/">
+      <img src="100-proxy-delusion/illustration.png" alt="">
+      <div class="meta">Metrics · Shreyas Doshi</div>
+      <h2>The Proxy Delusion: measure the proxy, do not manage it</h2>
+    </a>
+
+    <a class="card" href="101-positioning-five-components/">
+      <img src="101-positioning-five-components/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Positioning is five components, worked in a forced order</h2>
+    </a>
+    <a class="card" href="102-category-assumptions/">
+      <img src="102-category-assumptions/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Your market category fires a chain of assumptions; pick the one that centers your strengths</h2>
+    </a>
+    <a class="card" href="103-loose-then-tight-positioning/">
+      <img src="103-loose-then-tight-positioning/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Keep positioning loose until patterns appear, then tighten to an actionable segment</h2>
+    </a>
+    <a class="card" href="104-sell-market-pov/">
+      <img src="104-sell-market-pov/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Sell a point of view on the market, not a pile of features</h2>
+    </a>
+    <a class="card" href="105-seven-virality-strategies/">
+      <img src="105-seven-virality-strategies/illustration.png" alt="">
+      <div class="meta">Growth · Lenny Rachitsky</div>
+      <h2>Seven ways to increase virality — after you check the product is suited</h2>
+    </a>
+    <a class="card" href="106-feature-factory-vs-inventing/">
+      <img src="106-feature-factory-vs-inventing/illustration.png" alt="">
+      <div class="meta">Teams · Itamar Gilad</div>
+      <h2>Feature factories disengage developers; product teams are expected to invent</h2>
+    </a>
+    <a class="card" href="107-results-strategy-initiative-leadership/">
+      <img src="107-results-strategy-initiative-leadership/illustration.png" alt="">
+      <div class="meta">Leadership · Gibson Biddle</div>
+      <h2>Results = Strategy + Initiative + Leadership</h2>
+    </a>
+    <a class="card" href="108-transform-vs-streamline/">
+      <img src="108-transform-vs-streamline/illustration.png" alt="">
+      <div class="meta">Strategy · Melissa Perri</div>
+      <h2>Ask whether you are transforming or streamlining; they are different products</h2>
+    </a>
+    <a class="card" href="109-product-thinking-solution-shape/">
+      <img src="109-product-thinking-solution-shape/illustration.png" alt="">
+      <div class="meta">PO craft · Melissa Perri</div>
+      <h2>Product thinking is the shape of the solution, not only the process</h2>
+    </a>
+    <a class="card" href="110-designer-pushback-user-language/">
+      <img src="110-designer-pushback-user-language/illustration.png" alt="">
+      <div class="meta">Stakeholders · Julie Zhuo</div>
+      <h2>Answer designer pushback in the language of users, not PM shorthand</h2>
+    </a>
+    <a class="card" href="111-high-agency/">
+      <img src="111-high-agency/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>High Agency: find a way, or reverse the conditions</h2>
+    </a>
+    <a class="card" href="112-nine-time-principles-lno/">
+      <img src="112-nine-time-principles-lno/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>Nine time principles: scope kills brute force; LNO the rest</h2>
+    </a>
+    <a class="card" href="113-opportunity-cost-not-roi/">
+      <img src="113-opportunity-cost-not-roi/illustration.png" alt="">
+      <div class="meta">Prioritization · Shreyas Doshi</div>
+      <h2>In a high-leverage role, minimize opportunity cost, not ROI</h2>
+    </a>
+    <a class="card" href="114-radical-delegation/">
+      <img src="114-radical-delegation/illustration.png" alt="">
+      <div class="meta">Leadership · Shreyas Doshi</div>
+      <h2>Radical Delegation: keep the singular impact, contract the rest</h2>
+    </a>
+    <a class="card" href="115-10-30-50-pm/">
+      <img src="115-10-30-50-pm/illustration.png" alt="">
+      <div class="meta">Career · Shreyas Doshi</div>
+      <h2>Become a 10-30-50 PM: one sense at 10%, another 30%, the third 50%</h2>
+    </a>
+    <a class="card" href="116-eyeglass-store/">
+      <img src="116-eyeglass-store/illustration.png" alt="">
+      <div class="meta">Discovery · Shreyas Doshi</div>
+      <h2>Cognitive empathy is a product superpower: use the Eyeglass Store</h2>
+    </a>
+    <a class="card" href="117-curse-of-brilliance/">
+      <img src="117-curse-of-brilliance/illustration.png" alt="">
+      <div class="meta">PO craft · Shreyas Doshi</div>
+      <h2>The Curse of Brilliance: do not copy the tactics the greats found hard</h2>
+    </a>
+    <a class="card" href="118-messy-middle-inputs/">
+      <img src="118-messy-middle-inputs/illustration.png" alt="">
+      <div class="meta">Strategy · John Cutler</div>
+      <h2>Beat the messy middle: stable 12–24 month inputs, not goal cascades</h2>
+    </a>
+    <a class="card" href="119-change-the-words/">
+      <img src="119-change-the-words/illustration.png" alt="">
+      <div class="meta">PO craft · John Cutler</div>
+      <h2>Change the words: mission, bet, opportunity, intervention, capability</h2>
+    </a>
+    <a class="card" href="120-primary-user-benefit/">
+      <img src="120-primary-user-benefit/illustration.png" alt="">
+      <div class="meta">Discovery · Pavel Samsonov</div>
+      <h2>Name the primary user benefit; tautologies are not strategy</h2>
+    </a>
+    <a class="card" href="121-positioning-before-story/">
+      <img src="121-positioning-before-story/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Positioning before storytelling: don’t write fiction that sings</h2>
+    </a>
+    <a class="card" href="122-position-competitors/">
+      <img src="122-position-competitors/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Position your competitors, not only yourself</h2>
+    </a>
+    <a class="card" href="123-perf-scope-times-impact/">
+      <img src="123-perf-scope-times-impact/illustration.png" alt="">
+      <div class="meta">Career · Itamar Gilad</div>
+      <h2>Perf = Scope × Unique Impact — and the formula can punish discovery</h2>
+    </a>
+    <a class="card" href="124-cd-is-business-practice/">
+      <img src="124-cd-is-business-practice/illustration.png" alt="">
+      <div class="meta">Delivery · Janna Bastow</div>
+      <h2>Continuous deployment is a business practice, not a tech brag</h2>
+    </a>
+    <a class="card" href="125-oceans-11-cascade/">
+      <img src="125-oceans-11-cascade/illustration.png" alt="">
+      <div class="meta">Strategy · Lenny Rachitsky</div>
+      <h2>Mission → Vision → Strategy → Goals → Roadmap → Task (Ocean’s 11)</h2>
+    </a>
+    <a class="card" href="126-family-to-dream-team/">
+      <img src="126-family-to-dream-team/illustration.png" alt="">
+      <div class="meta">Teams · Gibson Biddle</div>
+      <h2>Agree where you sit on Family → Dream Team (and the other continuums)</h2>
+    </a>
+    <a class="card" href="127-ab-swing-for-the-fence/">
+      <img src="127-ab-swing-for-the-fence/illustration.png" alt="">
+      <div class="meta">Discovery · Teresa Torres</div>
+      <h2>Most A/B tests do nothing; swing for the fence, don’t treat α as FPR</h2>
+    </a>
+    <a class="card" href="128-designer-answers-pm-pushback/">
+      <img src="128-designer-answers-pm-pushback/illustration.png" alt="">
+      <div class="meta">Stakeholders · Julie Zhuo</div>
+      <h2>How designers can answer the four PM pushbacks</h2>
+    </a>
+    <a class="card" href="129-ship-design-product-business/">
+      <img src="129-ship-design-product-business/illustration.png" alt="">
+      <div class="meta">PO craft · Des Traynor / Intercom Design</div>
+      <h2>Ship design vs product vs business; the market always wins</h2>
+    </a>
+    <a class="card" href="130-proof-of-worth/">
+      <img src="130-proof-of-worth/illustration.png" alt="">
+      <div class="meta">Career · Shreyas Doshi</div>
+      <h2>Proof of Worth is junior scaffolding, not the job</h2>
+    </a>
+
+    <a class="card" href="131-climb-the-loops/">
+      <img src="131-climb-the-loops/illustration.png" alt="">
+      <div class="meta">Discovery · Pavel Samsonov</div>
+      <h2>Climb the loops: right things, then the right “right,” then Learning Ops</h2>
+    </a>
+    <a class="card" href="132-metrics-are-not-goals/">
+      <img src="132-metrics-are-not-goals/illustration.png" alt="">
+      <div class="meta">Metrics · Pavel Samsonov</div>
+      <h2>Metrics are not goals; pick the destination before the dashboard</h2>
+    </a>
+    <a class="card" href="133-artifact-is-the-conversation/">
+      <img src="133-artifact-is-the-conversation/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>The artifact is the conversation; it is done when acted upon</h2>
+    </a>
+    <a class="card" href="134-outcome-first-planning/">
+      <img src="134-outcome-first-planning/illustration.png" alt="">
+      <div class="meta">Strategy · Pavel Samsonov</div>
+      <h2>Outcome-first planning: make the future clearer than the present</h2>
+    </a>
+    <a class="card" href="135-congruence-quality-timing/">
+      <img src="135-congruence-quality-timing/illustration.png" alt="">
+      <div class="meta">Strategy · John Cutler</div>
+      <h2>Debug planning with congruence, decision quality, and timing</h2>
+    </a>
+    <a class="card" href="136-three-roadmaps/">
+      <img src="136-three-roadmaps/illustration.png" alt="">
+      <div class="meta">Roadmaps · Melissa Perri</div>
+      <h2>There is no one roadmap; tailor at least three to the audience</h2>
+    </a>
+    <a class="card" href="137-vision-strategy-positioning-clocks/">
+      <img src="137-vision-strategy-positioning-clocks/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Vision, strategy, and positioning are different time horizons</h2>
+    </a>
+    <a class="card" href="138-timeline-vicious-cycle/">
+      <img src="138-timeline-vicious-cycle/illustration.png" alt="">
+      <div class="meta">Roadmaps · Janna Bastow</div>
+      <h2>Timeline roadmaps create a vicious cycle of buffers and blame</h2>
+    </a>
+    <a class="card" href="139-foundation-not-big-bang/">
+      <img src="139-foundation-not-big-bang/illustration.png" alt="">
+      <div class="meta">Strategy · John Cutler</div>
+      <h2>Reactivity is a missing foundation, not a missing big plan</h2>
+    </a>
+    <a class="card" href="140-segment-then-champion/">
+      <img src="140-segment-then-champion/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Nail segmentation and the champion before persona busywork</h2>
+    </a>
+    <a class="card" href="141-fidelity-of-thinking/">
+      <img src="141-fidelity-of-thinking/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>Fidelity of artifacts must never exceed fidelity of thinking</h2>
+    </a>
+
+    <a class="card" href="142-absolute-not-relative/">
+      <img src="142-absolute-not-relative/illustration.png" alt="">
+      <div class="meta">Discovery · Pavel Samsonov</div>
+      <h2>Absolute not relative: “makes it easier to X” is not a product</h2>
+    </a>
+
+    <a class="card" href="143-low-hanging-fruit/">
+      <img src="143-low-hanging-fruit/illustration.png" alt="">
+      <div class="meta">Prioritization · Pavel Samsonov</div>
+      <h2>Low-hanging-fruit talk is self-defeating</h2>
+    </a>
+
+    <a class="card" href="144-design-documents-decisions/">
+      <img src="144-design-documents-decisions/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>A design is documentation of decisions for a known purpose</h2>
+    </a>
+
+    <a class="card" href="145-company-vs-product-positioning/">
+      <img src="145-company-vs-product-positioning/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Company positioning equals product positioning — until you choose cascade, suite, or lead product</h2>
+    </a>
+
+    <a class="card" href="146-positioning-misalignment-catch-22/">
+      <img src="146-positioning-misalignment-catch-22/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Positioning misalignment is a roadmap catch-22</h2>
+    </a>
+
+    <a class="card" href="147-eight-first-time-leader-mistakes/">
+      <img src="147-eight-first-time-leader-mistakes/illustration.png" alt="">
+      <div class="meta">Leadership · Melissa Perri</div>
+      <h2>Eight first-time product-leader mistakes</h2>
+    </a>
+
+    <a class="card" href="148-org-vs-swimlane-smt/">
+      <img src="148-org-vs-swimlane-smt/illustration.png" alt="">
+      <div class="meta">Strategy · Gibson Biddle</div>
+      <h2>Org-level product strategy vs swimlane SMT</h2>
+    </a>
+
+    <a class="card" href="149-simplicity-is-a-tactic/">
+      <img src="149-simplicity-is-a-tactic/illustration.png" alt="">
+      <div class="meta">PO craft · John Cutler</div>
+      <h2>Simplicity is a tactic, not the goal</h2>
+    </a>
+
+    <a class="card" href="150-value-exchange-rate/">
+      <img src="150-value-exchange-rate/illustration.png" alt="">
+      <div class="meta">Teams · Julie Zhuo</div>
+      <h2>Devotion to any single value has an exchange rate</h2>
+    </a>
+    <a class="card" href="151-deadlines-not-the-incentive/">
+      <img src="151-deadlines-not-the-incentive/illustration.png" alt="">
+      <div class="meta">Delivery · Janna Bastow</div>
+      <h2>Deadlines are not the incentive</h2>
+    </a>
+
+    <a class="card" href="152-burnout-black-box/">
+      <img src="152-burnout-black-box/illustration.png" alt="">
+      <div class="meta">Teams · John Cutler</div>
+      <h2>Burnout and “low quality” are downstream of the black box</h2>
+    </a>
+
+    <a class="card" href="153-wean-off-nps/">
+      <img src="153-wean-off-nps/illustration.png" alt="">
+      <div class="meta">Metrics · John Cutler</div>
+      <h2>Wean the company off NPS by naming the leading levers</h2>
+    </a>
+
+    <a class="card" href="154-metrics-from-guessing-the-build/">
+      <img src="154-metrics-from-guessing-the-build/illustration.png" alt="">
+      <div class="meta">Metrics · Pavel Samsonov</div>
+      <h2>Metrics-from-guessing-the-build is backwards</h2>
+    </a>
+
+    <a class="card" href="155-not-the-main-character/">
+      <img src="155-not-the-main-character/illustration.png" alt="">
+      <div class="meta">Discovery · Pavel Samsonov</div>
+      <h2>You are not the main character in the user’s life</h2>
+    </a>
+
+    <a class="card" href="156-bake-in-the-expertise/">
+      <img src="156-bake-in-the-expertise/illustration.png" alt="">
+      <div class="meta">PO craft · Melissa Perri</div>
+      <h2>Not everyone knows how to do the job; bake in the expertise</h2>
+    </a>
+
+    <a class="card" href="157-influence-execs-how-judged/">
+      <img src="157-influence-execs-how-judged/illustration.png" alt="">
+      <div class="meta">Stakeholders · Melissa Perri</div>
+      <h2>Influence executives by how they are judged</h2>
+    </a>
+
+    <a class="card" href="158-disappointment-is-expectations/">
+      <img src="158-disappointment-is-expectations/illustration.png" alt="">
+      <div class="meta">Stakeholders · Julie Zhuo</div>
+      <h2>Every disappointment is a failure to set expectations</h2>
+    </a>
+
+    <a class="card" href="159-stop-deciphering-the-ceo/">
+      <img src="159-stop-deciphering-the-ceo/illustration.png" alt="">
+      <div class="meta">Leadership · Shreyas Doshi</div>
+      <h2>Stop deciphering the CEO; tell them what needs to be done</h2>
+    </a>
+
+    <a class="card" href="160-real-alternatives-not-theoretical/">
+      <img src="160-real-alternatives-not-theoretical/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Position only against real alternatives, not the theoretical list</h2>
+    </a>
+
+    <a class="card" href="161-three-bullets-on-the-slide/">
+      <img src="161-three-bullets-on-the-slide/illustration.png" alt="">
+      <div class="meta">PO craft · John Cutler</div>
+      <h2>“Only 3 priorities” is really three bullets on the slide</h2>
+    </a>
+
+    <a class="card" href="162-idle-beats-feasible-code/">
+      <img src="162-idle-beats-feasible-code/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>Sitting idle beats feasible code that does not ladder up</h2>
+    </a>
+
+    <a class="card" href="163-storyboards-not-hifi/">
+      <img src="163-storyboards-not-hifi/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>Storyboards, not hi-fi mockups</h2>
+    </a>
+
+    <a class="card" href="164-five-things-starting-in-product/">
+      <img src="164-five-things-starting-in-product/illustration.png" alt="">
+      <div class="meta">PO craft · Melissa Perri</div>
+      <h2>Five things starting in product</h2>
+    </a>
+
+    <a class="card" href="165-considered-purchase-no-decision/">
+      <img src="165-considered-purchase-no-decision/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Considered purchases; no-decision is the low-risk default</h2>
+    </a>
+
+    <a class="card" href="166-category-orients-value-story/">
+      <img src="166-category-orients-value-story/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Category orients; the value story answers why pick us</h2>
+    </a>
+
+    <a class="card" href="167-three-value-themes/">
+      <img src="167-three-value-themes/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Buyers care about ≤3 value themes, not the feature list</h2>
+    </a>
+
+    <a class="card" href="168-walkthrough-five-moves/">
+      <img src="168-walkthrough-five-moves/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Walkthroughs need five moves, not a feature tour</h2>
+    </a>
+
+    <a class="card" href="169-just-talk-to-customers-cop-out/">
+      <img src="169-just-talk-to-customers-cop-out/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>“Just talk to customers” is a cop-out</h2>
+    </a>
+
+    <a class="card" href="170-champion-then-arm/">
+      <img src="170-champion-then-arm/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Position first for the Champion, then arm them</h2>
+    </a>
+
+    <a class="card" href="171-same-value-same-positioning/">
+      <img src="171-same-value-same-positioning/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Same value across segments is the same positioning</h2>
+    </a>
+
+    <a class="card" href="172-position-against-approaches/">
+      <img src="172-position-against-approaches/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Position against approaches, not vendors</h2>
+    </a>
+
+    <a class="card" href="173-storytelling-maps-approaches/">
+      <img src="173-storytelling-maps-approaches/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>B2B storytelling that sells maps approaches</h2>
+    </a>
+
+    <a class="card" href="174-hoard-giant-ghost/">
+      <img src="174-hoard-giant-ghost/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Beat the hoard, the giant, and the ghost</h2>
+    </a>
+
+    <a class="card" href="175-methods-need-inputs/">
+      <img src="175-methods-need-inputs/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>Methods fail when outputs are demanded without inputs</h2>
+    </a>
+
+    <a class="card" href="176-ux-not-the-screen/">
+      <img src="176-ux-not-the-screen/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>UX is not the screen; enterprise users are developers</h2>
+    </a>
+
+    <a class="card" href="177-go-faster-define-value/">
+      <img src="177-go-faster-define-value/illustration.png" alt="">
+      <div class="meta">Delivery · John Cutler</div>
+      <h2>“Go faster” is define value, do less, and make safety a prerequisite</h2>
+    </a>
+
+    <a class="card" href="178-exec-never-seen-a-flop/">
+      <img src="178-exec-never-seen-a-flop/illustration.png" alt="">
+      <div class="meta">Leadership · John Cutler</div>
+      <h2>An exec who has never seen a flop was never invited in</h2>
+    </a>
+
+    <a class="card" href="179-working-with-developers/">
+      <img src="179-working-with-developers/illustration.png" alt="">
+      <div class="meta">Teams · John Cutler</div>
+      <h2>Working with developers: they maintain the turd</h2>
+    </a>
+
+    <a class="card" href="180-presentation-culture-fallacies/">
+      <img src="180-presentation-culture-fallacies/illustration.png" alt="">
+      <div class="meta">Stakeholders · John Cutler</div>
+      <h2>Presentation culture hides the fallacies writing would surface</h2>
+    </a>
+
+    <a class="card" href="181-devalued-not-a-seat/">
+      <img src="181-devalued-not-a-seat/illustration.png" alt="">
+      <div class="meta">Teams · John Cutler</div>
+      <h2>Feeling devalued is not solved by a seat at the table</h2>
+    </a>
+
+    <a class="card" href="182-leadership-defaults/">
+      <img src="182-leadership-defaults/illustration.png" alt="">
+      <div class="meta">Leadership · John Cutler</div>
+      <h2>Leadership defaults: awareness vs universal vs optimal</h2>
+    </a>
+
+    <a class="card" href="183-new-senior-leaders/">
+      <img src="183-new-senior-leaders/illustration.png" alt="">
+      <div class="meta">Leadership · John Cutler</div>
+      <h2>New senior leaders miss glue people, hidden successes, and the failure log</h2>
+    </a>
+
+    <a class="card" href="184-pyramids-vs-orbits/">
+      <img src="184-pyramids-vs-orbits/illustration.png" alt="">
+      <div class="meta">PO craft · John Cutler</div>
+      <h2>Pyramids do not reflect product work; sense/respond orbits</h2>
+    </a>
+
+    <a class="card" href="185-manager-roles-converge/">
+      <img src="185-manager-roles-converge/illustration.png" alt="">
+      <div class="meta">Leadership · Julie Zhuo</div>
+      <h2>Manager roles converge; four practices at VP</h2>
+    </a>
+
+    <a class="card" href="186-interview-questions/">
+      <img src="186-interview-questions/illustration.png" alt="">
+      <div class="meta">Teams · Julie Zhuo</div>
+      <h2>Interview questions that surface taste, conflict, and motivation</h2>
+    </a>
+
+    <a class="card" href="187-keep-positioning-loose/">
+      <img src="187-keep-positioning-loose/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>Keep positioning loose at launch; tighten after the first wave</h2>
+    </a>
+
+    <a class="card" href="188-b2b-fear-no-decision/">
+      <img src="188-b2b-fear-no-decision/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>B2B fear: no-decision is a vote against a bad choice</h2>
+    </a>
+
+    <a class="card" href="189-decision-making-documentation/">
+      <img src="189-decision-making-documentation/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>Decision-making and documentation are one cadence</h2>
+    </a>
+
+    <a class="card" href="190-work-with-not-for/">
+      <img src="190-work-with-not-for/illustration.png" alt="">
+      <div class="meta">Teams · Pavel Samsonov</div>
+      <h2>Work with a function, not for their requirements</h2>
+    </a>
+
+    <a class="card" href="191-demo-context-then-value/">
+      <img src="191-demo-context-then-value/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>A demo is positioning: context vs alternatives, then value themes</h2>
+    </a>
+
+    <a class="card" href="192-not-xyz-positioning/">
+      <img src="192-not-xyz-positioning/illustration.png" alt="">
+      <div class="meta">Positioning · April Dunford</div>
+      <h2>You cannot position as “not xyz”; capabilities only matter as value</h2>
+    </a>
+
+    <a class="card" href="193-satisfaction-not-a-metric/">
+      <img src="193-satisfaction-not-a-metric/illustration.png" alt="">
+      <div class="meta">Metrics · Pavel Samsonov</div>
+      <h2>Customer satisfaction is not a metric; NPS is a courage-substitute</h2>
+    </a>
+
+    <a class="card" href="194-definition-of-good-hiring/">
+      <img src="194-definition-of-good-hiring/illustration.png" alt="">
+      <div class="meta">Teams · Pavel Samsonov</div>
+      <h2>“Help ship the roadmap” is not a Definition of Good</h2>
+    </a>
+
+    <a class="card" href="195-not-catering-to-wants/">
+      <img src="195-not-catering-to-wants/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>Good design is not catering to wants; three ways to build</h2>
+    </a>
+
+    <a class="card" href="196-capture-inputs-propagate/">
+      <img src="196-capture-inputs-propagate/illustration.png" alt="">
+      <div class="meta">PO craft · Pavel Samsonov</div>
+      <h2>Capture inputs, size effort to value, decide, document, propagate</h2>
+    </a>
+
+    <a class="card" href="197-no-single-safe-alternative/">
+      <img src="197-no-single-safe-alternative/illustration.png" alt="">
+      <div class="meta">PO craft · Melissa Perri</div>
+      <h2>There is no single alternative to SAFe</h2>
+    </a>
+
+    <a class="card" href="198-renaming-pms-hurts-hiring/">
+      <img src="198-renaming-pms-hurts-hiring/illustration.png" alt="">
+      <div class="meta">Teams · Melissa Perri</div>
+      <h2>Renaming PMs solves the week and hurts hiring</h2>
+    </a>
+
+    <a class="card" href="199-specific-ask/">
+      <img src="199-specific-ask/illustration.png" alt="">
+      <div class="meta">Stakeholders · Julie Zhuo</div>
+      <h2>Vague asks fail; name what, why them, boundaries, and an easy yes</h2>
+    </a>
+
+    <a class="card" href="200-experts-vs-armchair/">
+      <img src="200-experts-vs-armchair/illustration.png" alt="">
+      <div class="meta">PO craft · Julie Zhuo</div>
+      <h2>True experts study, implement, own, iterate; armchair stops at 1–2</h2>
+    </a>
 </div>
-<div class="overlay" id="overlay"></div>
-<script>
-const LESSONS = [
-  {id:"01", tag:"PO craft", title:"Ship incomplete bets, then wait for the model",
-   source:"Lenny Rachitsky · 23 Apr 2026", link:"https://x.com/lennysan/status/2047377335406694431", img:"learnfeed-lessons/01-ship-incomplete-bets/illustration.png",
-   claims:"Anthropic’s cadence went months → weeks → days. Cat Wu’s punchline: build products that don’t fully work yet, then wait for the model to catch up. Hiring is shifting away from classic PM skills toward taste, evals, and being the right amount of AGI-pilled. 95% automation is not automation.",
-   why:"Your job stops being backlog admin. You pick the bet, define “good enough to ship,” and write the eval — not the 18-month roadmap of features the model will make free.",
-   takeaways:["Cadence is a product decision. If discovery still takes a quarter, you are the bottleneck.","Ship the shape of the product before the capability exists. The model is the delivery team.","A leftover 5% of manual work is still a full product, with full cost."],
-   practice:"Pick one backlog item that only works if a model/API gets better. Write a 5-line eval of “done,” ship a v0 that fails it on purpose, and date when you’ll re-run the eval."},
-  {id:"02", tag:"PO craft", title:"Delivery includes deprecation",
-   source:"Cat Wu · 28 May 2026", link:"https://x.com/_catwu/status/2060054180379689074", img:"learnfeed-lessons/02-delivery-includes-deprecation/illustration.png",
-   claims:"Claude Code “dynamic workflows” let you name a workflow and get an orchestration plan that actually runs in order — including across hundreds of agents. Cat used it to catalogue hundreds of A/B flags, find the ones stuck at 0% or 100%, and deprecate them in under 10 minutes in parallel.",
-   why:"Shipping is the easy half. Stale experiments, leftover flags, and zombie configs are silent product. Using AI to remove work is a PO skill, not an engineering side quest.",
-   takeaways:["0% and 100% flags are decisions you already made. Leaving them in the system is new risk.","Parallelise the hygiene, not just the build.","Trust comes from a plan the tool cannot skip — not from a longer prompt."],
-   practice:"List every experiment, feature flag, or “temporary” config you know of. Mark each 0 / partial / 100. Kill or schedule one stale 0% or 100% item by Friday."},
-  {id:"03", tag:"EV charging", title:"Corridor megawatt vs depot CCS is the product split",
-   source:"Sawyer Merritt · 17 Jul 2026", link:"https://x.com/SawyerMerritt/status/2077964549123170309", img:"learnfeed-lessons/03-megawatt-vs-depot/illustration.png",
-   claims:"Tesla opened the first public Megacharger in Bloomington, CA: 6 stalls, 1.2 MW peak each, Tesla Semi customers. Public, corridor, minutes — not overnight depot.",
-   why:"Fleets do not buy “a charger.” They buy a day in the life: depot fill at night (CCS, hours) vs en-route top-up (MCS-class, minutes). Once public megawatt exists, the customer question changes from “will this exist?” to “when is it on our corridors?” Treat this as a market fact to explain, not a Siemens-internal roadmap.",
-   takeaways:["Spec the job, not the plug: minutes on a highway vs hours at a yard.","Six stalls is a product too: queueing, uptime, who can use it.","Official map drops are sparse and still move buyers. Your comms can be short if the artifact is real."],
-   practice:"Draw one fleet’s Tuesday: depot overnight + one public top-up. Write the two jobs in one sentence each (power, time, who pays). Take that to your next stakeholder chat instead of a feature list."},
-  {id:"04", tag:"Stakeholders", title:"Name the level before you argue the ticket",
-   source:"Shreyas Doshi · 12 Mar 2021", link:"https://x.com/shreyas/status/1370248637842812936", img:"learnfeed-lessons/04-three-levels-of-product-work/illustration.png",
-   claims:"Product work has three levels: Execution, Impact, Optics. Conflict is usually two people stuck on different levels — PM on impact vs team on execution, or PM on optics vs team on impact.",
-   why:"Fleet ops lives in execution (“did the charger come up”). Leadership lives in impact (“did uptime move”). Sales/comms lives in optics (“can I say we launched”). If you litigate story points, you never notice you’re in different rooms.",
-   takeaways:["Start reviews with “which level are we on?” It ends half the fights.","Optics is not fake — it’s a different job. Don’t moralise it; schedule it.","If you only reward on-time sprints, you trained the room for execution."],
-   practice:"In one meeting, write Execution / Impact / Optics on a notepad. Tick where each speaker is. If two ticks disagree, say that out loud before discussing the ticket."},
-  {id:"05", tag:"Stakeholders", title:"Find the eigenquestion before the options",
-   source:"Shreyas Doshi · Aug 2020", link:"https://x.com/shreyas/status/1293973551167373312", img:"learnfeed-lessons/05-eigenquestion/illustration.png",
-   claims:"For a high-stakes decision, most debate is downstream. The eigenquestion (from Shishir Mehrotra) is the one answer that makes the other questions easy. Netflix example: TVOD vs SVOD wasn’t “how big is the catalog?” — it was “do we care more about catalog size or consumption friction?” Spend half the time on the question.",
-   why:"Steering committees love three options and a recommendation. You end up litigating details. Corridor vs depot, interoperability vs time-to-market, custom vs standard — those only resolve if you name the one tradeoff that matches strategy.",
-   takeaways:["A beautiful options slide with the wrong question still ships the wrong thing.","The eigenquestion must be answerable from vision, not from last week’s metric.","It feels slow. It’s faster than reconvening."],
-   practice:"Take one live decision. Write every question on the table. Circle the one that, if answered, kills most of the others. Open the next review with only that sentence."},
-  {id:"06", tag:"PO craft", title:"Don’t mix Explore with Extract",
-   source:"Shreyas Doshi · May 2021", link:"https://x.com/shreyas/status/1399042778613485578", img:"learnfeed-lessons/06-explore-expand-extract/illustration.png",
-   claims:"A product is in Explore, Expand, or Extract. Almost every important decision should account for the stage. Frameworks don’t save you — they name the context so you stop using extract-stage process on explore-stage work.",
-   why:"A pilot and a scale-out need different evidence, different WIP, different stakeholder promises. If you run a new corridor behaviour through a mature-depot playbook (or the reverse), the team looks slow and the exec looks reckless. Same people, wrong stage.",
-   takeaways:["Explore: cheap tests, kill rate is a feature. Extract: reliability is the product.","Expand is the messy middle — process has to grow with volume, not copy extract too early.","Say the stage in the first line of a review. It licenses the plan that follows."],
-   practice:"Label three things in your world Explore / Expand / Extract. For the Explore one, cut one “scale” requirement (SLA, full i18n, extra report) that only belongs in Extract."},
-  {id:"07", tag:"PO craft", title:"Steering, not rowing",
-   source:"Lenny Rachitsky · 31 Aug 2026", link:"https://x.com/lennysan/status/2094444052204998908", img:"learnfeed-lessons/07-steering-not-rowing/illustration.png",
-   claims:"OpenAI’s ChatGPT Work lead Tara: the future of work is steering (taste, next call), not rowing. Build for where models will be in 2–3 months. PMs elevate ambition. Share mocks not docs. Never automate writing-as-thinking. Someone still has to be the DRI. Speed without a hypothesis compounds error.",
-   why:"As execution gets cheaper, the PO job is hypothesis, taste, and a name on the outcome. Long docs stop being a signal of rigor. A 70% artifact plus a DRI beats a perfect spec with no owner.",
-   takeaways:["Build 2–3 months ahead of the model, not 12.","Mocks and A/B results communicate better than strategy novels.","Never outsource the writing you think with; automate the reporting."],
-   practice:"This week, replace one status doc with a mock or a 70% note. Put a DRI on the outcome in the first line."},
-  {id:"08", tag:"Scrum / PSPO", title:"PO is not a backlog secretary",
-   source:"Scrum.org · 31 Aug 2026", link:"https://x.com/Scrumdotorg/status/2094576068724158861", img:"learnfeed-lessons/08-po-not-backlog-secretary/illustration.png",
-   claims:"How a candidate defines the product role names the operating model they came from, not their skill. Missing problem framing, solution choice, and viability together is the tell. Role behaviour follows the funding model. POs are not backlog secretaries; they are strategic leaders.",
-   why:"If your week is “supplying ready work,” you inherited an order-taker model. PSPO-level work is finding worthwhile problems and solutions customers choose — including whether the thing is viable.",
-   takeaways:["The Rorschach test: backlog vs worthwhile problems.","Problem + solution + viability must sit with the PO, not get split away.","Funding model trains the behaviour; name it if you’re stuck supplying tickets."],
-   practice:"In one sentence, write your job this sprint as either “owning the backlog” or “choosing a worthwhile problem.” If it’s the first, pick one problem this week you will frame before any story is written."}
-];
-
-const KEY = "learnfeed-practiced-v1";
-const practiced = new Set(JSON.parse(localStorage.getItem(KEY) || "[]"));
-let filter = "All";
-
-function save(){ localStorage.setItem(KEY, JSON.stringify([...practiced])); }
-
-function topics(){
-  const tags = ["All", ...new Set(LESSONS.map(l => l.tag))];
-  document.getElementById("topics").innerHTML = tags.map(t =>
-    `<button data-tag="${t}" class="${t===filter?"on":""}">${t}</button>`
-  ).join("");
-  document.getElementById("topics").onclick = e => {
-    const b = e.target.closest("button"); if(!b) return;
-    filter = b.dataset.tag; render();
-  };
-}
-
-function progress(){
-  document.getElementById("progress").textContent = practiced.size + " / " + LESSONS.length;
-}
-
-function render(){
-  topics(); progress();
-  const list = LESSONS.filter(l => filter==="All" || l.tag===filter);
-  document.getElementById("board").innerHTML = list.map(l => `
-    <article class="card" data-id="${l.id}">
-      <img src="${l.img}" alt="">
-      <div class="body">
-        <div class="tag">${l.tag}</div>
-        <h2>${l.title}</h2>
-        <div class="meta">${l.source}</div>
-        <div class="done ${practiced.has(l.id)?"yes":""}">${practiced.has(l.id)?"Practiced":"Practice waiting"}</div>
-      </div>
-    </article>`).join("");
-  document.getElementById("board").onclick = e => {
-    const c = e.target.closest("article"); if(c) open(c.dataset.id);
-  };
-}
-
-function open(id){
-  const l = LESSONS.find(x => x.id===id);
-  const ov = document.getElementById("overlay");
-  ov.className = "overlay show";
-  ov.innerHTML = `
-    <div class="sheet">
-      <img src="${l.img}" alt="">
-      <div class="pad">
-        <button class="close" id="x">×</button>
-        <div class="tag">${l.tag}</div>
-        <h2>${l.title}</h2>
-        <p class="meta">${l.source} · <a href="${l.link}" target="_blank" rel="noopener">original post</a></p>
-        <section><h3>What it claims</h3><p>${l.claims}</p></section>
-        <section><h3>Why it matters for a PO</h3><p>${l.why}</p></section>
-        <section><h3>3 takeaways</h3><ol>${l.takeaways.map(t=>"<li>"+t+"</li>").join("")}</ol></section>
-        <section><h3>Practice this week</h3><p>${l.practice}</p></section>
-        <div class="row">
-          <button class="primary" id="mark">${practiced.has(l.id)?"Mark unpracticed":"I did the practice"}</button>
-          <a href="${l.link}" target="_blank" rel="noopener"><button>Open post</button></a>
-        </div>
-      </div>
-    </div>`;
-  ov.onclick = e => { if(e.target===ov || e.target.id==="x"){ ov.className="overlay"; ov.innerHTML=""; } };
-  document.getElementById("mark").onclick = () => {
-    if(practiced.has(id)) practiced.delete(id); else practiced.add(id);
-    save(); render(); open(id);
-  };
-}
-render();
-</script>
 </body>
 </html>

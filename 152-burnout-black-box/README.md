@@ -1,0 +1,24 @@
+# Burnout and “low quality” are downstream of the black box
+
+![Illustration](illustration.png)
+
+**Source:** John Cutler (@johncutlefish)
+**Post:** https://x.com/johncutlefish/status/1624820436373749760
+
+## What it claims
+
+Your team is burnt out. They are not getting anything done. Work is “low quality.” You can see and feel those things — but what you are seeing is an output of something: the downstream effects of other things happening. In some companies this is a black box; they do not have visibility into what is happening. It is not that simple: the outputs are inputs into the black box, and the outputs input into the inputs. Say the team reactively addresses quality issues. This creates more “work” (the output inputs into the input), but it also leaves the team more burnt out and they make less-good decisions on whatever is going on in the box. An executive walks in and says “we need visibility of what is going on in the box, give me a status check on everything!” That does not tell you what is really going on in the box — it does not explain the traffic-light indicators. You still cannot see what is happening. In fact, it creates more inputs (more “work”), and stresses the people out working in the box, which becomes another input to what is in the box. Then another person says “we should shine a light on what is in the box!” They shine the light. First, this is another input into the box, and that adds stress. When people see what is inside, they find it incredibly overwhelming. Seeing the mess causes high cognitive load, which creates yet another input. The people in the box have been saying this for 18 months, and no one ever really listened — so the flashlight only bubbles up accumulated resentment. What happens next? They bring in a new manager with low context. The manager concludes that better planning (packing even more work, and relying even more on estimates) will solve the problem. And our Andon cord puller leaves. And we go back to our black box. The end.
+
+## Why it matters for a PO
+
+Status decks, RAG boards, and “shine a light” audits feel like management. They are more work into the same box. A PO who treats burnout and quality as outputs will not add a status check or a new planner — they will reduce inputs, listen to the 18-month warning, and stop packing more estimated work.
+
+## 3 takeaways
+
+1. Burnout and low quality are downstream effects, not the disease; outputs loop back as inputs.
+2. Exec status checks and flashlights add work, stress, cognitive load, and resentment — they do not explain the box.
+3. The common “fix” (new low-context manager, more planning, more estimates) restores the black box and ejects the person who pulled the cord.
+
+## Practice this week
+
+Name the last three “visibility” asks that landed on the trio (status, RAG, audit). For each, write whether it reduced work in the box or added an input. Kill one status artifact. Ask the people in the box what they have been saying for months, and do not answer with a new plan.

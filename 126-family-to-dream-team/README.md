@@ -1,0 +1,24 @@
+# Agree where you sit on Family → Dream Team (and the other continuums)
+
+![Illustration](illustration.png)
+
+**Source:** Gibson Biddle (@gibsonbiddle)
+**Post:** https://x.com/gibsonbiddle/status/1495093752309993484
+
+## What it claims
+
+Barry McCarthy, former CFO at Spotify/Netflix, then CEO of Peloton, in a NY Times interview, explains disagreement with the former Peloton CEO (now Chairman): John, “We’re a Family.” Barry, “No, we’re a Pro Sports Team.” The issue is cultural. Companies need to decide where they want to be on a continuum from “Family” to “Pro Sports Team.” There is no right answer, but it is helpful to agree on where you are today and where you aspire to be. On that continuum: “Family” on the left — you can never let family members go — then “everyone plays,” Club, Semi-pro, or a Pro team where you know the stars will eventually be replaced. Netflix aspires to move beyond “Pro” to “Dream Team,” where every person is the best possible person on the planet for a given role; Dream Team is one step further right. There is no right answer. Biddle left Netflix when it aspired to become a Dream Team and joined Chegg, which embraced a family culture. At Netflix he would NEVER hire summer interns; Chegg hired 30 each summer — part of the mission was to help college students find jobs. The key, as at Peloton, is that the team needs to agree; Barry is trying to work that out in public. After Peloton let 2,800 employees go, it is clear they are NOT a family. One exercise Biddle takes exec teams through: where are you today and where do you aspire to be on several continuums, with where he thinks Netflix sits: Control vs Freedom — how much freedom employees get; at Netflix no one dies if they release a bad movie, so lots of freedom (in contrast, Boeing requires lots of control — it is disastrous when planes fall out of the sky). Secrecy vs Transparency — how much information to give employees; Netflix is highly transparent inside the company, Apple is highly secretive; again no right answer. Indirect vs Direct communication — level of candor; Barry comes from Netflix and is used to very direct, candid conversation (clear in the interview); other environments (like Spotify) are not as comfortable with this. For all of these — Family vs Dream Team, Control vs Freedom, Secrecy vs Transparency, Indirect vs Direct — teams need to be clear with each other where they are today and where they aspire to be. (Closing tweets point to Biddle’s Vimeo talk “How Netflix Defined A World-Class Culture” and the NYT interview; those sources were not unrolled here.)
+
+## Why it matters for a PO
+
+A trio that talks “we’re a family” while running a forced ranking or a layoff is not confused about HR — it is lying about the continuum. PO practices (who stays on the train, how candid the retro is, how much context the PO shares) only work if the team has named today vs aspire on the same scales.
+
+## 3 takeaways
+
+1. Family → everyone-plays → Club → Semi-pro → Pro → Dream Team is a choice with no universal right answer; the failure is disagreeing in silence.
+2. Netflix-style Dream Team, Chegg-style family, and Boeing-style control are coherent with different missions and different costs of failure.
+3. Pair the talent continuum with Control/Freedom, Secrecy/Transparency, and Indirect/Direct, and name today vs aspire on each.
+
+## Practice this week
+
+With the trio (or your manager), mark today and aspire on four lines: Family–Dream Team, Control–Freedom, Secrecy–Transparency, Indirect–Direct. Pick one practice this sprint that matches the aspire mark (e.g. more context in the PI brief, or a more direct retro).

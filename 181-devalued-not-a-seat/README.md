@@ -1,0 +1,24 @@
+# Feeling devalued is not solved by a seat at the table
+
+![Illustration](illustration.png)
+
+**Source:** John Cutler (@johncutlefish)
+**Post:** https://x.com/johncutlefish/status/1164245303840522241
+
+## What it claims
+
+You feel devalued at work — craft and perspective not appreciated, diminished, pushed to the side. It can be paralyzing. Empathy first: coworkers probably feel, to some degree, that their work is not fully valued and understood. Only one coworker actually has lots of power — the CEO — and even she reports to a board. Efforts to “get a seat at the table” without closer collaboration often make the problem worse. We imagine we will be more responsible once we get “power,” then realize we were solving the wrong problem. If we only reflect being valued based on the org chart or budgets, we are in for a very rough time work-wise (and work-identity-wise). If you frame their pushback as kingdom-building and spite vs. lack of exposure and experience, you will be filled with anxiety. Keep fundamental attribution bias in mind: people (unduly) emphasize the agent’s internal characteristics (character or intention), rather than external factors, in explaining other people’s behavior. It is easy to frame this as nasty, incompetent people not giving you your due, while your own bad behavior is blamed on the system. Look deeply at your own biases and the degree to which you may value/devalue/feel threatened by the work of others — and how you carry that into day-to-day interactions. Sensing a power imbalance changes posture, what you communicate, what you share, ability to focus. It is possible to influence more effectively even with less formal power and authority. It takes practice. It starts with negotiating with yourself. Cutler has witnessed people communicating clearly about needs and value, being amazing listeners, with no formal authority. “Show don’t tell.” One challenge: you feel you “shouldn’t have to” show this; it is an unfair burden of proof. Consider how you have changed perspectives personally. Was it being told, or being shown? Every function already believes the others “don’t understand.” The challenge is here to stay.
+
+## Why it matters for a PO
+
+“I need a seat at PI / the steering committee” is the move this thread warns against. Without closer collaboration it makes devaluing worse; org-chart and budget are the wrong scoreboard; attribution bias turns pushback into spite. A PO who will show (a working slice, a customer clip) instead of demanding the seat — and who will name their own devaluing of sales/eng/design — can influence without waiting for a title.
+
+## 3 takeaways
+
+1. A seat at the table without closer collaboration often makes devaluing worse; power was the wrong problem.
+2. Org-chart/budget as the only proof of value, plus fundamental attribution (they are nasty; my misses are the system), fills the week with anxiety.
+3. Influence without formal authority is show-don’t-tell plus clear needs; every function already believes the others “don’t understand.”
+
+## Practice this week
+
+Before asking for a “seat,” pick one person whose pushback you have framed as spite. Write the exposure/experience alternative. Show one thing (a customer clip, a WIP slice) instead of arguing for the seat. Do not add a status meeting to feel valued.

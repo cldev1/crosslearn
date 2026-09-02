@@ -1,0 +1,24 @@
+# Continuous deployment is a business practice, not a tech brag
+
+![Illustration](illustration.png)
+
+**Source:** Janna Bastow (@simplybastow)
+**Post:** https://x.com/simplybastow/status/1275059360012496898
+
+## What it claims
+
+A lot of people see continuous deployment as a pinnacle of achievement in tech terms, but superfluous for the business — who really cares that the deployment process is smooth and fast, and does it make a difference to the bottom line? It does. Continuous deployment means being able to continuously iterate, and continuous iteration is the core of being agile: the ability to iterate easily when needed. Waiting weeks between iterations is not very agile. At the core of lean is continuous learning, and that continuous learning is enabled by continuous iteration. You cannot be lean unless you are agile, and you are not agile if you are not iterating quickly. So at its core, continuous deployment helps companies move toward agility and more lean practices, which is better for the bottom line; advocate for continuous delivery as part of better business practices in general. That is not the only reason. If each release is a pain in the neck, it takes time and mental energy. It also forces the team to avoid missing releases: “Gotta get this into next week’s release or else I hold it up and it doesn’t go out for another two weeks.” That thinking leads to rushed work squeezed into releases (this is where tech debt comes from) or releases getting pushed back to accommodate late submissions (this is why everything goes so slowly). Neither is good for business. Bastow is a fan of continuous deployment, or at least a release train: releases that constantly go out with minimal fuss, scooping up whatever is ready to go live. Work not ready? Don’t sweat it — it will be in the next release. So long as releases are hours or days apart, not weeks or months, missing a release is fine. Result: quality work, less mental overhead on managing releases, constant opportunity for iteration. If you are a product person, help the tech team advocate for better release processes. It takes time and effort, but it pays off. Continuous integration and deployment are not just techie things to brag about; they are game changers for companies who want to be agile and lean.
+
+## Why it matters for a PO
+
+A PO who treats CD as “an engineering KPI” will keep packing the PI to hit a painful train, then either squeeze unfinished work (debt) or slip the train (everything slows). Helping the trio get to hours-or-days-apart releases is how “missing this one” becomes a quality decision instead of a career event.
+
+## 3 takeaways
+
+1. CD is how you iterate and therefore how you are actually agile and lean — it is a bottom-line practice.
+2. Painful, infrequent releases create rushed debt or slipped calendars; both are business costs.
+3. A frequent release train that scoops what is ready makes missing a release safe; product should help advocate, not only consume the train.
+
+## Practice this week
+
+Write the current time-between-releases and what happens if one item misses. With the trio, name one change that would make “not ready → next train” cheap (hours/days, not weeks). Do not squeeze an unready item into this train to “make the date.”

@@ -1,0 +1,24 @@
+# High Agency: find a way, or reverse the conditions
+
+![Illustration](illustration.png)
+
+**Source:** Shreyas Doshi (@shreyas)
+**Post:** https://x.com/shreyas/status/1276956836856393728
+
+## What it claims
+
+High Agency is an attitude Doshi has seen in every successful product manager and leader he has known; some people are born/raised with it and it can also be developed later. It is a prerequisite for profound impact. High Agency is finding a way to get what you want without waiting for perfect conditions or blaming circumstances: High Agency people either push through adverse conditions or reverse those conditions to achieve the goal. Highly talented + High Agency people are Game Changers; highly talented + Low Agency people are Frustrated Geniuses who may have a success or two then capitulate to “the system.” Some Go Getters become Game Changers because of High Agency. Prefer Go Getters over Frustrated Geniuses; never compromise on Integrity even for Game Changers. Low Agency treats every tough challenge as an “other” problem; High Agency speech comes from what the person can control. To cultivate it: reread The 7 Habits and use Circle of Influence vs Circle of Concern; observe language and self-talk. Ownership Mindset is the most important of the three traits (other trait names live in an image and are not reconstructed). Creative Execution is an essential skill, related to jugaad. High Agency is learnable. Tweet 13 is absent in the TRA source (12 → 14) and is not invented.
+
+## Why it matters for a PO
+
+A PO in a large org is surrounded by “the system”: PI cadence, sister trains, architecture boards. Low Agency treats those as reasons the backlog cannot move. High Agency names what is in the Circle of Influence — a stakeholder, a spike, a scope cut — and either pushes through or changes the condition. Hiring and pairing should prefer agency + integrity over raw talent that waits for perfect conditions.
+
+## 3 takeaways
+
+1. High Agency is get-it-done without blaming circumstances; Low Agency makes every fire an “other” problem.
+2. Prefer Go Getters over Frustrated Geniuses; never trade Integrity for a Game Changer.
+3. Cultivate it via Circle of Influence, language/self-talk, Ownership Mindset, and Creative Execution — it is learnable.
+
+## Practice this week
+
+Pick one blocked item. Write two columns: Circle of Concern vs Circle of Influence. Convert one “other problem” sentence into an Alice sentence (“what I can control”). Take one action from the Influence column this sprint.

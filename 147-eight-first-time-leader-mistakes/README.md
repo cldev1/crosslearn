@@ -1,0 +1,24 @@
+# Eight first-time product-leader mistakes
+
+![Illustration](illustration.png)
+
+**Source:** Melissa Perri (@lissijean)
+**Post:** https://x.com/lissijean/status/1556664419937042442
+
+## What it claims
+
+First-time product leaders have to keep the position after the leap. Common mistakes: (1) Focusing too much on processes and ignoring the roadmap — you must implement process and structure, but you are also responsible for vision and direction; balance both. (2) Blaming others — “I can’t do this because the CXO won’t let me.” You are now a leader; usher things through; work with other leaders rather than asking permission. No one is coming to save you; take initiative. (3) Getting too into the weeds — easy to get sucked into backlog prioritization or pick up slack for a team; you were promoted because you are good at that; it is no longer your job. Hire the right people and focus on the bigger picture. (4) Not forging relationships with the other leaders — your first team is now the leadership team; understand them, their goals, and how they work; you need them on your side; spend time with these people. (5) Not communicating effectively with the board — the board wants to know how the product roadmap == hitting company goals; that is the story to weave. Too much detail is no good; if they ask for more detail they are probably not getting the right info. (6) Not planning for scale before you need to scale — Product Operations, org design, strategy deployment: plan each stage. If you need to hire 20 product managers at once to keep up, you waited too long. Plan early, refine as needed. (7) Enable the team — once built, give them what they need to succeed: a clear strategy, data, access to customers. Their success is your success. (8) Not every size/type of company is right for everyone. Find your fit: startup VP, growth CPO, corporate negotiator? Product leadership is not a linear path with company size; find the sweet spot.
+
+## Why it matters for a PO
+
+Even before the “head of product” title, POs repeat these: process theater over direction, “the CXO won’t let me,” living in the backlog, no time with peer leads, status reports that drown leadership in detail, scale surprises, teams without strategy/data/customers, and staying in a context that is a bad fit. The PO who weaves roadmap == goals, and treats the leadership peer group as the first team, is already doing the job Perri is describing.
+
+## 3 takeaways
+
+1. Process without vision, and weeds without a hired team, are how new product leaders fail.
+2. Stop asking permission of other leaders; work with them. No one is coming to save you.
+3. Board/exec story is roadmap == company goals; extra detail means they did not get that story.
+
+## Practice this week
+
+Pick one mistake you are currently making (process-over-roadmap, blame, weeds, missing peer time, too-detailed update, unplanned scale, team missing strategy/data/customers). Do the opposite once: a one-slide “roadmap == goal” for leadership, or a 30-minute peer-lead conversation, or hand a weed back to the trio with a named owner.

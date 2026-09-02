@@ -1,0 +1,24 @@
+# Positioning is five components, worked in a forced order
+
+![Illustration](illustration.png)
+
+**Source:** April Dunford (@aprildunford)
+**Post:** https://x.com/aprildunford/status/1128352777367953409
+
+## What it claims
+
+Dunford’s first two products were repositioned (personal database → embeddable mobile database; enterprise CRM → CRM for investment banks); growth followed and both were acquired. Across 16 products as an executive, in 7 startups and the companies that acquired them, every product was repositioned at some point. Positioning is the starting point for almost everything in marketing and sales — it defines competition, differentiated value, and target segments — but she was never taught a process for doing it, only the “laughably vague” fill-in-the-blanks Positioning Statement that relies on voodoo and intuition. She broke positioning into parts — competitive alternatives, unique capabilities, differentiated value, target customers, market category — the blanks of a positioning statement. Those parts have a relationship: value depends on capabilities, which are only differentiated versus alternatives; target segments are who cares most about the value you deliver. To get differentiated positioning you have to work the pieces in the right order — a concept missing from the classic statement.
+
+## Why it matters for a PO
+
+A PO is often handed a category and a feature list. Dunford’s order stops the team filling blanks in the wrong sequence (category first, then “unique value” invented in a room). Start from alternatives, then capabilities, then value, then who cares, then category.
+
+## 3 takeaways
+
+1. Positioning is a process with five named parts, not a slogan or a positioning-statement Mad Lib.
+2. The parts are dependent: you cannot name differentiated value before you name the alternative.
+3. Work them in order; the classic statement hides that order.
+
+## Practice this week
+
+For one offering, fill the five boxes in order only: (1) what customers do if we do not exist, (2) capabilities they cannot get that way, (3) value those capabilities create, (4) who cares most, (5) the category that makes that value obvious. Do not skip ahead to category.

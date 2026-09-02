@@ -1,0 +1,24 @@
+# B2B’s grandaddy emotion is fear; no-decision is a vote against a bad choice
+
+![Illustration](illustration.png)
+
+**Source:** April Dunford (@aprildunford)
+**Post:** https://x.com/aprildunford/status/1546875330413182976
+
+## What it claims
+
+Consumer marketers often tap a range of emotions (status, self-worth, love, acceptance). In B2B, the grandaddy of emotions is fear: fear of making a bad decision and the consequences of a mistake; fear of looking stupid. A buyer that does not feel confident they are making the right purchase decision will default to the status quo. “No decision” is the lowest-risk decision a buyer can make. This is often not a vote for the status quo — it is a vote against making a potentially bad choice. As vendors, we have to help customers get confidence in their decision-making logic. We can help by giving them a rubric for making choices. The more buyers understand the trade-offs associated with different alternatives, the more confidence they will have in a decision. To do that, we need to help customers understand the entire market and our position in it. We are fighting the status quo, but we are also fighting every other alternative a buyer puts on the shortlist. We have to communicate our compelling, differentiated value against the pros and cons of all of the alternative ways of solving the problem — in a way buyers can easily understand. We need to give them a map of the entire market, not just our stuff. We can overcome the fear of making a poor choice by helping them feel confident they understand their options and the trade-offs for each. We cannot just focus on our solution — we have to paint a picture of the market and then explain our position in it.
+
+## Why it matters for a PO
+
+A stalled deal is often read as “they prefer do-nothing / Competitor X.” Dunford’s claim: it is frequently a vote against looking stupid, not a vote for the status quo. Distinct from already-used ~40% no-decision because teams cannot agree on approach, and from considered-purchase ~30%: here the job is a rubric that makes the buyer confident in the logic. A PO who sequences the map (alternatives, trade-offs, our place) instead of more feature proof is doing confidence work, not more demo.
+
+## 3 takeaways
+
+1. B2B’s dominant emotion is fear of a bad decision / looking stupid — not consumer status/love.
+2. No-decision is often a vote against a potentially bad choice, not a vote for the status quo.
+3. Confidence comes from a rubric and a map of the whole market (trade-offs of every alternative), not from more of “our stuff.”
+
+## Practice this week
+
+For one stalled B2B bet, write whether the stall is a vote for do-nothing or against looking stupid. Draft a one-page rubric: two alternatives, trade-offs, where we sit. If the only artifact is a feature comparison of us vs us, you have not addressed the fear.

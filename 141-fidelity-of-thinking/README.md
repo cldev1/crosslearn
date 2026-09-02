@@ -1,0 +1,24 @@
+# Fidelity of artifacts must never exceed fidelity of thinking
+
+![Illustration](illustration.png)
+
+**Source:** Pavel A. Samsonov (@PavelASamsonov)
+**Post:** https://x.com/PavelASamsonov/status/1578012629288853511
+
+## What it claims
+
+The fidelity of artifacts should never exceed the fidelity of thinking. Documenting low-fidelity thinking in a high-fidelity artifact lends that thinking credibility it does not deserve and discourages further thinking — “We have the mockups, it’s ready to build.” When the build then breaks down (the product did not satisfy the user, or there was too much unresolved ambiguity to ship), the burden falls on design: clearly we gave you enough input to make the artifacts, past here it is your fault. Seniority in design has much less to do with tool mastery or “taste,” and much more with knowing what inputs the design process needs, articulating the requirements for those inputs, facilitating their creation by the right people, and ensuring inputs do not change. That last point is the toughest, doubly obfuscated: first by “agile processes” kicked off in response to the wrong input (management fiat rather than discovery), then by premature artifact production. High-fidelity artifacts must follow high-fidelity thinking, but high-fidelity thinking must sit on a solid foundation; building an entire mental model around a premise before decider-level stakeholders are aligned around that premise is a costly mistake. Getting dozens of product managers to agree does not protect you from a single director rolling in and changing everything. Designers who are “too busy” redoing high-fidelity artifacts every time a stakeholder’s whim changes never do the real work: transforming the mental model (facilitation plus research synthesis) so some alignment sticks. Meanwhile delivery chugs along anyway, and in a low-fidelity thinking environment every decision is made locally without understanding how it impacts the system as a whole.
+
+## Why it matters for a PO
+
+Hi-fi mockups, pixel-perfect tickets, and “ready for sprint” labels are often more finished than the thinking behind them. A PO who ships a polished story from an unaligned premise hands design and eng the blame when ambiguity explodes in the build — and then spends the PI redoing artifacts instead of locking the inputs with the actual decider.
+
+## 3 takeaways
+
+1. Hi-fi artifacts on lo-fi thinking fake readiness and kill further thinking.
+2. Senior product work is input quality and input stability, not tool craft.
+3. Align deciders before the mental model; PM consensus is not director consensus.
+
+## Practice this week
+
+Pick one “ready” story with a hi-fi mock or dense AC. Write the thinking it documents in three bullets. If any bullet is still a premise the decider has not agreed, drop the fidelity (sketch / question) and book that conversation before refinement.

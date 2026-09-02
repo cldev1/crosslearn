@@ -1,0 +1,24 @@
+# Org-level product strategy vs swimlane SMT
+
+![Illustration](illustration.png)
+
+**Source:** Gibson Biddle (@gibsonbiddle)
+**Post:** https://x.com/gibsonbiddle/status/1498364760034889735
+
+## What it claims
+
+Biddle wants to tease out the distinction between a high-level product strategy for the whole product organization and the product strategy for teams/swimlanes inside it. A product org should have a high-level product strategy: high-level product vision; high-level engagement metric; how they prioritize growth, engagement, and monetization; their high-level product strategies (hypotheses for how they hope to delight customers in hard-to-copy, margin-enhancing ways) with metrics and tactics against each; and a rolling four-quarter roadmap for how tactics (projects) may roll out. Bonus: clear positioning; super-bonus: brand — though he expects those last two to be owned by marketing. For a team inside the org (a swimlane), it is sufficient to have a Strategy/Metric/Tactic lock-up and a rolling four-quarter roadmap that is more detailed than the org view. He does not think a product vision for a swimlane is helpful. Sometimes clarifying positioning of the swimlane’s work helps; sometimes not. A high-level engagement metric for a swimlane is helpful; Growth/Engagement/Monetization prioritization is not needed at swimlane level. So org-level includes: product vision; (positioning/branding) optional; high-level engagement metric; GEM prioritization; SMT lock-up; rolling 4-quarter roadmap (cherry-pick key projects from each swimlane). Each swimlane: (high-level engagement metric — the one metric you will move to demonstrate value to the org); (positioning); SMT lock-up; rolling 4-quarter roadmap (more detailed). Closing tweets point at a self-paced Product Strategy Workshop (play King/Queen for a day: outline org strategy even if you are not Head of Product, then SMT + 4-quarter roadmap for your swimlane) and a Medium series that outlines Netflix org strategy plus the Personalization swimlane; those essay and workshop bodies are not part of this lesson.
+
+## Why it matters for a PO
+
+A swimlane PO who writes a local “vision” and a local GEM stack is duplicating org work and fighting sister teams. The PO’s job is one metric that proves value to the org, an SMT lock-up, and a more detailed four-quarter view — while the org cherry-picks. Positioning/brand at swimlane level is optional, not a second company.
+
+## 3 takeaways
+
+1. Org owns vision, GEM prioritization, and a cherry-picked four-quarter view; swimlanes do not need their own vision or GEM stack.
+2. Swimlane sufficient set: one engagement metric, SMT lock-up, detailed rolling four-quarter roadmap.
+3. Positioning/brand are bonus and usually marketing-owned; do not invent a swimlane brand to feel strategic.
+
+## Practice this week
+
+Draw two columns: Org vs this swimlane. Put vision, GEM, SMT, 4Q roadmap, positioning in the org column only if they actually exist org-wide. In the swimlane column keep only: one metric you will move, SMT, detailed 4Q. Delete one “swimlane vision” sentence if you have one.

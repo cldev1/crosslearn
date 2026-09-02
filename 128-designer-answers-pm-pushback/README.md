@@ -1,0 +1,24 @@
+# How designers can answer the four PM pushbacks
+
+![Illustration](illustration.png)
+
+**Source:** Julie Zhuo (@joulee)
+**Post:** https://x.com/joulee/status/1495794206542995457
+
+## What it claims
+
+How PMs push back against designers: “That’s not the priority right now”; “We don’t have the eng resources for that”; “This design is not going to work”; “The data shows that metrics dropped with this design change.” How to respond: “That’s not the priority” / “We don’t have the eng resources” is usually a response to a proposal that (1) doesn’t directly tackle the team’s specified problem (though it may tackle a real, different problem) OR (2) addresses the problem but is too ambitious. To debate whether a project is off-topic, focus the conversation on priority: (1) “Here’s why solving this is more important than doing X…”; (2) “Solving this is actually a dependency for X…”; (3) “Solving this accelerates our future plans…”. To address “too ambitious”: (1) show a range of design proposals from low to high investment, explain the difference, consider user-testing — you must do the work here to be convincing; (2) break it down into smaller launch milestones — easier to digest. “This design is not going to work” is said when someone feels skepticism about what they see. Always ask “why do you think that?” and hear them out. Avoid playing the “I am the designer so I know best” card. Address the concerns directly. Once everyone’s concerns have been heard but disagreement remains, draw out the differing assumptions for why you think it will work and your partner does not (“You’re assuming readers will understand X and I’m assuming they won’t”), then suggest actions to validate. Things you can say to resolve a design disagreement and move forward: (1) “Let’s escalate to the director/vp/ceo”; (2) “Let’s show this design to X users and get their take”; (3) “Let’s build both and A/B test them”; (4) “This decision isn’t important, so happy to defer.” “The data shows that metrics dropped with this design change” is said when someone feels skepticism about design and considers this proof the design did not work. The design may indeed not have worked, but if you truly feel the design was better, you need to dig further. Make sure you are convinced by some reason why it did not work — otherwise the team learns nothing: (1) “Do you have a hypothesis for why it didn’t work?” Suggest speaking with users if not. (2) “What metrics were down? Could the change be good but the metrics not capture it?” Designers struggle in these debates because they are draining: PMs are usually (a) articulate, (b) decisive, (c) present what seems like convincing data. Don’t make this about the PM — what can you do? Bezos: you do need the data, then check that data with intuition and instincts. Every discipline has strengths. Designers have killer instincts for customer problems and solutions; speak up; you can debate effectively. (Zhuo notes she will also do a future thread on how PMs can push back against designers.)
+
+## Why it matters for a PO
+
+These four sentences are how POs accidentally shut down design. Hearing them as your default pushbacks — and expecting the designer’s priority / range / assumption / metric responses — turns the argument into a joint decision instead of a veto. The PO’s job is to stay in the assumption-and-evidence loop, not to win on articulateness.
+
+## 3 takeaways
+
+1. “Not the priority / no eng” is either off-problem or too ambitious; answer with priority, dependency, acceleration, or a low-to-high investment range plus milestones.
+2. “Won’t work” needs “why,” heard concerns, named assumptions, and a validate/escalate/A-B/defer move — not “I am the designer.”
+3. A metrics drop is a prompt for a hypothesis and metric-fit check, not automatic proof the design was wrong; data still needs instinct.
+
+## Practice this week
+
+After the next design review, log which of the four pushbacks you used. For one of them, write the designer-side reply you should have made space for (priority argument, investment range, named assumption, or metric hypothesis) and run that loop before the next grooming.
