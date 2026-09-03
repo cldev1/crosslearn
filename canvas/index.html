@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Learnfeed</title>
+<link rel="stylesheet" href="../theme.css"/>
+</head>
+<body class="canvas">
+<div class="app">
+  <aside>
+    <div class="brand">Learnfeed<span>Study canvas</span></div>
+    <div class="stat"><b id="progress">0 / 8</b>practiced</div>
+    <div class="topics" id="topics"></div>
+  </aside>
+  <main>
+    <h1>Keep the ideas, not the feed.</h1>
+    <p class="lede">One board. Open a card, do the practice, mark it. Progress stays on this device.</p>
+    <div class="board" id="board"></div>
+  </main>
+</div>
+<div class="overlay" id="overlay"></div>
+<script>
+const LESSONS = [
+  {id:"01", tag:"PO craft", title:"Ship incomplete bets, then wait for the model",
+   source:"Lenny Rachitsky · 23 Apr 2026", link:"https://x.com/lennysan/status/2047377335406694431", img:"../01-ship-incomplete-bets/illustration.png",
+   claims:"Anthropic’s cadence went months → weeks → days. Cat Wu’s punchline: build products that don’t fully work yet, then wait for the model to catch up. Hiring is shifting away from classic PM skills toward taste, evals, and being the right amount of AGI-pilled. 95% automation is not automation.",
+   why:"Your job stops being backlog admin. You pick the bet, define “good enough to ship,” and write the eval — not the 18-month roadmap of features the model will make free.",
+   takeaways:["Cadence is a product decision. If discovery still takes a quarter, you are the bottleneck.","Ship the shape of the product before the capability exists. The model is the delivery team.","A leftover 5% of manual work is still a full product, with full cost."],
+   practice:"Pick one backlog item that only works if a model/API gets better. Write a 5-line eval of “done,” ship a v0 that fails it on purpose, and date when you’ll re-run the eval."},
+  {id:"02", tag:"PO craft", title:"Delivery includes deprecation",
+   source:"Cat Wu · 28 May 2026", link:"https://x.com/_catwu/status/2060054180379689074", img:"../02-delivery-includes-deprecation/illustration.png",
+   claims:"Claude Code “dynamic workflows” let you name a workflow and get an orchestration plan that actually runs in order — including across hundreds of agents. Cat used it to catalogue hundreds of A/B flags, find the ones stuck at 0% or 100%, and deprecate them in under 10 minutes in parallel.",
+   why:"Shipping is the easy half. Stale experiments, leftover flags, and zombie configs are silent product. Using AI to remove work is a PO skill, not an engineering side quest.",
+   takeaways:["0% and 100% flags are decisions you already made. Leaving them in the system is new risk.","Parallelise the hygiene, not just the build.","Trust comes from a plan the tool cannot skip — not from a longer prompt."],
+   practice:"List every experiment, feature flag, or “temporary” config you know of. Mark each 0 / partial / 100. Kill or schedule one stale 0% or 100% item by Friday."},
+  {id:"04", tag:"Stakeholders", title:"Name the level before you argue the ticket",
+   source:"Shreyas Doshi · 12 Mar 2021", link:"https://x.com/shreyas/status/1370248637842812936", img:"../04-three-levels-of-product-work/illustration.png",
+   claims:"Product work has three levels: Execution, Impact, Optics. Conflict is usually two people stuck on different levels — PM on impact vs team on execution, or PM on optics vs team on impact.",
+   why:"Ops lives in execution (“did it ship”). Leadership lives in impact (“did the outcome move”). Sales/comms lives in optics (“can I say we launched”). If you litigate story points, you never notice you’re in different rooms.",
+   takeaways:["Start reviews with “which level are we on?” It ends half the fights.","Optics is not fake — it’s a different job. Don’t moralise it; schedule it.","If you only reward on-time sprints, you trained the room for execution."],
+   practice:"In one meeting, write Execution / Impact / Optics on a notepad. Tick where each speaker is. If two ticks disagree, say that out loud before discussing the ticket."},
+  {id:"05", tag:"Stakeholders", title:"Find the eigenquestion before the options",
+   source:"Shreyas Doshi · Aug 2020", link:"https://x.com/shreyas/status/1293973551167373312", img:"../05-eigenquestion/illustration.png",
+   claims:"For a high-stakes decision, most debate is downstream. The eigenquestion (from Shishir Mehrotra) is the one answer that makes the other questions easy. Netflix example: TVOD vs SVOD wasn’t “how big is the catalog?” — it was “do we care more about catalog size or consumption friction?” Spend half the time on the question.",
+   why:"Steering committees love three options and a recommendation. You end up litigating details. Build vs buy, custom vs standard, time-to-market vs quality — those only resolve if you name the one tradeoff that matches strategy.",
+   takeaways:["A beautiful options slide with the wrong question still ships the wrong thing.","The eigenquestion must be answerable from vision, not from last week’s metric.","It feels slow. It’s faster than reconvening."],
+   practice:"Take one live decision. Write every question on the table. Circle the one that, if answered, kills most of the others. Open the next review with only that sentence."},
+  {id:"06", tag:"PO craft", title:"Don’t mix Explore with Extract",
+   source:"Shreyas Doshi · May 2021", link:"https://x.com/shreyas/status/1399042778613485578", img:"../06-explore-expand-extract/illustration.png",
+   claims:"A product is in Explore, Expand, or Extract. Almost every important decision should account for the stage. Frameworks don’t save you — they name the context so you stop using extract-stage process on explore-stage work.",
+   why:"A pilot and a scale-out need different evidence, different WIP, different stakeholder promises. If you run Explore work through an Extract-stage playbook (or the reverse), the team looks slow and the exec looks reckless. Same people, wrong stage.",
+   takeaways:["Explore: cheap tests, kill rate is a feature. Extract: reliability is the product.","Expand is the messy middle — process has to grow with volume, not copy extract too early.","Say the stage in the first line of a review. It licenses the plan that follows."],
+   practice:"Label three things in your world Explore / Expand / Extract. For the Explore one, cut one “scale” requirement (SLA, full i18n, extra report) that only belongs in Extract."},
+  {id:"07", tag:"PO craft", title:"Steering, not rowing",
+   source:"Lenny Rachitsky · 31 Aug 2026", link:"https://x.com/lennysan/status/2094444052204998908", img:"../07-steering-not-rowing/illustration.png",
+   claims:"OpenAI’s ChatGPT Work lead Tara: the future of work is steering (taste, next call), not rowing. Build for where models will be in 2–3 months. PMs elevate ambition. Share mocks not docs. Never automate writing-as-thinking. Someone still has to be the DRI. Speed without a hypothesis compounds error.",
+   why:"As execution gets cheaper, the PO job is hypothesis, taste, and a name on the outcome. Long docs stop being a signal of rigor. A 70% artifact plus a DRI beats a perfect spec with no owner.",
+   takeaways:["Build 2–3 months ahead of the model, not 12.","Mocks and A/B results communicate better than strategy novels.","Never outsource the writing you think with; automate the reporting."],
+   practice:"This week, replace one status doc with a mock or a 70% note. Put a DRI on the outcome in the first line."},
+  {id:"08", tag:"Scrum / PSPO", title:"PO is not a backlog secretary",
+   source:"Scrum.org · 31 Aug 2026", link:"https://x.com/Scrumdotorg/status/2094576068724158861", img:"../08-po-not-backlog-secretary/illustration.png",
+   claims:"How a candidate defines the product role names the operating model they came from, not their skill. Missing problem framing, solution choice, and viability together is the tell. Role behaviour follows the funding model. POs are not backlog secretaries; they are strategic leaders.",
+   why:"If your week is “supplying ready work,” you inherited an order-taker model. PSPO-level work is finding worthwhile problems and solutions customers choose — including whether the thing is viable.",
+   takeaways:["The Rorschach test: backlog vs worthwhile problems.","Problem + solution + viability must sit with the PO, not get split away.","Funding model trains the behaviour; name it if you’re stuck supplying tickets."],
+   practice:"In one sentence, write your job this sprint as either “owning the backlog” or “choosing a worthwhile problem.” If it’s the first, pick one problem this week you will frame before any story is written."},
+  {id:"09", tag:"Scrum / PSPO", title:"AI-faster Build still dies at the bottleneck",
+   source:"Scrum.org · 1 Sep 2026", link:"https://x.com/Scrumdotorg/status/2094930879290249230", img:"img/09.png",
+   claims:"AI speeds coding and testing, but humans still own the flow. Yuval Yeret’s frame: think end-to-end — Discover → Decide → Build → Launch → Adopt → Learn. Business impact depends on the constraint. If Launch (or Adopt) is the bottleneck, accelerating Build with AI adds WIP, not outcomes.",
+   why:"POs get sold “AI will make the team faster.” Throughput only moves if you relieve the real constraint. Otherwise you just fill a jammed launch/adoption pipe with more half-finished bets.",
+   takeaways:["Map the whole value stream before celebrating a faster Build step.","Find the bottleneck (often Launch or Adopt), then put attention there.","AI that speeds the non-constraint is busywork with a fancy tool."],
+   practice:"Sketch Discover → Decide → Build → Launch → Adopt → Learn for one live initiative. Circle where work waits longest. Put one improvement on that step this week — not on coding."},
+  {id:"10", tag:"Scrum / PSPO", title:"Same retro item across seasons is a choice",
+   source:"Scrum.org · 31 Aug 2026", link:"https://x.com/Scrumdotorg/status/2094425298313912714", img:"img/10.png",
+   claims:"Open last year’s and last quarter’s retro notes. Same problem still there? Steven Deneir’s point: recurring items are signs the org chooses to ignore the impediment — not proof the team failed the retro.",
+   why:"A PO who only coaches the team to “write better actions” misses the real signal. Persistent cross-retro themes are usually org design, funding, or handoffs above the team. Naming that is the PO’s job.",
+   takeaways:["Recurring = unresolved, not “we forgot to try.”","Compare notes across time; one retro is a snapshot, three are a pattern.","Escalate the pattern as an impediment with evidence, not another sticky."],
+   practice:"Pull retro notes from ~12 months ago and last quarter. Highlight any item that still appears. Bring that one pattern (with dates) to your next impediment conversation."},
+  {id:"11", tag:"PO craft", title:"Be more ambitious — the recurring miss",
+   source:"Lenny Rachitsky · 3 Sep 2026", link:"https://x.com/lennysan/status/2095262542839050336", img:"img/11.png",
+   claims:"Across recent podcast guests, Lenny keeps hearing the same advice back: be more ambitious. The repeated failure mode at senior product levels is under-scoping the bet — playing small when the opportunity called for a bigger move.",
+   why:"POs default to safe increments that fit the sprint and the stakeholder comfort zone. If leaders who ship keep saying “aim higher,” the risk is not overreach — it is shipping something too timid to move the metric or the market.",
+   takeaways:["Under-ambition is a pattern, not a one-off guest tip.","Size the bet to the opportunity, not to the comfort of the backlog.","Ask once: what would this look like if we were 3× more ambitious?"],
+   practice:"Pick one live initiative. Rewrite its outcome in one sentence at 3× ambition (bigger user, bigger wedge, bigger constraint removed). Share that sentence with your DRI and decide what to keep."},
+  {id:"12", tag:"PO craft", title:"Evals beat vibes for AI product work",
+   source:"Teresa Torres · 3 Sep 2026", link:"https://x.com/ttorres/status/2095207229750435959", img:"img/12.png",
+   claims:"The only way to know if AI products and workflows are any good is with evals. Whether you use AI to write PRDs, analyze feedback, or ship customer-facing AI, you need an evaluation discipline — not gut feel.",
+   why:"POs are already using AI in discovery and delivery. Without evals, “looks good” becomes the acceptance criteria. That fails the moment the model drifts, the prompt changes, or a edge case hits a customer.",
+   takeaways:["Treat evals as the new acceptance criteria for AI-touched work.","Cover both internal AI workflows (PRDs, feedback) and customer-facing AI.","Define pass/fail before you trust the output in a decision."],
+   practice:"For one AI-assisted task you do this week (draft, cluster, summarize), write 5 scored examples of good vs bad output. Run the task twice and score both against that mini-eval before you use the result."}
+];
+
+const KEY = "learnfeed-practiced-v1";
+const practiced = new Set(JSON.parse(localStorage.getItem(KEY) || "[]"));
+let filter = "All";
+
+function save(){ localStorage.setItem(KEY, JSON.stringify([...practiced])); }
+
+function topics(){
+  const tags = ["All", ...new Set(LESSONS.map(l => l.tag))];
+  document.getElementById("topics").innerHTML = tags.map(t =>
+    `<button data-tag="${t}" class="${t===filter?"on":""}">${t}</button>`
+  ).join("");
+  document.getElementById("topics").onclick = e => {
+    const b = e.target.closest("button"); if(!b) return;
+    filter = b.dataset.tag; render();
+  };
+}
+
+function progress(){
+  document.getElementById("progress").textContent = practiced.size + " / " + LESSONS.length;
+}
+
+function render(){
+  topics(); progress();
+  const list = LESSONS.filter(l => filter==="All" || l.tag===filter);
+  document.getElementById("board").innerHTML = list.map(l => `
+    <article class="card" data-id="${l.id}">
+      <img src="${l.img}" alt="">
+      <div class="body">
+        <div class="tag">${l.tag}</div>
+        <h2>${l.title}</h2>
+        <div class="meta">${l.source}</div>
+        <div class="done ${practiced.has(l.id)?"yes":""}">${practiced.has(l.id)?"Practiced":"Practice waiting"}</div>
+      </div>
+    </article>`).join("");
+  document.getElementById("board").onclick = e => {
+    const c = e.target.closest("article"); if(c) open(c.dataset.id);
+  };
+}
+
+function open(id){
+  const l = LESSONS.find(x => x.id===id);
+  const ov = document.getElementById("overlay");
+  ov.className = "overlay show";
+  ov.innerHTML = `
+    <div class="sheet">
+      <img src="${l.img}" alt="">
+      <div class="pad">
+        <button class="close" id="x">×</button>
+        <div class="tag">${l.tag}</div>
+        <h2>${l.title}</h2>
+        <p class="meta">${l.source} · <a href="${l.link}" target="_blank" rel="noopener">original post</a></p>
+        <section><h3>What it claims</h3><p>${l.claims}</p></section>
+        <section><h3>Why it matters for a PO</h3><p>${l.why}</p></section>
+        <section><h3>3 takeaways</h3><ol>${l.takeaways.map(t=>"<li>"+t+"</li>").join("")}</ol></section>
+        <section><h3>Practice this week</h3><p>${l.practice}</p></section>
+        <div class="row">
+          <button class="primary" id="mark">${practiced.has(l.id)?"Mark unpracticed":"I did the practice"}</button>
+          <a href="${l.link}" target="_blank" rel="noopener"><button>Open post</button></a>
+        </div>
+      </div>
+    </div>`;
+  ov.onclick = e => { if(e.target===ov || e.target.id==="x"){ ov.className="overlay"; ov.innerHTML=""; } };
+  document.getElementById("mark").onclick = () => {
+    if(practiced.has(id)) practiced.delete(id); else practiced.add(id);
+    save(); render(); open(id);
+  };
+}
+render();
+</script>
+</body>
+</html>

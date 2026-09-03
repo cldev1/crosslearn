@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Metrics-from-guessing-the-build is backwards</title>
-<style>
- body{margin:0;font-family:Georgia,serif;background:#f4efe6;color:#1c1915;}
- main{max-width:720px;margin:0 auto;padding:28px 20px 80px;}
- img{width:100%;border-radius:12px;}
- a{color:#1f6f64;} h2{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#6b6458;font-family:ui-sans-serif,system-ui,sans-serif;}
- .back{font-family:ui-sans-serif,system-ui,sans-serif;font-size:13px;}
-</style></head>
-<body><main>
+<link rel="stylesheet" href="../theme.css"/></head>
+<body class="lesson"><main>
 <p class="back"><a href="../index.html">← Learnfeed</a></p>
 <img src="illustration.png" alt="">
 <h1>Metrics-from-guessing-the-build is backwards</h1><p><strong>Source:</strong> Pavel A. Samsonov (@PavelASamsonov)<br><a href='https://x.com/PavelASamsonov/status/1594817299202154509'>original post</a></p><h2>What it claims</h2><p>Most teams create metrics based on the logic of “try and guess why execs told us to build this.” Management picking solutions and teams selecting metrics is the exact backwards way to make a product. Management’s role is to set business targets; the team’s role is to find the best path to their target. Targets created bottom-up have no executive buy-in, so they are meaningless outside of vanity purposes. You achieved X? So what? It is management’s job to build the hypothesis “if we achieve X, it will be good because…” and ensure that the important people agree with that. With a stable hypothesis established, teams can test it — which levers can we move to achieve this? — without needing management-level approval for each experiment, or building bloated releases. In other words, actual agile development. The whole purpose of these metrics is to make better decisions. Ask yourself: are you using the metrics to inform product decisions, or using product decisions to set your metrics?</p><h2>Why it matters for a PO</h2><p>After an exec names a feature, the trio invents a metric that will make the feature look successful. That is vanity. A PO who forces the hypothesis (“if we achieve X, it is good because…”) up to the people who matter can run experiments on levers instead of bloated releases that needed approval at every step.</p><h2>3 takeaways</h2><ol><li>Exec-picked solutions + team-picked metrics is backwards; targets belong to management, paths to the team.</li><li>Bottom-up metrics without the “if we achieve X it is good because…” hypothesis are vanity.</li><li>A stable shared hypothesis is what makes experiments (and actual agile) possible; metrics exist to inform decisions, not to decorate a decision already made.</li></ol><h2>Practice this week</h2><p>For one committed item, write whether the metric was chosen to justify the build. Replace it with the management hypothesis sentence. If no important person will agree that sentence, the item is not a target — it is a solution in search of a score.</p>
