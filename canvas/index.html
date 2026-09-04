@@ -87,7 +87,13 @@ const LESSONS = [
    claims:"The only way to know if AI products and workflows are any good is with evals. Whether you use AI to write PRDs, analyze feedback, or ship customer-facing AI, you need an evaluation discipline — not gut feel.",
    why:"POs are already using AI in discovery and delivery. Without evals, “looks good” becomes the acceptance criteria. That fails the moment the model drifts, the prompt changes, or a edge case hits a customer.",
    takeaways:["Treat evals as the new acceptance criteria for AI-touched work.","Cover both internal AI workflows (PRDs, feedback) and customer-facing AI.","Define pass/fail before you trust the output in a decision."],
-   practice:"For one AI-assisted task you do this week (draft, cluster, summarize), write 5 scored examples of good vs bad output. Run the task twice and score both against that mini-eval before you use the result."}
+   practice:"For one AI-assisted task you do this week (draft, cluster, summarize), write 5 scored examples of good vs bad output. Run the task twice and score both against that mini-eval before you use the result."},
+  {id:"13", tag:"Scrum / PSPO", title:"A live feature can still miss the Product Goal",
+   source:"Scrum.org · 3 Sep 2026", link:"https://x.com/Scrumdotorg/status/2095421691392303504", img:"img/13.png",
+   claims:"Product Goal finished, feature live — and still nothing changed for customers. Simon Flossmann’s point (via Scrum.org): that is the common Product Goal mistake. A logic-model view separates the shipped output from the customer outcome the goal was supposed to move.",
+   why:"POs get pulled to mark the Product Goal done when the backlog item ships. In Scrum, the Product Goal is an outcome for the product, not a delivery checkbox. If customer behavior did not change, the goal is still open — even if the feature is in production.",
+   takeaways:["Ship ≠ Product Goal. Ask what changed for the customer.","Write the goal as an outcome hypothesis, not a feature name.","Use a simple logic model: activity → output → outcome → impact, and measure the outcome step."],
+   practice:"Take one current Product Goal. Rewrite it in one sentence as a customer/outcome change (not a feature). Add one observable signal you will check two weeks after ship. If you cannot name the signal, the goal is still an output."},
 ];
 
 const KEY = "learnfeed-practiced-v1";
