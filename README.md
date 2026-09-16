@@ -227,3 +227,6 @@
 - [Stakeholder dump ≠ problem statement](226-stakeholder-dump-not-problem/)
 - [JTBD without forces is incomplete](227-jtbd-without-forces/)
 - [Your judgment is a product — calibrate it](228-judgment-is-a-product/)
+- [Stop asking what to build — grow an issue tree](229-issue-tree-before-features/)
+- [After messy meetings: where did every thread land?](230-where-did-we-land/)
+- [AI transformations rhyme with Agile ones](231-ai-agile-transformations-rhyme/)
