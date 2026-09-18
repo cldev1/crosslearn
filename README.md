@@ -230,3 +230,6 @@
 - [Stop asking what to build — grow an issue tree](229-issue-tree-before-features/)
 - [After messy meetings: where did every thread land?](230-where-did-we-land/)
 - [AI transformations rhyme with Agile ones](231-ai-agile-transformations-rhyme/)
+- [If retros change nothing, the format is not the problem](232-retros-format-not-the-problem/)
+- [Show me a factory that produces great ideas](233-factory-that-produces-ideas/)
+- [Ask for a distribution, not five clones](234-verbalized-sampling-idea-diversity/)
