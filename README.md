@@ -233,3 +233,8 @@
 - [If retros change nothing, the format is not the problem](232-retros-format-not-the-problem/)
 - [Show me a factory that produces great ideas](233-factory-that-produces-ideas/)
 - [Ask for a distribution, not five clones](234-verbalized-sampling-idea-diversity/)
+- [Reality does not attend the status meeting](235-reality-not-status-meeting/)
+- [Great taste is knowing when to stop](236-taste-knowing-when-to-stop/)
+- [Don’t ask the agent what to build without a use-case map](237-use-case-map-before-ask-agent/)
+- [Get ahead of “what about” with edge cases](238-edge-cases-ahead-of-what-about/)
+- [Steal the domain model, not the screens](239-extract-domain-from-products/)
