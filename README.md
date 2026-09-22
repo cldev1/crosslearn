@@ -238,3 +238,7 @@
 - [Don’t ask the agent what to build without a use-case map](237-use-case-map-before-ask-agent/)
 - [Get ahead of “what about” with edge cases](238-edge-cases-ahead-of-what-about/)
 - [Steal the domain model, not the screens](239-extract-domain-from-products/)
+- [There is always money in the banana stand](240-money-in-the-banana-stand/)
+- [Core Product Value needs phrase + metrics](241-core-product-value-phrase-metrics/)
+- [Shared ideology + clear DRIs beat coordination](242-ideology-and-dris-over-coordination/)
+- [Load your strongest performers first](243-load-strongest-performers-first/)
