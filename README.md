@@ -242,3 +242,6 @@
 - [Core Product Value needs phrase + metrics](241-core-product-value-phrase-metrics/)
 - [Shared ideology + clear DRIs beat coordination](242-ideology-and-dris-over-coordination/)
 - [Load your strongest performers first](243-load-strongest-performers-first/)
+- [Evals are becoming core PM craft](244-evals-core-pm-craft/)
+- [You can’t vibe through experimentation](245-cant-vibe-experimentation/)
+- [Opportunity mapping without inventing data](246-opportunity-map-without-inventing/)
