@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - roadmaps-prioritization
+  format: framework
+  source: john-cutler
+---
+
 # Change the words: mission, bet, opportunity, intervention, capability
 
 ![Illustration](illustration.png)

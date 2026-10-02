@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: framework
+  source: shreyas-doshi
+---
+
 # Gorilla taxes: compete against the incumbent’s structural costs
 
 ![Illustration](illustration.png)

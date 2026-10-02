@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - leadership-org
+  format: anti-pattern
+  source: john-cutler
+---
+
 # “Only 3 priorities” is really three bullets on the slide
 
 ![Illustration](illustration.png)

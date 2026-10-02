@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - delivery-execution
+  format: playbook
+  source: pavel-samsonov
+---
+
 # Decision-making and documentation are one cadence, not two jobs
 
 ![Illustration](illustration.png)

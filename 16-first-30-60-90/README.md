@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - career-habits
+  format: playbook
+  source: lenny-rachitsky
+---
+
 # First 30-60-90 days as a new PM
 
 ![Illustration](illustration.png)

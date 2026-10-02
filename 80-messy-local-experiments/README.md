@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - leadership-org
+  format: principle
+  source: john-cutler
+---
+
 # Real-world continuous improvement is messy local experiments
 
 ![Illustration](illustration.png)

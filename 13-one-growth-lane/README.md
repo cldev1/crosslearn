@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: framework
+  source: lenny-rachitsky
+---
+
 # Win one of three consumer growth lanes
 
 ![Illustration](illustration.png)

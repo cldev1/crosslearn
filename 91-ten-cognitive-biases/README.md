@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - leadership-org
+  format: framework
+  source: shreyas-doshi
+---
+
 # Ten product-team cognitive biases (name them to observe them)
 
 ![Illustration](illustration.png)

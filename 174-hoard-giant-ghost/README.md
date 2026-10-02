@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: framework
+  source: april-dunford
+---
+
 # Beat the hoard, the giant, and the ghost
 
 ![Illustration](illustration.png)

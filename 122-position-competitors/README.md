@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: principle
+  source: april-dunford
+---
+
 # Position your competitors, not only yourself
 
 ![Illustration](illustration.png)

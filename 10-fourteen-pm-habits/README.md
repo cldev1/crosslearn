@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - career-habits
+  format: playbook
+  source: lenny-rachitsky
+---
+
 # 14 habits of highly effective PMs
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - roadmaps-prioritization
+  format: principle
+  source: shreyas-doshi
+---
+
 # Will it make the boat go faster?
 
 ![Illustration](illustration.png)

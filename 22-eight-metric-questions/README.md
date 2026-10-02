@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+  format: playbook
+  source: julie-zhuo
+---
+
 # Eight questions before you accept “move Metric X up Y%”
 
 ![Illustration](illustration.png)

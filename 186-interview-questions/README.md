@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: playbook
+  source: julie-zhuo
+---
+
 # Interview questions that raise the signal of a tiny slice
 
 ![Illustration](illustration.png)

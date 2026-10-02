@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - career-habits
+  format: framework
+  source: pavel-samsonov
+---
+
 # Climb the loops: right things, then the right “right,” then Learning Ops
 
 ![Illustration](illustration.png)

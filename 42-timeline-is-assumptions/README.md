@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - strategy
+  format: anti-pattern
+  source: janna-bastow
+---
+
 # A timeline roadmap is a pile of assumptions; prototype strategy instead
 
 ![Illustration](illustration.png)

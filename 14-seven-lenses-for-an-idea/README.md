@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - discovery
+  format: framework
+  source: lenny-rachitsky
+---
+
 # Seven lenses for evaluating a product idea
 
 ![Illustration](illustration.png)

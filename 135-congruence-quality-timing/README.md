@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - leadership-org
+  format: framework
+  source: john-cutler
+---
+
 # Debug planning with congruence, decision quality, and timing
 
 ![Illustration](illustration.png)

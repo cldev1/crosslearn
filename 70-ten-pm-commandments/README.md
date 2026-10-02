@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - leadership-org
+  format: playbook
+  source: shreyas-doshi
+---
+
 # Ten PM commandments, plus don’t blindly follow them
 
 ![Illustration](illustration.png)

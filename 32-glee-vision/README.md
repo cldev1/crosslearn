@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: framework
+  source: gibson-biddle
+---
+
 # Write a GLEE vision, then debate the investment mix
 
 ![Illustration](illustration.png)

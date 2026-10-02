@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - roadmaps-prioritization
+  format: framework
+  source: lenny-rachitsky
+---
+
 # Mission → Vision → Strategy → Goals → Roadmap → Task (Ocean’s 11)
 
 ![Illustration](illustration.png)

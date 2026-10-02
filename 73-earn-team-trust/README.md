@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: playbook
+  source: john-cutler
+---
+
 # How PMs earn team trust (don’t shield, do work, IDD)
 
 ![Illustration](illustration.png)

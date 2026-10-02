@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - leadership-org
+  format: framework
+  source: shreyas-doshi
+---
+
 # Wear the Operator / Craftsperson / Visionary hat the company actually needs
 
 ![Illustration](illustration.png)

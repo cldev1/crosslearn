@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - career-habits
+  format: principle
+  source: shreyas-doshi
+---
+
 # In a high-leverage role, minimize opportunity cost, not ROI
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - ai-product
+  format: framework
+  source: lenny-rachitsky
+---
+
 # Ship incomplete bets, then wait for the model
 
 ![Illustration](illustration.png)

@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: anti-pattern
+  source: april-dunford
+---
+
 # You cannot position as “not xyz”; capabilities only matter as value
 
 ![Illustration](illustration.png)

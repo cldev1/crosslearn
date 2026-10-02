@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - metrics-analytics
+  format: principle
+  source: julie-zhuo
+---
+
 # Devotion to any single value has an exchange rate
 
 ![Illustration](illustration.png)

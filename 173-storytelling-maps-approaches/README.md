@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: framework
+  source: april-dunford
+---
+
 # B2B storytelling that sells maps approaches for types of customers
 
 ![Illustration](illustration.png)

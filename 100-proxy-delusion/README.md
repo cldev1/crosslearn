@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+  format: anti-pattern
+  source: shreyas-doshi
+---
+
 # The Proxy Delusion: measure the proxy, do not manage it
 
 ![Illustration](illustration.png)

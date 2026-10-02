@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+    - roadmaps-prioritization
+  format: framework
+  source: pavel-samsonov
+---
+
 # Outcome-first planning: make the future clearer than the present
 
 ![Illustration](illustration.png)

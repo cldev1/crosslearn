@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: framework
+  source: pavel-samsonov
+---
+
 # Leadership is direction plus autonomy (both, or decisions do not stick)
 
 ![Illustration](illustration.png)

@@ -1,0 +1,265 @@
+slug,title,source_author,source_slug,format,topics,file_type
+01-ship-incomplete-bets,"Ship incomplete bets, then wait for the model","Lenny Rachitsky (@lennysan), 23 Apr 2026",lenny-rachitsky,framework,strategy;ai-product,readme
+02-delivery-includes-deprecation,Delivery includes deprecation,"Cat Wu (@_catwu), 28 May 2026",cat-wu,principle,delivery-execution,readme
+04-three-levels-of-product-work,Name the level before you argue the ticket,"Shreyas Doshi (@shreyas), 12 Mar 2021",shreyas-doshi,framework,leadership-org;delivery-execution,readme
+05-eigenquestion,Find the eigenquestion before the options,"Shreyas Doshi (@shreyas), Aug 2020",shreyas-doshi,principle,strategy,readme
+06-explore-expand-extract,Donâ€™t mix Explore with Extract,"Shreyas Doshi (@shreyas) on Kent Beckâ€™s 3X, May 2021",shreyas-doshi,framework,strategy,readme
+07-steering-not-rowing,"Steering, not rowing","Lenny Rachitsky (@lennysan), 31 Aug 2026",lenny-rachitsky,principle,strategy,readme
+08-po-not-backlog-secretary,PO is not a backlog secretary,"Scrum.org (@Scrumdotorg), 31 Aug 2026",scrum-org,anti-pattern,delivery-execution;roadmaps-prioritization,readme
+09-roadmap-70-20-10,Build a roadmap in three phases (70/20/10),Lenny Rachitsky (@lennysan),lenny-rachitsky,framework,roadmaps-prioritization;strategy,readme
+10-fourteen-pm-habits,14 habits of highly effective PMs,Lenny Rachitsky (@lennysan),lenny-rachitsky,playbook,career-habits,readme
+11-strategy-between-vision-and-goals,Strategy sits between vision and goals,Lenny Rachitsky (@lennysan),lenny-rachitsky,framework,strategy,readme
+12-ten-tests-for-pmf,Ten tests for product/market fit,Lenny Rachitsky (@lennysan),lenny-rachitsky,playbook,strategy,readme
+13-one-growth-lane,Win one of three consumer growth lanes,Lenny Rachitsky (@lennysan),lenny-rachitsky,framework,strategy,readme
+14-seven-lenses-for-an-idea,Seven lenses for evaluating a product idea,Lenny Rachitsky (@lennysan),lenny-rachitsky,framework,strategy;discovery,readme
+15-premortem-tigers,"Pre-mortems: Tigers, Paper Tigers, Elephants",Shreyas Doshi (@shreyas),shreyas-doshi,playbook,leadership-org,readme
+16-first-30-60-90,First 30-60-90 days as a new PM,Lenny Rachitsky (@lennysan),lenny-rachitsky,playbook,career-habits,readme
+17-seven-discovery-paths,Seven ways people discover products,Lenny Rachitsky (@lennysan),lenny-rachitsky,framework,discovery,readme
+18-ic-to-pm-manager,IC PM â†’ manager of PMs,Lenny Rachitsky (@lennysan),lenny-rachitsky,principle,leadership-org;career-habits,readme
+19-ost-specific-stories,Opportunity mapping fails until opportunities are specific and story-sourced,Teresa Torres (@ttorres),teresa-torres,framework,discovery,readme
+20-okrs-vs-outcomes,OKRs are a format; the work is choosing the right outcome,Teresa Torres (@ttorres),teresa-torres,principle,metrics-analytics,readme
+21-assumption-tests,"Compare 3â€“4 solutions by testing assumptions, not by marrying idea #1",Teresa Torres (@ttorres),teresa-torres,playbook,discovery;delivery-execution,readme
+22-eight-metric-questions,Eight questions before you accept â€œmove Metric X up Y%â€,Julie Zhuo (@joulee),julie-zhuo,playbook,metrics-analytics,readme
+23-intuition-calendar,"Product intuition is a calendar habit, not a talent",Julie Zhuo (@joulee),julie-zhuo,principle,career-habits;discovery,readme
+24-prioritize-until-it-hurts,"Prioritize until it hurts: pick a customer, kill the dream, hunt the rest",Julie Zhuo (@joulee),julie-zhuo,principle,roadmaps-prioritization;strategy,readme
+25-gem-force-rank,"GEM: force-rank Growth, Engagement, Monetization and give each a metric",Gibson Biddle (@gibsonbiddle),gibson-biddle,framework,roadmaps-prioritization;metrics-analytics,readme
+26-dhm-stack,"DHM (and the rest of the stack): Delight, Hard-to-copy, Margin",Gibson Biddle (@gibsonbiddle),gibson-biddle,framework,strategy;roadmaps-prioritization,readme
+27-goals-then-evidence,"Start with goals, not approved ideas; invest only where evidence appears",Itamar Gilad (@itamargilad),itamar-gilad,framework,strategy;delivery-execution,readme
+28-three-feature-buckets,Donâ€™t rank all ideas on one formula: three buckets,Adam Nash (@adamnash),adam-nash,framework,roadmaps-prioritization;strategy,readme
+29-deconstruct-assumptions,Deconstruct every idea into hidden assumptions (even in a feature factory),Teresa Torres (@ttorres),teresa-torres,playbook,discovery;delivery-execution,readme
+30-five-data-values,"Internalize five values, not a dashboard, to be data-informed",Julie Zhuo (@joulee),julie-zhuo,framework,metrics-analytics,readme
+31-advisor-vs-solver,"Match advisor vs solver to the relationship, not your habit",Julie Zhuo (@joulee),julie-zhuo,framework,leadership-org,readme
+32-glee-vision,"Write a GLEE vision, then debate the investment mix",Gibson Biddle (@gibsonbiddle),gibson-biddle,framework,strategy,readme
+33-dhm-consumer-vs-b2b,Apply DHM on both sides; donâ€™t copy consumer playbooks into B2B,Gibson Biddle (@gibsonbiddle),gibson-biddle,framework,strategy,readme
+34-invisible-product-work,Fund the invisible work that makes the product â€œjust workâ€,Gibson Biddle (@gibsonbiddle),gibson-biddle,principle,strategy;delivery-execution,readme
+35-reward-killing-ideas,"If you only reward shipping, you punish the person who kills a bad idea",Itamar Gilad (@itamargilad),itamar-gilad,principle,leadership-org;delivery-execution,readme
+36-po-not-full-time-backlog,Donâ€™t split strategy from tactics; donâ€™t make â€œPOâ€ a full-time backlog job,Itamar Gilad (@itamargilad),itamar-gilad,anti-pattern,leadership-org;roadmaps-prioritization,readme
+37-false-predictability,Refuse the contract of false predictability,Itamar Gilad (@itamargilad),itamar-gilad,anti-pattern,roadmaps-prioritization;delivery-execution,readme
+38-discard-one-right-way,Discard â€œthe one right wayâ€; context beats dogma,Shreyas Doshi (@shreyas),shreyas-doshi,principle,strategy;career-habits,readme
+39-execution-as-wounds,"Treat execution failures as strategy, culture, or interpersonal wounds",Shreyas Doshi (@shreyas),shreyas-doshi,anti-pattern,leadership-org;strategy,readme
+40-opposite-can-be-good,Unlearn school: the opposite of a good idea can also be good,Shreyas Doshi (@shreyas),shreyas-doshi,principle,strategy,readme
+41-roadmaps-never-stand-alone,Roadmaps never stand alone; feature lists force premature convergence,John Cutler (@johncutlefish),john-cutler,anti-pattern,roadmaps-prioritization;strategy,readme
+42-timeline-is-assumptions,A timeline roadmap is a pile of assumptions; prototype strategy instead,Janna Bastow (@simplybastow),janna-bastow,anti-pattern,roadmaps-prioritization;strategy,readme
+43-enterprise-pm-cost-center,Enterprise PM stalls as IT cost-center with no path to CPO,Melissa Perri (@lissijean),melissa-perri,anti-pattern,leadership-org;strategy,readme
+44-okrs-need-strategy,OKRs are easy only when strategy exists; they fail as â€œthe thingâ€,John Cutler (@johncutlefish),john-cutler,anti-pattern,strategy;metrics-analytics,readme
+45-product-then-project,"Product Thinking before Project Thinking, then iterate both",Shreyas Doshi (@shreyas),shreyas-doshi,principle,strategy;delivery-execution,readme
+46-strategy-names-tradeoffs,"Good product strategy names segments, trade-offs, and leading indicators",Shreyas Doshi (@shreyas),shreyas-doshi,framework,strategy;metrics-analytics,readme
+47-smuggle-outcome-language,Smuggle outcome language in; donâ€™t wait for permission,John Cutler (@johncutlefish),john-cutler,playbook,strategy;delivery-execution,readme
+48-no-discovery-delivery-kingdoms,Donâ€™t let â€œdiscoveryâ€ and â€œdeliveryâ€ become kingdoms,John Cutler (@johncutlefish),john-cutler,anti-pattern,delivery-execution;discovery,readme
+49-operator-craftsperson-visionary,Wear the Operator / Craftsperson / Visionary hat the company actually needs,Shreyas Doshi (@shreyas),shreyas-doshi,framework,career-habits;leadership-org,readme
+50-builder-tuner-innovator,"Name the PM type in the job: Builder, Tuner, or Innovator",Shreyas Doshi (@shreyas),shreyas-doshi,framework,leadership-org;career-habits,readme
+51-data-not-trust-proxy,Data is not a trust proxy; connect learning to a human-relatable mission,John Cutler (@johncutlefish),john-cutler,principle,metrics-analytics;leadership-org,readme
+52-map-shapes-of-work,Donâ€™t start with role/process fixes; map 15+ shapes of work first,John Cutler (@johncutlefish),john-cutler,framework,delivery-execution;strategy,readme
+53-branching-roadmaps,Honest roadmaps branch; park pet features behind learning criteria,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,framework,roadmaps-prioritization,readme
+54-dual-track-not-cherry-pick,"Lean Startup, Agile, and Discovery fail when cherry-picked; combine as dual-track",PaweÅ‚ Huryn (@HurynPawel),pawel-huryn,anti-pattern,delivery-execution;discovery,readme
+55-stories-3cs-invest,"User stories are Card, Conversation, Confirmation + INVEST â€” not requirement containers",PaweÅ‚ Huryn (@PawelHuryn),pawel-huryn,framework,delivery-execution,readme
+56-cpsr-the-problem,Customers will endorse a problem; stack-rank to find the problem (CPSR),Shreyas Doshi (@shreyas),shreyas-doshi,framework,discovery;strategy,readme
+57-seven-things-you-know,"You already know how to discover, test, and ship â€” stop forgetting it",Shreyas Doshi (@shreyas),shreyas-doshi,playbook,discovery;delivery-execution,readme
+58-research-refine-loop,Discovery is a Researchâ€“Refine loop; progress theater slows it down,Shreyas Doshi (@shreyas),shreyas-doshi,anti-pattern,discovery,readme
+59-one-process-cannot-cover,One process cannot cover 15+ shapes of work,John Cutler (@johncutlefish),john-cutler,framework,delivery-execution,readme
+60-fewer-pdms-more-thinking,"Fewer PdMs, more product thinking",John Cutler (@johncutlefish),john-cutler,principle,leadership-org;roadmaps-prioritization,readme
+61-boat-go-faster,Will it make the boat go faster?,Shreyas Doshi (@shreyas),shreyas-doshi,principle,strategy;roadmaps-prioritization,readme
+62-why-where-when,Donâ€™t skip WHY / WHERE / WHEN,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,framework,strategy;delivery-execution,readme
+63-proxies-not-research,"Sales/CS are user proxies, not research",Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,anti-pattern,discovery,readme
+64-skier-lags-double-diamond,Stakeholder momentum lags the double diamond,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,framework,discovery;leadership-org,readme
+65-prio-is-strategy,Prioritization problems are strategy problems,Shreyas Doshi (@shreyas),shreyas-doshi,principle,roadmaps-prioritization;strategy,readme
+66-good-vs-great-pm,Good PMs deliver; great PMs change trajectory,Shreyas Doshi (@shreyas),shreyas-doshi,principle,career-habits;strategy,readme
+67-b2b-strategy-tests,"B2B strategy: three questions, eight tests",Shreyas Doshi (@shreyas),shreyas-doshi,playbook,strategy,readme
+68-visualize-work-power,Visualizing work threatens how power currently works,John Cutler (@johncutlefish),john-cutler,principle,leadership-org;delivery-execution,readme
+69-impact-execution-strategy-market,Impact â‰ˆ (Execution ^ Strategy) Ã— Market; hire execution-strong early,Shreyas Doshi (@shreyas),shreyas-doshi,framework,strategy;delivery-execution,readme
+70-ten-pm-commandments,"Ten PM commandments, plus donâ€™t blindly follow them",Shreyas Doshi (@shreyas),shreyas-doshi,playbook,career-habits;leadership-org,readme
+71-sell-doing-research,Sell doing research; UX is a power struggle,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,discovery;leadership-org,readme
+72-hero-culture-spare-capacity,Hero culture is brittle; spare capacity is resilience,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,anti-pattern,leadership-org;delivery-execution,readme
+73-earn-team-trust,"How PMs earn team trust (donâ€™t shield, do work, IDD)",John Cutler (@johncutlefish),john-cutler,playbook,leadership-org,readme
+74-bets-you-can-cut-short,Feature factories; frame work as bets you can cut short,John Cutler (@johncutlefish),john-cutler,anti-pattern,strategy;delivery-execution,readme
+75-observe-first-research,Research â‰  asking what they want; observe first,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,discovery,readme
+76-pm-work-is-private,Eng/design shade at PM because too much PM work is private,John Cutler (@johncutlefish),john-cutler,anti-pattern,leadership-org;career-habits,readme
+77-preventable-problem-paradox,"The preventable problem paradox: orgs reward rescue, not prevention",Shreyas Doshi (@shreyas),shreyas-doshi,anti-pattern,leadership-org,readme
+78-sprints-for-learning,"Hire sprints for learning, not as a delivery hamster wheel",John Cutler (@johncutlefish),john-cutler,principle,delivery-execution,readme
+79-strategy-culture-execution-questions,Answer the Strategy / Culture / Execution questions you already know matter,Shreyas Doshi (@shreyas),shreyas-doshi,playbook,strategy;leadership-org,readme
+80-messy-local-experiments,Real-world continuous improvement is messy local experiments,John Cutler (@johncutlefish),john-cutler,principle,delivery-execution;leadership-org,readme
+81-north-star-thirty-percent,North-star artifacts are conversation catalysts; leave them ~30% done,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,strategy;discovery,readme
+82-measure-under-uncertainty,Measurement is not a maturity stage; start under uncertainty,John Cutler (@johncutlefish),john-cutler,principle,metrics-analytics,readme
+83-drivers-constraints-floats,Minimize drivers and constraints; increase floats,John Cutler (@johncutlefish),john-cutler,framework,roadmaps-prioritization;delivery-execution,readme
+84-we-might-be-wrong,Iteration without â€œwe might be wrongâ€ becomes a linear roadmap,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,anti-pattern,roadmaps-prioritization;discovery,readme
+85-produce-organize-self-promote,Diagnose conflict as Produce / Organize / Self-promote,Shreyas Doshi (@shreyas),shreyas-doshi,framework,leadership-org;career-habits,readme
+86-crossover-x-pattern,Watch the crossover: when the company becomes its own largest customer,Shreyas Doshi (@shreyas),shreyas-doshi,framework,strategy;leadership-org,readme
+87-ten-health-signals,Ten signals of a healthier product team,John Cutler (@johncutlefish),john-cutler,playbook,leadership-org;delivery-execution,readme
+88-ceo-test,Apply The CEO Test before you settle on an ugly compromise,Shreyas Doshi (@shreyas),shreyas-doshi,playbook,strategy;leadership-org,readme
+89-gorilla-taxes,Gorilla taxes: compete against the incumbentâ€™s structural costs,Shreyas Doshi (@shreyas),shreyas-doshi,framework,strategy,readme
+90-product-vs-Product,"Optimize for The Product, not only the product you were assigned",Shreyas Doshi (@shreyas),shreyas-doshi,principle,strategy;leadership-org,readme
+91-ten-cognitive-biases,Ten product-team cognitive biases (name them to observe them),Shreyas Doshi (@shreyas),shreyas-doshi,framework,career-habits;leadership-org,readme
+92-start-with-principles,Start-with-Principles (Stripe): debate principles before solutions,Shreyas Doshi (@shreyas),shreyas-doshi,playbook,strategy;leadership-org,readme
+93-four-team-modes,"Four product-team modes: Assemble, Produce, Differentiate, Replicate",Shreyas Doshi (@shreyas),shreyas-doshi,framework,delivery-execution;leadership-org,readme
+94-execution-is-often-strategy,"Most â€œExecution problemsâ€ are Strategy, Interpersonal, or Culture",Shreyas Doshi (@shreyas),shreyas-doshi,anti-pattern,strategy;leadership-org,readme
+95-direction-plus-autonomy,"Leadership is direction plus autonomy (both, or decisions do not stick)",Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,framework,leadership-org,readme
+96-hostile-pm-environment,â€œImpossible to find qualified PMsâ€ often means a hostile environment,John Cutler (@johncutlefish),john-cutler,anti-pattern,leadership-org,readme
+97-less-x-more-y,Nineteen present less-X / more-Y shifts (item 13 absent in source),Shreyas Doshi (@shreyas),shreyas-doshi,framework,career-habits;leadership-org,readme
+98-inputs-execution-outputs-outcomes,"Team diagnosis: Inputs, Execution, Outputs, then Outcomes",Shreyas Doshi (@shreyas),shreyas-doshi,framework,metrics-analytics;delivery-execution,readme
+99-pm-team-member-not-mini-ceo,"Ten PM tips: you are a team member, not a mini-CEO",John Cutler (@johncutlefish),john-cutler,playbook,leadership-org;career-habits,readme
+100-proxy-delusion,"The Proxy Delusion: measure the proxy, do not manage it",Shreyas Doshi (@shreyas),shreyas-doshi,anti-pattern,metrics-analytics,readme
+101-positioning-five-components,"Positioning is five components, worked in a forced order",April Dunford (@aprildunford),april-dunford,framework,positioning,readme
+102-category-assumptions,Your market category fires a chain of assumptions; pick the one that centers your strengths,April Dunford (@aprildunford),april-dunford,principle,positioning,readme
+103-loose-then-tight-positioning,"Keep positioning loose until patterns appear, then tighten to an actionable segment",April Dunford (@aprildunford),april-dunford,principle,positioning,readme
+104-sell-market-pov,"Sell a point of view on the market, not a pile of features",April Dunford (@aprildunford),april-dunford,principle,positioning,readme
+105-seven-virality-strategies,Seven ways to increase virality â€” after you check the product is suited,Lenny Rachitsky (@lennysan),lenny-rachitsky,framework,strategy;discovery,readme
+106-feature-factory-vs-inventing,Feature factories disengage developers; product teams are expected to invent,Itamar Gilad (@itamargilad),itamar-gilad,anti-pattern,delivery-execution;leadership-org,readme
+107-results-strategy-initiative-leadership,Results = Strategy + Initiative + Leadership,Gibson Biddle (@gibsonbiddle),gibson-biddle,framework,strategy;leadership-org,readme
+108-transform-vs-streamline,Ask whether you are transforming or streamlining; they are different products,Melissa Perri (@lissijean),melissa-perri,framework,strategy,readme
+109-product-thinking-solution-shape,"Product thinking is the shape of the solution, not only the process",Melissa Perri (@lissijean),melissa-perri,principle,strategy;delivery-execution,readme
+110-designer-pushback-user-language,"Answer designer pushback in the language of users, not PM shorthand",Julie Zhuo (@joulee),julie-zhuo,playbook,leadership-org;discovery,readme
+111-high-agency,"High Agency: find a way, or reverse the conditions",Shreyas Doshi (@shreyas),shreyas-doshi,principle,career-habits,readme
+112-nine-time-principles-lno,Nine time principles: scope kills brute force; LNO the rest,Shreyas Doshi (@shreyas),shreyas-doshi,framework,career-habits,readme
+113-opportunity-cost-not-roi,"In a high-leverage role, minimize opportunity cost, not ROI",Shreyas Doshi (@shreyas),shreyas-doshi,principle,strategy;career-habits,readme
+114-radical-delegation,"Radical Delegation: keep the singular impact, contract the rest",Shreyas Doshi (@shreyas),shreyas-doshi,playbook,leadership-org;career-habits,readme
+115-10-30-50-pm,"Become a 10-30-50 PM: one sense at 10%, another 30%, the third 50%",Shreyas Doshi (@shreyas),shreyas-doshi,framework,career-habits;leadership-org,readme
+116-eyeglass-store,Cognitive empathy is a product superpower: use the Eyeglass Store,Shreyas Doshi (@shreyas),shreyas-doshi,principle,career-habits;discovery,readme
+117-curse-of-brilliance,The Curse of Brilliance: do not copy the tactics the greats found hard,Shreyas Doshi (@shreyas),shreyas-doshi,anti-pattern,career-habits;leadership-org,readme
+118-messy-middle-inputs,"Beat the messy middle: stable 12â€“24 month inputs, not goal cascades",John Cutler (@johncutlefish),john-cutler,framework,metrics-analytics;strategy,readme
+119-change-the-words,"Change the words: mission, bet, opportunity, intervention, capability",John Cutler (@johncutlefish),john-cutler,framework,strategy;roadmaps-prioritization,readme
+120-primary-user-benefit,Name the primary user benefit; tautologies are not strategy,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,framework,strategy;positioning,readme
+121-positioning-before-story,Positioning before storytelling: donâ€™t write fiction that sings,April Dunford (@aprildunford),april-dunford,principle,positioning,readme
+122-position-competitors,"Position your competitors, not only yourself",April Dunford (@aprildunford),april-dunford,principle,positioning,readme
+123-perf-scope-times-impact,Perf = Scope Ã— Unique Impact â€” and the formula can punish discovery,Itamar Gilad (@itamargilad),itamar-gilad,framework,career-habits;leadership-org,readme
+124-cd-is-business-practice,"Continuous deployment is a business practice, not a tech brag",Janna Bastow (@simplybastow),janna-bastow,principle,delivery-execution,readme
+125-oceans-11-cascade,Mission â†’ Vision â†’ Strategy â†’ Goals â†’ Roadmap â†’ Task (Oceanâ€™s 11),Lenny Rachitsky (@lennysan),lenny-rachitsky,framework,strategy;roadmaps-prioritization,readme
+126-family-to-dream-team,Agree where you sit on Family â†’ Dream Team (and the other continuums),Gibson Biddle (@gibsonbiddle),gibson-biddle,framework,leadership-org,readme
+127-ab-swing-for-the-fence,"Most A/B tests do nothing; swing for the fence, donâ€™t treat Î± as FPR",Teresa Torres (@ttorres),teresa-torres,principle,metrics-analytics;discovery,readme
+128-designer-answers-pm-pushback,How designers can answer the four PM pushbacks,Julie Zhuo (@joulee),julie-zhuo,framework,leadership-org;delivery-execution,readme
+129-ship-design-product-business,Ship design vs product vs business; the market always wins,"Intercom Design (@intercomdesign), quoting Des Traynor",des-traynor,framework,strategy;delivery-execution,readme
+130-proof-of-worth,"Proof of Worth is junior scaffolding, not the job",Shreyas Doshi (@shreyas),shreyas-doshi,anti-pattern,career-habits;leadership-org,readme
+131-climb-the-loops,"Climb the loops: right things, then the right â€œright,â€ then Learning Ops",Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,framework,leadership-org;career-habits,readme
+132-metrics-are-not-goals,Metrics are not goals; pick the destination before the dashboard,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,metrics-analytics,readme
+133-artifact-is-the-conversation,The artifact is the conversation; it is done when acted upon,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,leadership-org;discovery,readme
+134-outcome-first-planning,Outcome-first planning: make the future clearer than the present,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,framework,metrics-analytics;roadmaps-prioritization,readme
+135-congruence-quality-timing,"Debug planning with congruence, decision quality, and timing",John Cutler (@johncutlefish),john-cutler,framework,roadmaps-prioritization;leadership-org,readme
+136-three-roadmaps,There is no one roadmap; tailor at least three to the audience,Melissa Perri (@lissijean),melissa-perri,framework,roadmaps-prioritization;leadership-org,readme
+137-vision-strategy-positioning-clocks,"Vision, strategy, and positioning are different time horizons",April Dunford (@aprildunford),april-dunford,framework,positioning;strategy,readme
+138-timeline-vicious-cycle,Timeline roadmaps create a vicious cycle of buffers and blame,Janna Bastow (@simplybastow),janna-bastow,anti-pattern,roadmaps-prioritization;delivery-execution,readme
+139-foundation-not-big-bang,"Reactivity is a missing foundation, not a missing big plan",John Cutler (@johncutlefish),john-cutler,anti-pattern,strategy;delivery-execution,readme
+140-segment-then-champion,Nail segmentation and the champion before persona busywork,April Dunford (@aprildunford),april-dunford,principle,positioning;discovery,readme
+141-fidelity-of-thinking,Fidelity of artifacts must never exceed fidelity of thinking,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,delivery-execution;discovery,readme
+142-absolute-not-relative,Absolute not relative: â€œmakes it easier to Xâ€ is not a product,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,positioning;strategy,readme
+143-low-hanging-fruit,Low-hanging-fruit talk is self-defeating,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,anti-pattern,roadmaps-prioritization,readme
+144-design-documents-decisions,A design is documentation of decisions for a known purpose,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,delivery-execution;discovery,readme
+145-company-vs-product-positioning,"Company positioning equals product positioning â€” until you choose cascade, suite, or lead product",April Dunford (@aprildunford),april-dunford,framework,positioning;strategy,readme
+146-positioning-misalignment-catch-22,Positioning misalignment is a roadmap catch-22,April Dunford (@aprildunford),april-dunford,anti-pattern,positioning;roadmaps-prioritization,readme
+147-eight-first-time-leader-mistakes,Eight first-time product-leader mistakes,Melissa Perri (@lissijean),melissa-perri,anti-pattern,leadership-org,readme
+148-org-vs-swimlane-smt,Org-level product strategy vs swimlane SMT,Gibson Biddle (@gibsonbiddle),gibson-biddle,framework,strategy;leadership-org,readme
+149-simplicity-is-a-tactic,"Simplicity is a tactic, not the goal",John Cutler (@johncutlefish),john-cutler,principle,delivery-execution;strategy,readme
+150-value-exchange-rate,Devotion to any single value has an exchange rate,Julie Zhuo (@joulee),julie-zhuo,principle,leadership-org;metrics-analytics,readme
+151-deadlines-not-the-incentive,Deadlines are not the incentive,Janna Bastow (@simplybastow),janna-bastow,principle,roadmaps-prioritization;leadership-org,readme
+152-burnout-black-box,Burnout and â€œlow qualityâ€ are downstream of the black box,John Cutler (@johncutlefish),john-cutler,anti-pattern,career-habits;leadership-org,readme
+153-wean-off-nps,Wean the company off NPS by naming the leading levers,John Cutler (@johncutlefish),john-cutler,playbook,metrics-analytics,readme
+154-metrics-from-guessing-the-build,Metrics-from-guessing-the-build is backwards,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,anti-pattern,metrics-analytics,readme
+155-not-the-main-character,You are not the main character in the userâ€™s life,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,discovery,readme
+156-bake-in-the-expertise,Not everyone knows how to do the job; bake in the expertise,Melissa Perri (@lissijean),melissa-perri,playbook,leadership-org;delivery-execution,readme
+157-influence-execs-how-judged,Influence executives by how they are judged,Melissa Perri (@lissijean),melissa-perri,principle,leadership-org,readme
+158-disappointment-is-expectations,Every disappointment is a failure to set expectations,Julie Zhuo (@joulee),julie-zhuo,principle,leadership-org,readme
+159-stop-deciphering-the-ceo,Stop deciphering the CEO; tell them what needs to be done,Shreyas Doshi (@shreyas),shreyas-doshi,principle,leadership-org,readme
+160-real-alternatives-not-theoretical,"Position only against real alternatives, not the theoretical list",April Dunford (@aprildunford),april-dunford,principle,positioning,readme
+161-three-bullets-on-the-slide,â€œOnly 3 prioritiesâ€ is really three bullets on the slide,John Cutler (@johncutlefish),john-cutler,anti-pattern,roadmaps-prioritization;leadership-org,readme
+162-idle-beats-feasible-code,Identify the problem first; sitting idle beats feasible code that does not ladder up,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,delivery-execution;strategy,readme
+163-storyboards-not-hifi,"Storyboards, not hi-fi mockups: discuss the desired experience, not the button",Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,playbook,discovery;delivery-execution,readme
+164-five-things-starting-in-product,"Five things starting in product: ideas, ego, business+customer, delegate, trio speed",Melissa Perri (@lissijean),melissa-perri,playbook,career-habits;leadership-org,readme
+165-considered-purchase-no-decision,Positioning matters more for considered purchases; no-decision is the low-risk default,April Dunford (@aprildunford),april-dunford,principle,positioning,readme
+166-category-orients-value-story,Market category orients; the differentiated-value story answers â€œwhy pick usâ€,April Dunford (@aprildunford),april-dunford,framework,positioning,readme
+167-three-value-themes,"Buyers care about â‰¤3 value themes, not the feature list",April Dunford (@aprildunford),april-dunford,principle,positioning,readme
+168-walkthrough-five-moves,Product walkthroughs suck when they are feature tours; five moves,April Dunford (@aprildunford),april-dunford,playbook,positioning,readme
+169-just-talk-to-customers-cop-out,â€œJust talk to customersâ€ is a cop-out,April Dunford (@aprildunford),april-dunford,anti-pattern,positioning;discovery,readme
+170-champion-then-arm,"Position first for the Champion, then arm them",April Dunford (@aprildunford),april-dunford,playbook,positioning,readme
+171-same-value-same-positioning,Same value across segments is the same positioning; different value is two products,April Dunford (@aprildunford),april-dunford,principle,positioning;strategy,readme
+172-position-against-approaches,"Position against approaches, not vendors; 40% end in no decision",April Dunford (@aprildunford),april-dunford,principle,positioning,readme
+173-storytelling-maps-approaches,B2B storytelling that sells maps approaches for types of customers,April Dunford (@aprildunford),april-dunford,framework,positioning,readme
+174-hoard-giant-ghost,"Beat the hoard, the giant, and the ghost",April Dunford (@aprildunford),april-dunford,framework,positioning,readme
+175-methods-need-inputs,Product methods fail when outputs are demanded without inputs,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,anti-pattern,leadership-org;delivery-execution,readme
+176-ux-not-the-screen,UX is not the screen; enterprise users are developers,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,discovery;delivery-execution,readme
+177-go-faster-define-value,"â€œGo fasterâ€ is define value, do less, and make safety a prerequisite",John Cutler (@johncutlefish),john-cutler,principle,delivery-execution,readme
+178-exec-never-seen-a-flop,An exec who has never seen a flop was never invited into the process,John Cutler (@johncutlefish),john-cutler,anti-pattern,leadership-org,readme
+179-working-with-developers,Working with developers: they maintain the turd; five-minute questions take a morning,John Cutler (@johncutlefish),john-cutler,playbook,delivery-execution;leadership-org,readme
+180-presentation-culture-fallacies,Presentation culture hides the fallacies writing would surface,John Cutler (@johncutlefish),john-cutler,anti-pattern,leadership-org,readme
+181-devalued-not-a-seat,Feeling devalued is not solved by a seat at the table,John Cutler (@johncutlefish),john-cutler,anti-pattern,leadership-org;career-habits,readme
+182-leadership-defaults,Leadership defaults: awareness vs â€œuniversalâ€ vs â€œoptimalâ€,John Cutler (@johncutlefish),john-cutler,framework,leadership-org,readme
+183-new-senior-leaders,"New senior leaders miss glue people, hidden successes, and the log of what failed",John Cutler (@johncutlefish),john-cutler,anti-pattern,leadership-org,readme
+184-pyramids-vs-orbits,"Pyramids do not reflect product work; use orbits, graphs, and loops",John Cutler (@johncutlefish),john-cutler,framework,strategy;leadership-org,readme
+185-manager-roles-converge,Tech manager roles converge; Director is the specialization ceiling,Julie Zhuo (@joulee),julie-zhuo,framework,leadership-org;career-habits,readme
+186-interview-questions,Interview questions that raise the signal of a tiny slice,Julie Zhuo (@joulee),julie-zhuo,playbook,leadership-org,readme
+187-keep-positioning-loose,Keep positioning loose at launch; tighten after the first wave,April Dunford (@aprildunford),april-dunford,principle,positioning,readme
+188-b2b-fear-no-decision,B2Bâ€™s grandaddy emotion is fear; no-decision is a vote against a bad choice,April Dunford (@aprildunford),april-dunford,principle,positioning,readme
+189-decision-making-documentation,"Decision-making and documentation are one cadence, not two jobs",Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,playbook,leadership-org;delivery-execution,readme
+190-work-with-not-for,Working with a function is not working for their requirements,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,principle,leadership-org;delivery-execution,readme
+191-demo-context-then-value,"A demo is positioning: context vs alternatives, then value themes",April Dunford (@aprildunford),april-dunford,playbook,positioning,readme
+192-not-xyz-positioning,You cannot position as â€œnot xyzâ€; capabilities only matter as value,April Dunford (@aprildunford),april-dunford,anti-pattern,positioning,readme
+193-satisfaction-not-a-metric,Customer satisfaction is not a metric; NPS is a courage-substitute,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,anti-pattern,metrics-analytics,readme
+194-definition-of-good-hiring,â€œHelp ship the roadmapâ€ is not a Definition of Good,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,playbook,leadership-org,readme
+195-not-catering-to-wants,Good design is not catering to wants; three ways to build,Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,framework,discovery;strategy,readme
+196-capture-inputs-propagate,"Capture inputs, size effort to value, decide, document, propagate",Pavel A. Samsonov (@PavelASamsonov),pavel-samsonov,playbook,delivery-execution;leadership-org,readme
+197-no-single-safe-alternative,There is no single alternative to SAFe; a box diagram without context is snake oil,Melissa Perri (@lissijean),melissa-perri,anti-pattern,delivery-execution;leadership-org,readme
+198-renaming-pms-hurts-hiring,Renaming PMs solves the week and hurts hiring; standardize titles,Melissa Perri (@lissijean),melissa-perri,anti-pattern,leadership-org,readme
+199-specific-ask,"Vague asks fail; name what, why them, boundaries, and an easy yes",Julie Zhuo (@joulee),julie-zhuo,playbook,leadership-org,readme
+200-experts-vs-armchair,True experts study â†’ implement â†’ own â†’ iterate; armchair stops at 1â€“2,Julie Zhuo (@joulee),julie-zhuo,framework,career-habits,readme
+201-first-strategy-doc-alignment,Your first strategy doc is structured thinking + stakeholder alignment,George / prodmgmt.world (@nurijanian),george-nurijanian,framework,strategy;leadership-org,html
+202-tech-debt-first-30-days,Inherited tech debt: your first 30 days decide if engineers stay,George / prodmgmt.world (@nurijanian),george-nurijanian,playbook,delivery-execution;leadership-org,html
+203-merit-vs-corporate-rewards,Eng-turned-PMs: corporate does not reward merit the way eng teams do,George / prodmgmt.world (@nurijanian),george-nurijanian,principle,career-habits;leadership-org,html
+204-customer-driven-content,Customer-driven content is underrated GTM leverage,Alejandro Vivanco (@alvivanco),alejandro-vivanco,playbook,discovery;positioning,html
+205-growth-wom-brand-dogfood,"0→$50M: word-of-mouth foundation, brand before performance, dogfood",Grant Lee (@thisisgrantlee),grant-lee,framework,strategy,html
+206-inputs-chat-outputs,"Inputs → Chat → Outputs: one creation journey, three panels",Jason Spielman (@jayspiel_),jason-spielman,framework,ai-product,html
+207-unsolicited-affection-pmf,PMF shows up as unsolicited acts of affection from users,Guillermo Rauch (@rauchg),guillermo-rauch,principle,metrics-analytics;discovery,html
+208-early-stage-sales-learnings,"Early sales: founder is the product; PMF by elimination, not hedge",Jen Abel (@jjen_abel),jen-abel,playbook,discovery;positioning,html
+209-load-bearing-perspectives,Write down your load-bearing perspectives — do not leave them implicit,Nan Yu (@thenanyu),nan-yu,framework,strategy;leadership-org,html
+210-customers-as-investors,Make customers investors — small checks drive outsized referrals,Martin Tobias (@MartinGTobias),martin-tobias,principle,strategy,html
+211-clarity-by-subtraction,"Clarity in chaos comes from subtraction, never addition",Shreyas Doshi (@shreyas),shreyas-doshi,principle,strategy;roadmaps-prioritization,html
+212-shadow-of-doubt,Shadow of Doubt: leading experts without formal authority,George / prodmgmt.world (@nurijanian),george-nurijanian,principle,leadership-org,html
+213-ppf-then-mmf,PMF is two fits: Product–Problem then Motion–Market,Sajith Pai (@sajithpai),sajith-pai,framework,strategy;discovery,html
+214-refinement-continuous-not-meeting,"Refinement is continuous work, not a meeting",Scrum.org (@Scrumdotorg),scrum-org,principle,delivery-execution,html
+215-ai-fluency-operating-model,"AI fluency is an operating model, not a course",Scrum.org (@Scrumdotorg),scrum-org,framework,ai-product;leadership-org,html
+216-authorship-before-process,Change authorship before you redesign the process,Scrum.org (@Scrumdotorg) · Yuval Yeret,scrum-org,principle,leadership-org;delivery-execution,html
+217-strength-without-contempt,"Strength without contempt: hate the org, lose the room",Scrum.org (@Scrumdotorg) · Steven Deneir,scrum-org,principle,leadership-org,html
+218-elevate-others-ambition,Elevate others' ambition — the scarce PM skill,Lenny Rachitsky (@lennysan) quoting Tara Seshan (@tarstarr),lenny-rachitsky,principle,leadership-org;career-habits,html
+219-unship-before-launch,"Unship before launch: colleague, not dashboard",Lenny Rachitsky (@lennysan) summarizing Roman Ugarte on Grok Bot product lessons,lenny-rachitsky,playbook,ai-product;delivery-execution,html
+220-product-can-now,Optimize for “Our product can now…”,Lenny Rachitsky (@lennysan) quoting Roman Ugarte’s Grok Bot framing,lenny-rachitsky,principle,ai-product;roadmaps-prioritization,html
+221-dont-ship-org-chart,Don’t ship your org chart as product tabs,Lenny Rachitsky (@lennysan) interviewing Roman Ugarte on why Grok Bot started from scratch,lenny-rachitsky,anti-pattern,leadership-org;ai-product,html
+222-rejection-register,Keep a rejection register next to the roadmap,Scrum.org (@Scrumdotorg) summarizing Ralph Jocham,scrum-org,playbook,roadmaps-prioritization,html
+223-ai-path-not-answers,AI volume can atrophy the product path,Shreyas Doshi (@shreyas),shreyas-doshi,principle,ai-product;strategy,html
+224-traits-that-matter-more,Five traits that matter more than cleverness,Shreyas Doshi (@shreyas),shreyas-doshi,framework,leadership-org;career-habits,html
+225-ai-wip-limits-review,AI changed the bottleneck — update your WIP limits,Scrum.org (@Scrumdotorg) · Mary Iqbal,scrum-org,playbook,delivery-execution;ai-product,html
+226-stakeholder-dump-not-problem,Stakeholder dump ≠ problem statement,George / prodmgmt.world (@nurijanian),george-nurijanian,anti-pattern,discovery;roadmaps-prioritization,html
+227-jtbd-without-forces,JTBD without forces is incomplete,George / prodmgmt.world (@nurijanian),george-nurijanian,framework,discovery,html
+228-judgment-is-a-product,Your judgment is a product — calibrate it,George / prodmgmt.world (@nurijanian),george-nurijanian,framework,career-habits;strategy,html
+229-issue-tree-before-features,Stop asking what to build — grow an issue tree,George / prodmgmt.world (@nurijanian),george-nurijanian,framework,discovery;roadmaps-prioritization,html
+230-where-did-we-land,After messy meetings: where did every thread land?,George / prodmgmt.world (@nurijanian),george-nurijanian,playbook,leadership-org;delivery-execution,html
+231-ai-agile-transformations-rhyme,AI transformations rhyme with Agile ones,Scrum.org (@Scrumdotorg) · Stefan Wolpers,scrum-org,anti-pattern,ai-product;leadership-org,html
+232-retros-format-not-the-problem,"If retros change nothing, the format is not the problem",Scrum.org (@Scrumdotorg) · Steven Deneir,scrum-org,anti-pattern,delivery-execution,html
+233-factory-that-produces-ideas,Show me a factory that produces great ideas,George / prodmgmt.world (@nurijanian),george-nurijanian,anti-pattern,strategy;discovery,html
+234-verbalized-sampling-idea-diversity,"Ask for a distribution, not five clones",George / prodmgmt.world (@nurijanian),george-nurijanian,playbook,discovery;ai-product,html
+235-reality-not-status-meeting,Reality does not attend the status meeting,Scrum.org (@Scrumdotorg) · Steven Deneir,scrum-org,playbook,delivery-execution;leadership-org,html
+236-taste-knowing-when-to-stop,Great taste is knowing when to stop,Lenny Rachitsky (@lennysan) quoting Peter Sellis (@petersellis),lenny-rachitsky,principle,career-habits;discovery,html
+237-use-case-map-before-ask-agent,Don’t ask the agent what to build without a use-case map,George / prodmgmt.world (@nurijanian),george-nurijanian,framework,ai-product;discovery,html
+238-edge-cases-ahead-of-what-about,Get ahead of “what about” with edge cases,George / prodmgmt.world (@nurijanian),george-nurijanian,playbook,delivery-execution;leadership-org,html
+239-extract-domain-from-products,"Steal the domain model, not the screens",George / prodmgmt.world (@nurijanian),george-nurijanian,framework,discovery;strategy,html
+240-money-in-the-banana-stand,There is always money in the banana stand,Lenny Rachitsky / Peter Sellis (@lennysan),lenny-rachitsky,principle,strategy;metrics-analytics,html
+241-core-product-value-phrase-metrics,Core Product Value needs phrase + metrics,Lenny Rachitsky / Peter Sellis (@lennysan),lenny-rachitsky,framework,positioning;metrics-analytics,html
+242-ideology-and-dris-over-coordination,Shared ideology + clear DRIs beat coordination,Lenny Rachitsky / Peter Sellis (@lennysan),lenny-rachitsky,principle,leadership-org;delivery-execution,html
+243-load-strongest-performers-first,Load your strongest performers first,Lenny Rachitsky / Peter Sellis (@lennysan),lenny-rachitsky,principle,leadership-org,html
+244-evals-core-pm-craft,Evals are becoming core PM craft,Lenny Rachitsky (@lennysan),lenny-rachitsky,playbook,ai-product;delivery-execution,html
+245-cant-vibe-experimentation,You can’t vibe through experimentation,George / prodmgmt.world (@nurijanian),george-nurijanian,anti-pattern,metrics-analytics;discovery,html
+246-opportunity-map-without-inventing,Opportunity mapping without inventing data,George / prodmgmt.world (@nurijanian),george-nurijanian,playbook,discovery,html
+247-critical-decision-method,"Critical Decision Method gets you judgment, not advice",George / prodmgmt.world (@nurijanian),george-nurijanian,playbook,discovery;career-habits,html
+248-problem-first-invert-bad-ideas,Invert the solution before agents ship it,George / prodmgmt.world (@nurijanian),george-nurijanian,playbook,ai-product;strategy,html
+249-power-user-shift-frequency,Retention without frequency is a fake win,George / prodmgmt.world (@nurijanian),george-nurijanian,principle,metrics-analytics,html
+250-ai-workflow-inventory,Name the AI work the team already runs,Scrum.org / Stefan Wolpers (@Scrumdotorg),scrum-org,playbook,ai-product;delivery-execution,html
+251-metric-review-skills,"Start metrics review with signal, honesty, and first principles",George / prodmgmt.world (@nurijanian),george-nurijanian,playbook,metrics-analytics,html
+252-last-roadmap-durable-convictions,"When build is cheap, roadmap features become a slop cannon",Claire Vo via Lenny Rachitsky (@lennysan),claire-vo,principle,roadmaps-prioritization;ai-product,html
+253-audience-empathy-map,"Answer what each audience actually needs, not the question they asked",Shreyas Doshi (@shreyas),shreyas-doshi,framework,leadership-org;discovery,html
+254-hallway-meeting-agrees,"The meeting agrees, the hallway disagrees — and the decision ships incomplete","Scrum.org (@Scrumdotorg), via PST Steven Deneir",scrum-org,anti-pattern,leadership-org;delivery-execution,html
+255-velocity-without-design,Velocity without a design is noise,George (@nurijanian),george-nurijanian,anti-pattern,delivery-execution,html
+256-funeral-for-change,"Throw a funeral for what you are leaving, then ask what could be",Molly Graham (@molly_g) via Lenny Rachitsky (@lennysan),molly-graham,playbook,leadership-org,html
+257-ai-delegation-not-legos,Delegating to AI is not giving your Legos away,Molly Graham (@molly_g) via Lenny Rachitsky (@lennysan),molly-graham,principle,leadership-org;ai-product,html
+258-keep-judgment-taste-vision,"Never give away judgment, taste, and vision",Molly Graham (@molly_g) via Lenny Rachitsky (@lennysan),molly-graham,principle,leadership-org;career-habits,html
+259-every-ic-is-now-a-manager,Every knowledge worker is now a manager,Molly Graham (@molly_g) via Lenny Rachitsky (@lennysan),molly-graham,framework,leadership-org;career-habits,html
+260-three-pm-paths,"Three PM paths long-term: technical, tastemaker, GM",Geoff Charles (@geoffintech) via Lenny Rachitsky (@lennysan),geoff-charles,framework,career-habits;leadership-org,html
+261-good-product-work-is-thinking,Good product work is thinking (avoiding thinking),Marty Cagan via Lenny Rachitsky (@lennysan),marty-cagan,principle,strategy;career-habits,html
+262-ship-all-our-bad-ideas,We can now ship all our bad ideas,Claire Vo (@clairevo) via Lenny Rachitsky (@lennysan),claire-vo,anti-pattern,ai-product;delivery-execution,html
+263-pm-craft-is-decision-making,PM craft is decision-making,Ryan Stein (@rmstein) via Lenny Rachitsky (@lennysan),ryan-stein,principle,career-habits;strategy,html
+264-ask-when-confused,Ask when confused — others are too,Molly Graham (@molly_g),molly-graham,principle,career-habits;leadership-org,html
+265-friction-is-sometimes-the-learning,Friction is sometimes the learning,Molly Graham (@molly_g),molly-graham,principle,career-habits;discovery,html

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - leadership-org
+  format: framework
+  source: shreyas-doshi
+---
+
 # Watch the crossover: when the company becomes its own largest customer
 
 ![Illustration](illustration.png)

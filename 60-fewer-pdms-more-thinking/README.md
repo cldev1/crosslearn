@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - roadmaps-prioritization
+  format: principle
+  source: john-cutler
+---
+
 # Fewer PdMs, more product thinking
 
 ![Illustration](illustration.png)

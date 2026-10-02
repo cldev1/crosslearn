@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - positioning
+    - roadmaps-prioritization
+  format: anti-pattern
+  source: april-dunford
+---
+
 # Positioning misalignment is a roadmap catch-22
 
 ![Illustration](illustration.png)

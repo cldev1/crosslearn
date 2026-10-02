@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - discovery
+  format: anti-pattern
+  source: john-cutler
+---
+
 # Don’t let “discovery” and “delivery” become kingdoms
 
 ![Illustration](illustration.png)

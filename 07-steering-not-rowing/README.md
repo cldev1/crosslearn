@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: principle
+  source: lenny-rachitsky
+---
+
 # Steering, not rowing
 
 ![Illustration](illustration.png)

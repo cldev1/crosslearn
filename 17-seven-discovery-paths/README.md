@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - discovery
+  format: framework
+  source: lenny-rachitsky
+---
+
 # Seven ways people discover products
 
 ![Illustration](illustration.png)

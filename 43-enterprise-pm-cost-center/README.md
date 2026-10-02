@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - strategy
+  format: anti-pattern
+  source: melissa-perri
+---
+
 # Enterprise PM stalls as IT cost-center with no path to CPO
 
 ![Illustration](illustration.png)

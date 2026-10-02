@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - delivery-execution
+  format: playbook
+  source: melissa-perri
+---
+
 # Not everyone knows how to do the job; bake in the expertise
 
 ![Illustration](illustration.png)

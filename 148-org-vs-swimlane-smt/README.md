@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - leadership-org
+  format: framework
+  source: gibson-biddle
+---
+
 # Org-level product strategy vs swimlane SMT
 
 ![Illustration](illustration.png)

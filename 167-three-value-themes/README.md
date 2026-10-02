@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: principle
+  source: april-dunford
+---
+
 # Buyers care about ≤3 value themes, not the feature list
 
 ![Illustration](illustration.png)

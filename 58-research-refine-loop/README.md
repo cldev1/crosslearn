@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - discovery
+  format: anti-pattern
+  source: shreyas-doshi
+---
+
 # Discovery is a Research–Refine loop; progress theater slows it down
 
 ![Illustration](illustration.png)

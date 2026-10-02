@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: framework
+  source: gibson-biddle
+---
+
 # Agree where you sit on Family → Dream Team (and the other continuums)
 
 ![Illustration](illustration.png)

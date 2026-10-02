@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - strategy
+  format: principle
+  source: julie-zhuo
+---
+
 # Prioritize until it hurts: pick a customer, kill the dream, hunt the rest
 
 ![Illustration](illustration.png)

@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+  format: anti-pattern
+  source: pavel-samsonov
+---
+
 # Low-hanging-fruit talk is self-defeating
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - leadership-org
+  format: anti-pattern
+  source: shreyas-doshi
+---
+
 # Proof of Worth is junior scaffolding, not the job
 
 ![Illustration](illustration.png)

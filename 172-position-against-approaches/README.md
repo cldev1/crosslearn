@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: principle
+  source: april-dunford
+---
+
 # Position against approaches, not vendors; 40% end in no decision
 
 ![Illustration](illustration.png)

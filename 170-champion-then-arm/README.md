@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: playbook
+  source: april-dunford
+---
+
 # Position first for the Champion, then arm them
 
 ![Illustration](illustration.png)

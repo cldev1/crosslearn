@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: playbook
+  source: shreyas-doshi
+---
+
 # Pre-mortems: Tigers, Paper Tigers, Elephants
 
 ![Illustration](illustration.png)

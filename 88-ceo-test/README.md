@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - leadership-org
+  format: playbook
+  source: shreyas-doshi
+---
+
 # Apply The CEO Test before you settle on an ugly compromise
 
 ![Illustration](illustration.png)

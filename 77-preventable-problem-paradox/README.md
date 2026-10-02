@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: anti-pattern
+  source: shreyas-doshi
+---
+
 # The preventable problem paradox: orgs reward rescue, not prevention
 
 ![Illustration](illustration.png)

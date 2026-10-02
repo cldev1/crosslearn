@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: principle
+  source: april-dunford
+---
+
 # Sell a point of view on the market, not a pile of features
 
 ![Illustration](illustration.png)

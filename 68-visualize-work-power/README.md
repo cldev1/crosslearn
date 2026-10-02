@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - delivery-execution
+  format: principle
+  source: john-cutler
+---
+
 # Visualizing work threatens how power currently works
 
 ![Illustration](illustration.png)

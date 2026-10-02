@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: playbook
+  source: april-dunford
+---
+
 # A demo is positioning: context vs alternatives, then value themes
 
 ![Illustration](illustration.png)

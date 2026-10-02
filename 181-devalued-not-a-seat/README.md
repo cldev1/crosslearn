@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - career-habits
+  format: anti-pattern
+  source: john-cutler
+---
+
 # Feeling devalued is not solved by a seat at the table
 
 ![Illustration](illustration.png)

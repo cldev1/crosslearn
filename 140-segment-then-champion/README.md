@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - positioning
+    - discovery
+  format: principle
+  source: april-dunford
+---
+
 # Nail segmentation and the champion before persona busywork
 
 ![Illustration](illustration.png)

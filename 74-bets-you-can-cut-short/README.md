@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - delivery-execution
+  format: anti-pattern
+  source: john-cutler
+---
+
 # Feature factories; frame work as bets you can cut short
 
 ![Illustration](illustration.png)

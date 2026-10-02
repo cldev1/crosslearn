@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - career-habits
+  format: framework
+  source: julie-zhuo
+---
+
 # True experts study → implement → own → iterate; armchair stops at 1–2
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - leadership-org
+  format: framework
+  source: shreyas-doshi
+---
+
 # Four product-team modes: Assemble, Produce, Differentiate, Replicate
 
 ![Illustration](illustration.png)

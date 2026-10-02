@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - career-habits
+  format: framework
+  source: shreyas-doshi
+---
+
 # Diagnose conflict as Produce / Organize / Self-promote
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - discovery
+  format: principle
+  source: pavel-samsonov
+---
+
 # North-star artifacts are conversation catalysts; leave them ~30% done
 
 ![Illustration](illustration.png)

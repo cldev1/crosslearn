@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+  format: anti-pattern
+  source: pavel-samsonov
+---
+
 # Customer satisfaction is not a metric; NPS is a courage-substitute
 
 ![Illustration](illustration.png)

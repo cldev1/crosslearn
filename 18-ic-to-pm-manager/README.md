@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - career-habits
+  format: principle
+  source: lenny-rachitsky
+---
+
 # IC PM → manager of PMs
 
 ![Illustration](illustration.png)

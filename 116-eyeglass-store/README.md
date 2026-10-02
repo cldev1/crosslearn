@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - discovery
+  format: principle
+  source: shreyas-doshi
+---
+
 # Cognitive empathy is a product superpower: use the Eyeglass Store
 
 ![Illustration](illustration.png)

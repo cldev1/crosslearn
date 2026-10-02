@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - metrics-analytics
+  format: framework
+  source: gibson-biddle
+---
+
 # GEM: force-rank Growth, Engagement, Monetization and give each a metric
 
 ![Illustration](illustration.png)

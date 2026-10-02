@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - leadership-org
+  format: framework
+  source: itamar-gilad
+---
+
 # Perf = Scope × Unique Impact — and the formula can punish discovery
 
 ![Illustration](illustration.png)

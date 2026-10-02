@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - roadmaps-prioritization
+  format: framework
+  source: gibson-biddle
+---
+
 # DHM (and the rest of the stack): Delight, Hard-to-copy, Margin
 
 ![Illustration](illustration.png)

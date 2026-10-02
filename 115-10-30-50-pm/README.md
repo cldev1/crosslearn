@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - leadership-org
+  format: framework
+  source: shreyas-doshi
+---
+
 # Become a 10-30-50 PM: one sense at 10%, another 30%, the third 50%
 
 ![Illustration](illustration.png)

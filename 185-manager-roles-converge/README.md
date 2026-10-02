@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - career-habits
+  format: framework
+  source: julie-zhuo
+---
+
 # Tech manager roles converge; Director is the specialization ceiling
 
 ![Illustration](illustration.png)

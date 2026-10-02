@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - delivery-execution
+  format: framework
+  source: itamar-gilad
+---
+
 # Start with goals, not approved ideas; invest only where evidence appears
 
 ![Illustration](illustration.png)

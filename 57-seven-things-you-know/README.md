@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - discovery
+    - delivery-execution
+  format: playbook
+  source: shreyas-doshi
+---
+
 # You already know how to discover, test, and ship — stop forgetting it
 
 ![Illustration](illustration.png)

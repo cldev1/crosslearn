@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - leadership-org
+  format: framework
+  source: shreyas-doshi
+---
+
 # Nineteen present less-X / more-Y shifts (item 13 absent in source)
 
 ![Illustration](illustration.png)

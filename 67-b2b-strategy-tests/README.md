@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: playbook
+  source: shreyas-doshi
+---
+
 # B2B strategy: three questions, eight tests
 
 ![Illustration](illustration.png)

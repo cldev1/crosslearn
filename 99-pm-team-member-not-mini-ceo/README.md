@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - career-habits
+  format: playbook
+  source: john-cutler
+---
+
 # Ten PM tips: you are a team member, not a mini-CEO
 
 ![Illustration](illustration.png)

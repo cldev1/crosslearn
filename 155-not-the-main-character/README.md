@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - discovery
+  format: principle
+  source: pavel-samsonov
+---
+
 # You are not the main character in the user’s life
 
 ![Illustration](illustration.png)

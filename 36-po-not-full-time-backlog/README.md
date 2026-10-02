@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - roadmaps-prioritization
+  format: anti-pattern
+  source: itamar-gilad
+---
+
 # Don’t split strategy from tactics; don’t make “PO” a full-time backlog job
 
 ![Illustration](illustration.png)

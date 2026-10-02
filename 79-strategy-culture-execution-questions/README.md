@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - leadership-org
+  format: playbook
+  source: shreyas-doshi
+---
+
 # Answer the Strategy / Culture / Execution questions you already know matter
 
 ![Illustration](illustration.png)

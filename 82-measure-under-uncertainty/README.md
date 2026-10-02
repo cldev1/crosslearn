@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+  format: principle
+  source: john-cutler
+---
+
 # Measurement is not a maturity stage; start under uncertainty
 
 ![Illustration](illustration.png)

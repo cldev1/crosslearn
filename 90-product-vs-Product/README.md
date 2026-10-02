@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - leadership-org
+  format: principle
+  source: shreyas-doshi
+---
+
 # Optimize for The Product, not only the product you were assigned
 
 ![Illustration](illustration.png)

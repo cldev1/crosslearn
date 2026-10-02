@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - discovery
+  format: principle
+  source: pavel-samsonov
+---
+
 # Fidelity of artifacts must never exceed fidelity of thinking
 
 ![Illustration](illustration.png)

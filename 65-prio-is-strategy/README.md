@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - strategy
+  format: principle
+  source: shreyas-doshi
+---
+
 # Prioritization problems are strategy problems
 
 ![Illustration](illustration.png)

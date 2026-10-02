@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - discovery
+  format: principle
+  source: pavel-samsonov
+---
+
 # Research ≠ asking what they want; observe first
 
 ![Illustration](illustration.png)

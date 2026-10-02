@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - delivery-execution
+  format: principle
+  source: john-cutler
+---
+
 # Hire sprints for learning, not as a delivery hamster wheel
 
 ![Illustration](illustration.png)

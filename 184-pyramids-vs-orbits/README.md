@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - leadership-org
+  format: framework
+  source: john-cutler
+---
+
 # Pyramids do not reflect product work; use orbits, graphs, and loops
 
 ![Illustration](illustration.png)

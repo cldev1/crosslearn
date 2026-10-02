@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: framework
+  source: gibson-biddle
+---
+
 # Apply DHM on both sides; don’t copy consumer playbooks into B2B
 
 ![Illustration](illustration.png)

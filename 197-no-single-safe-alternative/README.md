@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - leadership-org
+  format: anti-pattern
+  source: melissa-perri
+---
+
 # There is no single alternative to SAFe; a box diagram without context is snake oil
 
 ![Illustration](illustration.png)

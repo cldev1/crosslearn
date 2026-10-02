@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: anti-pattern
+  source: john-cutler
+---
+
 # New senior leaders miss glue people, hidden successes, and the log of what failed
 
 ![Illustration](illustration.png)

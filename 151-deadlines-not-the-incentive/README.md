@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - leadership-org
+  format: principle
+  source: janna-bastow
+---
+
 # Deadlines are not the incentive
 
 ![Illustration](illustration.png)

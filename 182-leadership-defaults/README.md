@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: framework
+  source: john-cutler
+---
+
 # Leadership defaults: awareness vs “universal” vs “optimal”
 
 ![Illustration](illustration.png)

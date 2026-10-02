@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - delivery-execution
+  format: principle
+  source: itamar-gilad
+---
+
 # If you only reward shipping, you punish the person who kills a bad idea
 
 ![Illustration](illustration.png)

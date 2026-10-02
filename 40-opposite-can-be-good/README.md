@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: principle
+  source: shreyas-doshi
+---
+
 # Unlearn school: the opposite of a good idea can also be good
 
 ![Illustration](illustration.png)

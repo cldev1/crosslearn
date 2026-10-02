@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+  format: principle
+  source: pavel-samsonov
+---
+
 # Metrics are not goals; pick the destination before the dashboard
 
 ![Illustration](illustration.png)

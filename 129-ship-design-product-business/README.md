@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - delivery-execution
+  format: framework
+  source: des-traynor
+---
+
 # Ship design vs product vs business; the market always wins
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - delivery-execution
+  format: anti-pattern
+  source: janna-bastow
+---
+
 # Timeline roadmaps create a vicious cycle of buffers and blame
 
 ![Illustration](illustration.png)

@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: principle
+  source: april-dunford
+---
+
 # Keep positioning loose at launch; tighten after the first wave
 
 ![Illustration](illustration.png)

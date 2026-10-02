@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: principle
+  source: april-dunford
+---
+
 # Position only against real alternatives, not the theoretical list
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - delivery-execution
+  format: framework
+  source: shreyas-doshi
+---
+
 # Impact ≈ (Execution ^ Strategy) × Market; hire execution-strong early
 
 ![Illustration](illustration.png)

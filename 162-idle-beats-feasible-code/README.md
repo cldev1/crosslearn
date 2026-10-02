@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - strategy
+  format: principle
+  source: pavel-samsonov
+---
+
 # Identify the problem first; sitting idle beats feasible code that does not ladder up
 
 ![Illustration](illustration.png)

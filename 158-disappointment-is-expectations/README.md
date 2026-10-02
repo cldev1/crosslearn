@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: principle
+  source: julie-zhuo
+---
+
 # Every disappointment is a failure to set expectations
 
 ![Illustration](illustration.png)

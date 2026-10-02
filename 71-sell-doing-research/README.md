@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - discovery
+    - leadership-org
+  format: principle
+  source: pavel-samsonov
+---
+
 # Sell doing research; UX is a power struggle
 
 ![Illustration](illustration.png)

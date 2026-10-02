@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - strategy
+  format: framework
+  source: lenny-rachitsky
+---
+
 # Build a roadmap in three phases (70/20/10)
 
 ![Illustration](illustration.png)

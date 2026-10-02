@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - discovery
+    - delivery-execution
+  format: playbook
+  source: teresa-torres
+---
+
 # Compare 3–4 solutions by testing assumptions, not by marrying idea #1
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - strategy
+  format: principle
+  source: john-cutler
+---
+
 # Simplicity is a tactic, not the goal
 
 ![Illustration](illustration.png)

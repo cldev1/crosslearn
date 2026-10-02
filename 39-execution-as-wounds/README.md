@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - strategy
+  format: anti-pattern
+  source: shreyas-doshi
+---
+
 # Treat execution failures as strategy, culture, or interpersonal wounds
 
 ![Illustration](illustration.png)

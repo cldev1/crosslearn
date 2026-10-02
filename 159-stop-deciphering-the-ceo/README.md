@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: principle
+  source: shreyas-doshi
+---
+
 # Stop deciphering the CEO; tell them what needs to be done
 
 ![Illustration](illustration.png)

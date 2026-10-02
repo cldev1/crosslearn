@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - leadership-org
+  format: anti-pattern
+  source: shreyas-doshi
+---
+
 # The Curse of Brilliance: do not copy the tactics the greats found hard
 
 ![Illustration](illustration.png)

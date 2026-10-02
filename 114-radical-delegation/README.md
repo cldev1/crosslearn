@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - career-habits
+  format: playbook
+  source: shreyas-doshi
+---
+
 # Radical Delegation: keep the singular impact, contract the rest
 
 ![Illustration](illustration.png)

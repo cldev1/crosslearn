@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - leadership-org
+  format: anti-pattern
+  source: itamar-gilad
+---
+
 # Feature factories disengage developers; product teams are expected to invent
 
 ![Illustration](illustration.png)

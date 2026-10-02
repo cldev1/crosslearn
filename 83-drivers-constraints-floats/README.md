@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - delivery-execution
+  format: framework
+  source: john-cutler
+---
+
 # Minimize drivers and constraints; increase floats
 
 ![Illustration](illustration.png)

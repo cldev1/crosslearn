@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: playbook
+  source: pavel-samsonov
+---
+
 # “Help ship the roadmap” is not a Definition of Good
 
 ![Illustration](illustration.png)

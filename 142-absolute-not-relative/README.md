@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - positioning
+    - strategy
+  format: principle
+  source: pavel-samsonov
+---
+
 # Absolute not relative: “makes it easier to X” is not a product
 
 ![Illustration](illustration.png)

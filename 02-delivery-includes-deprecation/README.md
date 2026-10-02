@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - delivery-execution
+  format: principle
+  source: cat-wu
+---
+
 # Delivery includes deprecation
 
 ![Illustration](illustration.png)

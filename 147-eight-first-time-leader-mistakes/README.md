@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: anti-pattern
+  source: melissa-perri
+---
+
 # Eight first-time product-leader mistakes
 
 ![Illustration](illustration.png)

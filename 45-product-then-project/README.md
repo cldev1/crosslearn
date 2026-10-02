@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - delivery-execution
+  format: principle
+  source: shreyas-doshi
+---
+
 # Product Thinking before Project Thinking, then iterate both
 
 ![Illustration](illustration.png)

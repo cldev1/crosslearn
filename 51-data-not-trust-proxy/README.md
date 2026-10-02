@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+    - leadership-org
+  format: principle
+  source: john-cutler
+---
+
 # Data is not a trust proxy; connect learning to a human-relatable mission
 
 ![Illustration](illustration.png)

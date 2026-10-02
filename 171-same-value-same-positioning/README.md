@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - positioning
+    - strategy
+  format: principle
+  source: april-dunford
+---
+
 # Same value across segments is the same positioning; different value is two products
 
 ![Illustration](illustration.png)

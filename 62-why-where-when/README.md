@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - delivery-execution
+  format: framework
+  source: pavel-samsonov
+---
+
 # Don’t skip WHY / WHERE / WHEN
 
 ![Illustration](illustration.png)

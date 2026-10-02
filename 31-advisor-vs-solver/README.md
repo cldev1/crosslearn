@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: framework
+  source: julie-zhuo
+---
+
 # Match advisor vs solver to the relationship, not your habit
 
 ![Illustration](illustration.png)

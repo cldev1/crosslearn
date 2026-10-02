@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: framework
+  source: lenny-rachitsky
+---
+
 # Strategy sits between vision and goals
 
 ![Illustration](illustration.png)

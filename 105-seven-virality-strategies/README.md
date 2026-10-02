@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - discovery
+  format: framework
+  source: lenny-rachitsky
+---
+
 # Seven ways to increase virality — after you check the product is suited
 
 ![Illustration](illustration.png)

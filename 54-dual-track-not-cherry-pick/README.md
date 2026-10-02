@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - discovery
+  format: anti-pattern
+  source: pawel-huryn
+---
+
 # Lean Startup, Agile, and Discovery fail when cherry-picked; combine as dual-track
 
 ![Illustration](illustration.png)

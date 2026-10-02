@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - strategy
+  format: principle
+  source: shreyas-doshi
+---
+
 # Good PMs deliver; great PMs change trajectory
 
 ![Illustration](illustration.png)

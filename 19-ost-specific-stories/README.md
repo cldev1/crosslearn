@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - discovery
+  format: framework
+  source: teresa-torres
+---
+
 # Opportunity mapping fails until opportunities are specific and story-sourced
 
 ![Illustration](illustration.png)

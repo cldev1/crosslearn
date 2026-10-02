@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: playbook
+  source: april-dunford
+---
+
 # Product walkthroughs suck when they are feature tours; five moves
 
 ![Illustration](illustration.png)

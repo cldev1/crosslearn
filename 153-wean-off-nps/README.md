@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+  format: playbook
+  source: john-cutler
+---
+
 # Wean the company off NPS by naming the leading levers
 
 ![Illustration](illustration.png)

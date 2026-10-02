@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: framework
+  source: melissa-perri
+---
+
 # Ask whether you are transforming or streamlining; they are different products
 
 ![Illustration](illustration.png)

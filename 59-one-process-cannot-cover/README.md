@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - delivery-execution
+  format: framework
+  source: john-cutler
+---
+
 # One process cannot cover 15+ shapes of work
 
 ![Illustration](illustration.png)

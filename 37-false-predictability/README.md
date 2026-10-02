@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - delivery-execution
+  format: anti-pattern
+  source: itamar-gilad
+---
+
 # Refuse the contract of false predictability
 
 ![Illustration](illustration.png)

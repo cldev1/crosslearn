@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: anti-pattern
+  source: john-cutler
+---
+
 # Presentation culture hides the fallacies writing would surface
 
 ![Illustration](illustration.png)

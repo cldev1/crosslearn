@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - strategy
+  format: anti-pattern
+  source: john-cutler
+---
+
 # Roadmaps never stand alone; feature lists force premature convergence
 
 ![Illustration](illustration.png)

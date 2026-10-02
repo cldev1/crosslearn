@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - metrics-analytics
+  format: framework
+  source: shreyas-doshi
+---
+
 # Good product strategy names segments, trade-offs, and leading indicators
 
 ![Illustration](illustration.png)

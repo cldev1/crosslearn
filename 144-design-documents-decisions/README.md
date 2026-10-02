@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - discovery
+  format: principle
+  source: pavel-samsonov
+---
+
 # A design is documentation of decisions for a known purpose
 
 ![Illustration](illustration.png)

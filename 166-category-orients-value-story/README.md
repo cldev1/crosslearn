@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: framework
+  source: april-dunford
+---
+
 # Market category orients; the differentiated-value story answers “why pick us”
 
 ![Illustration](illustration.png)

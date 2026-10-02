@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - delivery-execution
+  format: playbook
+  source: john-cutler
+---
+
 # Ten signals of a healthier product team
 
 ![Illustration](illustration.png)

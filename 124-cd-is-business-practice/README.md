@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - delivery-execution
+  format: principle
+  source: janna-bastow
+---
+
 # Continuous deployment is a business practice, not a tech brag
 
 ![Illustration](illustration.png)

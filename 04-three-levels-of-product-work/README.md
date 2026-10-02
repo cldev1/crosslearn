@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - delivery-execution
+  format: framework
+  source: shreyas-doshi
+---
+
 # Name the level before you argue the ticket
 
 ![Illustration](illustration.png)

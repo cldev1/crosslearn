@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - discovery
+    - delivery-execution
+  format: principle
+  source: pavel-samsonov
+---
+
 # UX is not the screen; enterprise users are developers
 
 ![Illustration](illustration.png)

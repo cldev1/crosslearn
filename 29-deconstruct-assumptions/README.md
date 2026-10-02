@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - discovery
+    - delivery-execution
+  format: playbook
+  source: teresa-torres
+---
+
 # Deconstruct every idea into hidden assumptions (even in a feature factory)
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - delivery-execution
+  format: anti-pattern
+  source: john-cutler
+---
+
 # Reactivity is a missing foundation, not a missing big plan
 
 ![Illustration](illustration.png)

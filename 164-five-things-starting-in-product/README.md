@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - leadership-org
+  format: playbook
+  source: melissa-perri
+---
+
 # Five things starting in product: ideas, ego, business+customer, delegate, trio speed
 
 ![Illustration](illustration.png)

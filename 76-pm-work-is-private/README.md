@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - career-habits
+  format: anti-pattern
+  source: john-cutler
+---
+
 # Eng/design shade at PM because too much PM work is private
 
 ![Illustration](illustration.png)

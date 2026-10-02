@@ -1,0 +1,7 @@
+# Build and scratch artifacts
+_catalog-skim.csv
+_ag-content-filters/*.log
+_ag-content-filters/lessons_dump.txt
+_ag-content-filters/__pycache__/
+__pycache__/
+*.pyc

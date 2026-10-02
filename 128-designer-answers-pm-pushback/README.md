@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - delivery-execution
+  format: framework
+  source: julie-zhuo
+---
+
 # How designers can answer the four PM pushbacks
 
 ![Illustration](illustration.png)

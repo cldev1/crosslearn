@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - positioning
+    - strategy
+  format: framework
+  source: april-dunford
+---
+
 # Vision, strategy, and positioning are different time horizons
 
 ![Illustration](illustration.png)

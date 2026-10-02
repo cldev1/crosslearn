@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - discovery
+  format: anti-pattern
+  source: pavel-samsonov
+---
+
 # Iteration without “we might be wrong” becomes a linear roadmap
 
 ![Illustration](illustration.png)

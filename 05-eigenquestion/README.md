@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: principle
+  source: shreyas-doshi
+---
+
 # Find the eigenquestion before the options
 
 ![Illustration](illustration.png)

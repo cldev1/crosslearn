@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - leadership-org
+  format: playbook
+  source: pavel-samsonov
+---
+
 # Capture inputs, size effort to value, decide, document, propagate
 
 ![Illustration](illustration.png)

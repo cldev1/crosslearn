@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - leadership-org
+  format: playbook
+  source: john-cutler
+---
+
 # Working with developers: they maintain the turd; five-minute questions take a morning
 
 ![Illustration](illustration.png)

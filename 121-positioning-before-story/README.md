@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: principle
+  source: april-dunford
+---
+
 # Positioning before storytelling: don’t write fiction that sings
 
 ![Illustration](illustration.png)

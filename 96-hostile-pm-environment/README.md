@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: anti-pattern
+  source: john-cutler
+---
+
 # “Impossible to find qualified PMs” often means a hostile environment
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - leadership-org
+  format: playbook
+  source: shreyas-doshi
+---
+
 # Start-with-Principles (Stripe): debate principles before solutions
 
 ![Illustration](illustration.png)

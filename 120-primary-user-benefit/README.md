@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - positioning
+  format: framework
+  source: pavel-samsonov
+---
+
 # Name the primary user benefit; tautologies are not strategy
 
 ![Illustration](illustration.png)

@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - delivery-execution
+  format: principle
+  source: john-cutler
+---
+
 # “Go faster” is define value, do less, and make safety a prerequisite
 
 ![Illustration](illustration.png)

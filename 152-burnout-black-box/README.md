@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - leadership-org
+  format: anti-pattern
+  source: john-cutler
+---
+
 # Burnout and “low quality” are downstream of the black box
 
 ![Illustration](illustration.png)

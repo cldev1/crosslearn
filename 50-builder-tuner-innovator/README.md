@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - career-habits
+  format: framework
+  source: shreyas-doshi
+---
+
 # Name the PM type in the job: Builder, Tuner, or Innovator
 
 ![Illustration](illustration.png)

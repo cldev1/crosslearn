@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: principle
+  source: april-dunford
+---
+
 # Positioning matters more for considered purchases; no-decision is the low-risk default
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - discovery
+    - leadership-org
+  format: framework
+  source: pavel-samsonov
+---
+
 # Stakeholder momentum lags the double diamond
 
 ![Illustration](illustration.png)

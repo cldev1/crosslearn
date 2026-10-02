@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - delivery-execution
+  format: playbook
+  source: john-cutler
+---
+
 # Smuggle outcome language in; don’t wait for permission
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+    - discovery
+  format: principle
+  source: teresa-torres
+---
+
 # Most A/B tests do nothing; swing for the fence, don’t treat α as FPR
 
 ![Illustration](illustration.png)

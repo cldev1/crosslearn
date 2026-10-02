@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - discovery
+  format: principle
+  source: pavel-samsonov
+---
+
 # The artifact is the conversation; it is done when acted upon
 
 ![Illustration](illustration.png)

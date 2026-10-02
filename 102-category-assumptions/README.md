@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: principle
+  source: april-dunford
+---
+
 # Your market category fires a chain of assumptions; pick the one that centers your strengths
 
 ![Illustration](illustration.png)

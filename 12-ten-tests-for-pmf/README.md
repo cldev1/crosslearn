@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: playbook
+  source: lenny-rachitsky
+---
+
 # Ten tests for product/market fit
 
 ![Illustration](illustration.png)

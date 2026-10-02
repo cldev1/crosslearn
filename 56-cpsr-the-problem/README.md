@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - discovery
+    - strategy
+  format: framework
+  source: shreyas-doshi
+---
+
 # Customers will endorse a problem; stack-rank to find the problem (CPSR)
 
 ![Illustration](illustration.png)

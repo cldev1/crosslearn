@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: principle
+  source: april-dunford
+---
+
 # B2B’s grandaddy emotion is fear; no-decision is a vote against a bad choice
 
 ![Illustration](illustration.png)

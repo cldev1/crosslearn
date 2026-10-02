@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - discovery
+    - delivery-execution
+  format: playbook
+  source: pavel-samsonov
+---
+
 # Storyboards, not hi-fi mockups: discuss the desired experience, not the button
 
 ![Illustration](illustration.png)

@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: anti-pattern
+  source: melissa-perri
+---
+
 # Renaming PMs solves the week and hurts hiring; standardize titles
 
 ![Illustration](illustration.png)

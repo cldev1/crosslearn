@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - delivery-execution
+  format: anti-pattern
+  source: pavel-samsonov
+---
+
 # Product methods fail when outputs are demanded without inputs
 
 ![Illustration](illustration.png)

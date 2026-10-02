@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - roadmaps-prioritization
+  format: anti-pattern
+  source: scrum-org
+---
+
 # PO is not a backlog secretary
 
 ![Illustration](illustration.png)

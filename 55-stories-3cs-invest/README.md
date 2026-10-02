@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - delivery-execution
+  format: framework
+  source: pawel-huryn
+---
+
 # User stories are Card, Conversation, Confirmation + INVEST — not requirement containers
 
 ![Illustration](illustration.png)

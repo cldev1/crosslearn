@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+  format: anti-pattern
+  source: pavel-samsonov
+---
+
 # Metrics-from-guessing-the-build is backwards
 
 ![Illustration](illustration.png)

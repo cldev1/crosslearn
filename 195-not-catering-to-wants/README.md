@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - discovery
+    - strategy
+  format: framework
+  source: pavel-samsonov
+---
+
 # Good design is not catering to wants; three ways to build
 
 ![Illustration](illustration.png)

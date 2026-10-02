@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - career-habits
+  format: principle
+  source: shreyas-doshi
+---
+
 # Discard “the one right way”; context beats dogma
 
 ![Illustration](illustration.png)

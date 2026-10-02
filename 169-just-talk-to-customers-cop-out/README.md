@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - positioning
+    - discovery
+  format: anti-pattern
+  source: april-dunford
+---
+
 # “Just talk to customers” is a cop-out
 
 ![Illustration](illustration.png)

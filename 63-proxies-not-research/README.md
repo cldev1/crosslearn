@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - discovery
+  format: anti-pattern
+  source: pavel-samsonov
+---
+
 # Sales/CS are user proxies, not research
 
 ![Illustration](illustration.png)

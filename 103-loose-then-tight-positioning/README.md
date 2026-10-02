@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - positioning
+  format: principle
+  source: april-dunford
+---
+
 # Keep positioning loose until patterns appear, then tighten to an actionable segment
 
 ![Illustration](illustration.png)

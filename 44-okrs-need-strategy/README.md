@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - metrics-analytics
+  format: anti-pattern
+  source: john-cutler
+---
+
 # OKRs are easy only when strategy exists; they fail as “the thing”
 
 ![Illustration](illustration.png)

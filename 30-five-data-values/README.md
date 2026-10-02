@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+  format: framework
+  source: julie-zhuo
+---
+
 # Internalize five values, not a dashboard, to be data-informed
 
 ![Illustration](illustration.png)

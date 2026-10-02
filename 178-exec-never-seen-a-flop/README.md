@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: anti-pattern
+  source: john-cutler
+---
+
 # An exec who has never seen a flop was never invited into the process
 
 ![Illustration](illustration.png)

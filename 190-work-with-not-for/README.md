@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - delivery-execution
+  format: principle
+  source: pavel-samsonov
+---
+
 # Working with a function is not working for their requirements
 
 ![Illustration](illustration.png)

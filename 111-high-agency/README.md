@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - career-habits
+  format: principle
+  source: shreyas-doshi
+---
+
 # High Agency: find a way, or reverse the conditions
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - discovery
+  format: playbook
+  source: julie-zhuo
+---
+
 # Answer designer pushback in the language of users, not PM shorthand
 
 ![Illustration](illustration.png)

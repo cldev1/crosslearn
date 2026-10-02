@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - strategy
+  format: framework
+  source: shreyas-doshi
+---
+
 # Don’t mix Explore with Extract
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+    - delivery-execution
+  format: framework
+  source: shreyas-doshi
+---
+
 # Team diagnosis: Inputs, Execution, Outputs, then Outcomes
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - career-habits
+    - discovery
+  format: principle
+  source: julie-zhuo
+---
+
 # Product intuition is a calendar habit, not a talent
 
 ![Illustration](illustration.png)

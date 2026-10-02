@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+    - strategy
+  format: framework
+  source: john-cutler
+---
+
 # Beat the messy middle: stable 12–24 month inputs, not goal cascades
 
 ![Illustration](illustration.png)

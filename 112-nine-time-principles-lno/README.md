@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - career-habits
+  format: framework
+  source: shreyas-doshi
+---
+
 # Nine time principles: scope kills brute force; LNO the rest
 
 ![Illustration](illustration.png)

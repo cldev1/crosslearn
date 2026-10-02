@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - positioning
+    - strategy
+  format: framework
+  source: april-dunford
+---
+
 # Company positioning equals product positioning — until you choose cascade, suite, or lead product
 
 ![Illustration](illustration.png)

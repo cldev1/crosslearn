@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - leadership-org
+  format: anti-pattern
+  source: shreyas-doshi
+---
+
 # Most “Execution problems” are Strategy, Interpersonal, or Culture
 
 ![Illustration](illustration.png)

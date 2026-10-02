@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - metrics-analytics
+  format: principle
+  source: teresa-torres
+---
+
 # OKRs are a format; the work is choosing the right outcome
 
 ![Illustration](illustration.png)

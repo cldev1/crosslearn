@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - delivery-execution
+    - strategy
+  format: framework
+  source: john-cutler
+---
+
 # Don’t start with role/process fixes; map 15+ shapes of work first
 
 ![Illustration](illustration.png)

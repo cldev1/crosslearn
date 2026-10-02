@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - leadership-org
+  format: framework
+  source: gibson-biddle
+---
+
 # Results = Strategy + Initiative + Leadership
 
 ![Illustration](illustration.png)

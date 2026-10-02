@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - delivery-execution
+  format: principle
+  source: gibson-biddle
+---
+
 # Fund the invisible work that makes the product “just work”
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - leadership-org
+    - delivery-execution
+  format: anti-pattern
+  source: pavel-samsonov
+---
+
 # Hero culture is brittle; spare capacity is resilience
 
 ![Illustration](illustration.png)

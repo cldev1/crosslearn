@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - roadmaps-prioritization
+    - strategy
+  format: framework
+  source: adam-nash
+---
+
 # Don’t rank all ideas on one formula: three buckets
 
 ![Illustration](illustration.png)

@@ -1,3 +1,12 @@
+---
+filters:
+  topic:
+    - strategy
+    - delivery-execution
+  format: principle
+  source: melissa-perri
+---
+
 # Product thinking is the shape of the solution, not only the process
 
 ![Illustration](illustration.png)

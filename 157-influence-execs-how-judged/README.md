@@ -1,3 +1,11 @@
+---
+filters:
+  topic:
+    - leadership-org
+  format: principle
+  source: melissa-perri
+---
+
 # Influence executives by how they are judged
 
 ![Illustration](illustration.png)
