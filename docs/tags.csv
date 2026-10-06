@@ -263,3 +263,7 @@ slug,title,source_author,source_slug,format,topics,file_type
 263-pm-craft-is-decision-making,PM craft is decision-making,Ryan Stein (@rmstein) via Lenny Rachitsky (@lennysan),ryan-stein,principle,career-habits;strategy,html
 264-ask-when-confused,Ask when confused — others are too,Molly Graham (@molly_g),molly-graham,principle,career-habits;leadership-org,html
 265-friction-is-sometimes-the-learning,Friction is sometimes the learning,Molly Graham (@molly_g),molly-graham,principle,career-habits;discovery,html
+271-trust-is-a-battery,"Trust isn't binary, it's a battery",Molly Graham (@molly_g),molly-graham,framework,leadership-org,html
+272-good-at-product-vs-good-at-winning,Good at product is not the same as good at winning,Shreyas Doshi (@shreyas),shreyas-doshi,anti-pattern,positioning;career-habits,html
+273-build-for-10x-models-and-agent-users,"Build as if models will be 10x better, and agents will be your users","Lenny Rachitsky (@lennysan), takeaways from Thibault Sottiaux",lenny-rachitsky,framework,ai-product;strategy,html
+274-open-up-closed-product-questions,"Ask better product questions: open, add, rank",George Nurijanian (@nurijanian),george-nurijanian,playbook,discovery,html
