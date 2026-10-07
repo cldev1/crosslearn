@@ -267,3 +267,7 @@ slug,title,source_author,source_slug,format,topics,file_type
 272-good-at-product-vs-good-at-winning,Good at product is not the same as good at winning,Shreyas Doshi (@shreyas),shreyas-doshi,anti-pattern,positioning;career-habits,html
 273-build-for-10x-models-and-agent-users,"Build as if models will be 10x better, and agents will be your users","Lenny Rachitsky (@lennysan), takeaways from Thibault Sottiaux",lenny-rachitsky,framework,ai-product;strategy,html
 274-open-up-closed-product-questions,"Ask better product questions: open, add, rank",George Nurijanian (@nurijanian),george-nurijanian,playbook,discovery,html
+275-measure-the-immeasurable,Anything you care about can be measured: break it down first,"George Nurijanian (@nurijanian), drawing on Douglas Hubbard's How to Measure Anything",george-nurijanian,playbook,metrics-analytics,html
+276-size-bets-with-ranges,"Unstick prioritization with sized ranges, not guesses",George Nurijanian (@nurijanian),george-nurijanian,playbook,roadmaps-prioritization,html
+277-memory-is-not-a-recording,"Your memory is not a recording, so give people permission to evolve","Teresa Torres (@ttorres) and Petra Wille, “Recorded Conversations” podcast episode",teresa-torres,principle,leadership-org,html
+278-ai-simulations-to-pretest-ideas,"Use AI simulations to pre-test ideas, then confirm with real users",Lenny Rachitsky (@lennysan),lenny-rachitsky,principle,discovery;ai-product,html
