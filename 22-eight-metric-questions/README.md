@@ -30,3 +30,7 @@ Unquestioned KRs produce Goodhart games, unmemorable dashboards, and work that d
 ## Practice this week
 
 Run the 8 questions on this half’s primary metric in a 45-minute trio meeting; add one counter-metric and a “ship nothing” forecast.
+
+## Also from
+
+- **Shreyas Doshi (@shreyas)**, [original post](https://x.com/shreyas/status/1412942226150232064) (merged from lesson 100): Measure the proxy; do not manage it. Write the pairs: metrics – mission; on-time launch – team execution; MAU – user appeal; DAU:MAU – user value; NPS – customer satisfaction; MoM growth – sustainable traction; launches – impact. Turning a proxy into the goal is where “what gets measured gets managed” goes wrong.

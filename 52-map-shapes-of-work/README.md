@@ -31,3 +31,7 @@ POs get pulled into RACI debates that do not change the work. Mapping shapes fir
 ## Practice this week
 
 In a 45-minute team session, blurt last six months of work onto a Size × Complexity grid, cluster into shapes, and write one current-state working agreement for the two most common shapes.
+
+## Also from
+
+- **John Cutler (@johncutlefish)**, [original post](https://x.com/johncutlefish/status/1176199019602698240) (merged from lesson 59): The handoff smell: if engineering “delivers,” design is “ready for eng,” and product says “design this,” you are already designing handoffs. First confirm you are a cross-functional product team (not a delivery or feature team) that can tweak its own approach, then revisit process. Understaffed design often drives the “process” question, and sprints are enabling constraints, not Tetris.

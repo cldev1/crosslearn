@@ -161,6 +161,14 @@ body.lesson ol {
 
 body.lesson ol li { margin: 0 0 8px; }
 
+body.lesson ul.also-from {
+  padding-left: 1.25em;
+  margin: 0 0 12px;
+  line-height: 1.55;
+}
+
+body.lesson ul.also-from li { margin: 0 0 8px; color: var(--text); }
+
 body.lesson a { color: var(--accent); }
 
 /* ---------- Study canvas ---------- */

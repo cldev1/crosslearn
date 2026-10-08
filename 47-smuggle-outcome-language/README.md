@@ -31,3 +31,7 @@ Change language in place. Reliability is a prerequisite for outcome work.
 ## Practice this week
 
 Rewrite touched items as Trying to [outcome] by [intervention]; add Measurement; 30-min review including a miss.
+
+## Also from
+
+- **John Cutler (@johncutlefish)**, [original post](https://x.com/johncutlefish/status/1070500483087781888) (merged from lesson 119): The word list: say mission instead of project; attach “bet” even to prescriptive work; use opportunity vs intervention instead of problem vs solution; deliver capabilities, not features. Rename the board’s Done column to Adoption or Measuring, and phrase work as “we’re trying X to see if it impacts Y, which we believe impacts Z.”

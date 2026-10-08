@@ -31,3 +31,7 @@ Backlogs often start at Task (“arrive at the casino”) with no shared Mission
 ## Practice this week
 
 One page, six lines, for the current PI: Mission, Vision, Strategy (including the “shared vault” constraint), Goal (a number), Roadmap (five enabling moves), Task (this sprint’s first concrete action). If a backlog item does not serve a line, cut or recategorize it.
+
+## Also from
+
+- **Lenny Rachitsky (@lennysan)**, [original post](https://x.com/lennysan/status/1303356480842682368) (merged from lesson 11): Strategy is the “how we will win” layer between vision and goals. If you cannot say how you will win, the roadmap is just a backlog. Goals measure the strategy; they are not the strategy. Write the strategy as a document people can argue with, not a slide.

@@ -19,7 +19,7 @@ A good demo call does a lot more than demo the product — it is the chance to p
 
 ## Why it matters for a PO
 
-A PO who “just walks the sprint increment” is running problem 1+3: no alternative-context, a new-user feature flow. Distinct from already-used walkthrough 156064 (five moves including proof and next-step): here the operational failures are no context, prospect drives, features not themes. A PO who will script the first five minutes as “problem / why other approaches fall short / the gap we fill,” then demo value themes instead of the login path, is positioning in the room — not handing the click-path to the loudest stakeholder.
+A PO who “just walks the sprint increment” is running problem 1+3: no alternative-context, a new-user feature flow. The operational failures are no context, prospect drives, features not themes. A PO who will script the first five minutes as “problem / why other approaches fall short / the gap we fill,” then demo value themes instead of the login path, is positioning in the room — not handing the click-path to the loudest stakeholder.
 
 ## 3 takeaways
 
@@ -30,3 +30,7 @@ A PO who “just walks the sprint increment” is running problem 1+3: no altern
 ## Practice this week
 
 Before the next stakeholder or customer demo, write three lines: (a) the problem, (b) why two alternatives fall short, (c) the value theme you will show first. Cut the new-user / login path. Do not let the first question from the room rewrite the script into a weakness tour.
+
+## Also from
+
+- **April Dunford (@aprildunford)**, [original post](https://x.com/aprildunford/status/1560640569801461761) (merged from lesson 168): The buyer’s one big question in the first meeting is “why you over the alternatives?” Cut the login and setup tour, and do not settle for vague value (“saves time”: how much, and how differently from competitors?). Two moves to add: put proof (stats, references, quotes) next to the differentiated value, and end with an agreed next step (a broader meeting, a POC, or a quote) instead of “any questions?”

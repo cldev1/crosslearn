@@ -112,6 +112,28 @@ filters:
 > LearnFeed's ingest script checks `existsSync(readmePath) ? readFileSync(...) : html ? ...`.
 > Adding a metadata-only `README.md` to an HTML lesson folder would shadow `index.html` and drop the lesson body. Therefore, metadata is stored directly inside `index.html`.
 
+### C. Retired lessons (redirect stubs)
+
+When overlapping lessons are merged, the retired lesson keeps its numbered folder so old URLs still work, but the folder holds only `index.html` (no `README.md`) and `illustration.png`. The page is a dark meta-refresh redirect with a canonical link and a visible link to the keep lesson. Its filters block keeps the original topic/format/source (so ingest does not crash) and adds two keys:
+
+```html
+<!--
+filters:
+  topic:
+    - strategy
+  format: framework
+  source: lenny-rachitsky
+  retired: true
+  redirect_to: 125-oceans-11-cascade
+-->
+<!DOCTYPE html>
+...
+<meta name="crosslearn-retired" content="125-oceans-11-cascade"/>
+<meta http-equiv="refresh" content="0; url=../125-oceans-11-cascade/"/>
+```
+
+Rules: retired stubs are removed from the library cards and from the `README.md` index, the live count excludes them, folder numbers are never reused, and `apply_filters.py` leaves them alone. `validate_tags.py` checks that each stub has no `README.md`, points at an existing, non-retired lesson, and carries the refresh and canonical link. Downstream consumers (LearnFeed ingest) should skip any lesson whose filters have `retired: true`.
+
 ---
 
 ## 3. Rationale for Omitted Dimensions

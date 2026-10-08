@@ -30,3 +30,7 @@ Feature-list roadmaps train sales to recite capabilities. A PO who can say “pi
 ## Practice this week
 
 Write one sentence: “If you want A, pick [competitor]; if you want B, pick us.” Share with the trio. Cut or park one backlog item that only serves A.
+
+## Also from
+
+- **April Dunford (@aprildunford)**, [original post](https://x.com/aprildunford/status/1349820125998948352) (merged from lesson 173): You know it is the right story when it helps first-time buyers choose their criteria and build a shortlist. Comparison sites only label leaders and challengers, market insight is scarce, and about 4 in 10 purchases end in “no decision.” Drop the “customer has a problem, we are the hero” movie script; tell your point of view on which customer types should pick which approach, without bashing competitors.

@@ -30,3 +30,7 @@ Missed promos, underwhelming reviews, and slipped-date rage look like performanc
 ## Practice this week
 
 For the next review or launch, write “good looks like” in one line with the trio, and publish a three-column tracker (owner / status / confidence) for the workstreams that must complete. Do it before the meeting that would otherwise produce disappointment.
+
+## Also from
+
+- **Molly Graham (@molly_g)**, [original post](https://x.com/molly_g/status/2106052539690979395) (merged from lesson 267): Before deciding someone is not good enough, ask them what they think their job is and what success looks like. If their answer differs from yours, that is a briefing failure to fix, not a verdict on the person.

@@ -2,6 +2,7 @@
 filters:
   topic:
     - metrics-analytics
+    - roadmaps-prioritization
   format: principle
   source: teresa-torres
 ---
@@ -30,3 +31,7 @@ Sprint commitments on features hide whether anyone’s behavior changed. Product
 ## Practice this week
 
 Rewrite this quarter’s top KR as a product outcome (% of users who do behavior Z weekly). If you cannot name the behavior, the KR is still an output.
+
+## Also from
+
+- **Pavel A. Samsonov (@PavelASamsonov)**, [original post](https://x.com/PavelASamsonov/status/1569366431975804928) (merged from lesson 134): Output-first planning makes the present clearer than the future (Q1 stories, Q4 feature fog). Outcome-first planning makes the future clearer than the present (Q4 goals are set; Q1 is spent finding paths). The outcome plan looks vaguer but is more agile, because nothing ties the team to the next feature set after the first release. The usual gap is leaders not committing to an explicit strategy, not teams failing to write OKRs. Frame the north star as “today users have to X, now they can Y, and this is why it matters for the business,” and share goals with sister teams instead of trading roadmap slots.

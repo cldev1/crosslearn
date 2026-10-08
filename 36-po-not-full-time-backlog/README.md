@@ -31,3 +31,7 @@ If the week is tickets and standups, you are in the split that fails. PO is a Sc
 ## Practice this week
 
 Delegate story drafting for one sprint; use the hours for problem framing.
+
+## Also from
+
+- **Scrum.org (@Scrumdotorg)**, [original post](https://x.com/Scrumdotorg/status/2094576068724158861) (merged from lesson 8): How a candidate defines the product role reveals the operating model they came from, not their skill. Missing problem framing, solution choice, and viability together is the tell, and the funding model is what trains that behaviour.

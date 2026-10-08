@@ -32,6 +32,12 @@ for slug, data in sorted(tags.items(), key=lambda x: int(x[0].split('-')[0])):
     yaml_lines.append(f"  source: {source}")
     yaml_body = "\n".join(yaml_lines)
 
+    # Retired lessons are redirect stubs; leave their filters (retired/redirect_to) alone.
+    if not has_readme and has_html:
+        with open(html_path, 'r', encoding='utf-8') as f:
+            if 'name="crosslearn-retired"' in f.read():
+                continue
+
     if has_readme:
         with open(readme_path, 'r', encoding='utf-8') as f:
             content = f.read()

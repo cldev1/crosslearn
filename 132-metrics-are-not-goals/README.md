@@ -30,3 +30,7 @@ Dashboards, Jira columns, and “the metric the tool reports” quietly become t
 ## Practice this week
 
 For one in-flight epic, write the goal as a state of the world in one sentence *without* a metric. Then list the current metric/tool. If the metric would still look “green” while that state failed, replace the metric or park the epic until the destination is agreed.
+
+## Also from
+
+- **Pavel A. Samsonov (@PavelASamsonov)**, [original post](https://x.com/PavelASamsonov/status/1594817299202154509) (merged from lesson 154): Watch for metrics back-solved from a build executives already chose (“guess why execs told us to build this”). Management sets the target and owns the hypothesis “if we achieve X, it is good because…”; the team finds the path and tests levers without needing approval for each experiment. Ask: are the metrics informing decisions, or are decisions setting the metrics?

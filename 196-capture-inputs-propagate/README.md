@@ -20,7 +20,7 @@ On design tools, the wish is one that captures the full design process: finding 
 
 ## Why it matters for a PO
 
-A sprint that starts at the mockup is skipping inputs and sizing, then shipping a picture that looks like design. Distinct from keeper 175 (methods out of order) and keeper 189 (thinking 🔁 documenting as one cadence): here the PO-usable list is five moves — inputs, size-to-value, decide, document, propagate the mental model. A PO who will not accept “pixel up X,” who will size the design week to expected value, and who will spend a working block helping the trio think the decision (not only review the Figma) is running the scaffolding. Without it, design is only allowed to solve design problems.
+A sprint that starts at the mockup is skipping inputs and sizing, then shipping a picture that looks like design. The PO-usable list is five moves — inputs, size-to-value, decide, document, propagate the mental model. A PO who will not accept “pixel up X,” who will size the design week to expected value, and who will spend a working block helping the trio think the decision (not only review the Figma) is running the scaffolding. Without it, design is only allowed to solve design problems.
 
 ## 3 takeaways
 
@@ -31,3 +31,7 @@ A sprint that starts at the mockup is skipping inputs and sizing, then shipping 
 ## Practice this week
 
 For one in-flight mockup, fill the five lines (inputs / size-to-value / decision / document / who has the mental model). If inputs are “pixel up X” or sizing is “whatever the sprint holds,” stop drawing. Do not add a review meeting that only comments on pixels.
+
+## Also from
+
+- **Pavel A. Samsonov (@PavelASamsonov)**, [original post](https://x.com/PavelASamsonov/status/1534698419377291266) (merged from lesson 175): Methods collapse when they run out of order. The order: identify the problem → define how we will know it is solved → form a hypothesis → design the experiment → synthesize and iterate. Designing with no definition of good is futile, metrics set after the product is defined cannot steer it, and OKRs, stories, or prototypes ordered as deliverables are garnish when the decision is already made.

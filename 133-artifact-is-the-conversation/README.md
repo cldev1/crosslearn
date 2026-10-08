@@ -31,3 +31,8 @@ Backlog items, PRDs, and PI boards are artifacts. Starting from “we need a sto
 ## Practice this week
 
 Before writing the next story, write one line: the conversation this artifact must produce, and who must act. After refinement, check whether anyone acted. If not, the story is not done — change the format or have the conversation, do not add acceptance criteria.
+
+## Also from
+
+- **Pavel A. Samsonov (@PavelASamsonov)**, [original post](https://x.com/PavelASamsonov/status/1607788796497612803) (merged from lesson 144): A design is documentation of decisions for a known purpose; Figma documents decisions, it does not make them. Fidelity follows the loop: wireframes for team critique, low fidelity for research, the provenance of each decision for a stakeholder demo, and high fidelity only for delivery to people who will not be in the room. Bring downstream decision-makers in early instead of handing off.
+- **Pavel A. Samsonov (@PavelASamsonov)**, [original post](https://x.com/PavelASamsonov/status/1594051373208936450) (merged from lesson 189): Deciding and documenting are one cadence (decision-making 🔁 decision documenting). “Design thinking” with no artifact and “pixeling” with no decision are each half of it; the thinking is the doing. Without the loop you get “pixel it up better” and end up solving design problems instead of user problems.

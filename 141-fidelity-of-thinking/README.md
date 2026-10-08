@@ -31,3 +31,7 @@ Hi-fi mockups, pixel-perfect tickets, and “ready for sprint” labels are ofte
 ## Practice this week
 
 Pick one “ready” story with a hi-fi mock or dense AC. Write the thinking it documents in three bullets. If any bullet is still a premise the decider has not agreed, drop the fidelity (sketch / question) and book that conversation before refinement.
+
+## Also from
+
+- **Pavel A. Samsonov (@PavelASamsonov)**, [original post](https://x.com/PavelASamsonov/status/1125874039841599490) (merged from lesson 81): North-star artifacts are conversation catalysts. Leave them about 30% done and ask for 30%-done feedback; agreeing to implement the north star as-is is big design up front. Without any vision you hill-climb to a local maximum.

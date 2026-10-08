@@ -31,3 +31,7 @@ Laundry-list “strategy” is a prayer. This checklist is a reason to slow the 
 ## Practice this week
 
 Score the current strategy on five of these items; share the scorecard, not a rewrite.
+
+## Also from
+
+- **Shreyas Doshi (@shreyas)**, [original post](https://x.com/shreyas/status/1384008853004578822) (merged from lesson 67): For B2B, the short form is target segments, differentiation, and how you reach them. Extra tests: a Porter generic strategy, capabilities you can visualize, Helmer’s Powers (now and new), credible execution, a non-obvious insight rather than “be the best,” and uniqueness (Roger Martin). Run Amazon’s five questions at the feature level. Roadmaps, OKRs, visions, and plans are not strategy, even with “Strategic” in the title.

@@ -30,3 +30,7 @@ A backlog of “make discovery better” is untestable. Specific opportunities o
 ## Practice this week
 
 This week, take one vague opportunity on the tree, interview 3 users about the last time it happened, and rewrite it as a one-sentence specific opportunity.
+
+## Also from
+
+- **George Nurijanian (@nurijanian)**, [original post](https://x.com/nurijanian/status/2102412104057954761) (merged from lesson 246): The same rule holds with an AI agent. A MECE-tree skill can turn interview notes into an opportunity map fast, but only if it refuses to invent nodes. Delete any opportunity you cannot point to a quote or observation for.

@@ -31,3 +31,7 @@ Works when the delivery contract cannot change. Shared language for risk without
 ## Practice this week
 
 One committed item, 60 minutes: list D/V/F/U assumptions; star two killers; share in refinement.
+
+## Also from
+
+- **George Nurijanian (@nurijanian)**, [original post](https://x.com/nurijanian/status/2102773987491418280) (merged from lesson 248): A decompress script for a pre-baked solution (“we need a new notification system”): do not block it and do not rubber-stamp it. Write the underlying problem, the assumptions with a validation test for each, three alternative framings, and a draft message so the requesting team is not ambushed. Agents build the wrong thing faster, so this matters more, not less. Run it on your own idea pile too; most ideas die at “evidence: none.”

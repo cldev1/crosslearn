@@ -3,6 +3,11 @@ Validation harness for CrossLearn content filters.
 Checks all 264 lessons for valid filters and vocabulary conformance.
 Zero external dependencies (does not require pyyaml).
 
+Retired lessons (merged into a keep lesson) stay as redirect stubs so old URLs
+work. A stub is an index.html-only folder whose filters block also carries
+`retired: true` and `redirect_to: <keep-slug>`. Stubs keep valid filters (so
+ingest does not crash) and are counted separately from live lessons.
+
 Priority rule (matches LearnFeed ingest):
 - If README.md exists (199 lessons), check YAML frontmatter in README.md.
 - If only index.html exists (65 lessons), check YAML HTML comment in index.html.
@@ -113,6 +118,7 @@ def validate_catalog(catalog_dir='.'):
     print(f"Validating {len(dirs)} lesson directories...")
     errors = []
     validated = 0
+    retired = []
 
     for slug in dirs:
         dir_path = os.path.join(catalog_dir, slug)
@@ -159,9 +165,27 @@ def validate_catalog(catalog_dir='.'):
         if not src or not isinstance(src, str) or not re.match(r'^[a-z0-9-]+$', src):
             errors.append(f"[{slug}] Invalid source slug '{src}' (must be non-empty kebab-case)")
 
+        if str(filters.get('retired', '')).lower() == 'true':
+            target = filters.get('redirect_to')
+            if has_readme:
+                errors.append(f"[{slug}] Retired stub must not have README.md (it would shadow the redirect)")
+            if not target or not os.path.isdir(os.path.join(catalog_dir, str(target))):
+                errors.append(f"[{slug}] Retired stub redirect_to '{target}' is not a lesson folder")
+            else:
+                with open(html_path, encoding='utf-8', errors='ignore') as f:
+                    stub = f.read()
+                if f'url=../{target}/' not in stub or 'rel="canonical"' not in stub:
+                    errors.append(f"[{slug}] Retired stub is missing the meta refresh or canonical link to {target}")
+            retired.append((slug, target))
+
         validated += 1
 
-    print(f"Validation completed: {validated}/{len(dirs)} lessons checked.")
+    retired_slugs = {s for s, _ in retired}
+    for s, target in retired:
+        if target in retired_slugs:
+            errors.append(f"[{s}] redirect_to '{target}' is itself retired")
+    print(f"Validation completed: {validated}/{len(dirs)} lessons checked "
+          f"({len(dirs) - len(retired)} live, {len(retired)} retired redirect stubs).")
     if errors:
         print(f"\nReported {len(errors)} validation notes (expected before tagging):")
         for e in errors[:5]:

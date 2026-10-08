@@ -31,3 +31,8 @@ Backlog language is full of “makes it easier to…” stories. Relative benefi
 ## Practice this week
 
 Rewrite one in-flight story without the word “easier.” Use: end goal; today’s task + specific problems; what we eliminate or smooth; business benefit of users reaching the goal. If any slot is empty, the story is not ready.
+
+## Also from
+
+- **Pavel A. Samsonov (@PavelASamsonov)**, [original post](https://x.com/PavelASamsonov/status/1638224408832557057) (merged from lesson 120): After stating the problem, ask “how does the solution help?” Two tautologies fail that test: “customers don’t have this feature, and now they will,” and “the problem goes away because AI.” A tautological benefit leaves no room for “how else could we deliver this?”, which is also why “make it easier” is not a strategy.
+- **Lenny Rachitsky (@lennysan), quoting Roman Ugarte**, [original post](https://x.com/lennysan/status/2097742517244764608) (merged from lesson 220): Optimize for “Our product can now…”, not “Our product now has…”. “Has” is feature inventory; “can now” names the new capability. If you cannot finish the “can now” sentence, you do not have a Product Goal yet.

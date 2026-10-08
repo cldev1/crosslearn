@@ -30,3 +30,7 @@ A pre-launch “we are for this exact persona” that then freezes the backlog i
 ## Practice this week
 
 Write the current positioning in two columns: thesis (what we believed at launch) vs first-wave evidence (who actually loves it and why). If the backlog is already sequenced to the thesis persona and the evidence column is empty, loosen the next slice — do not add another “for exact persona X” story.
+
+## Also from
+
+- **April Dunford (@aprildunford)**, [original post](https://x.com/aprildunford/status/1120760058688737285) (merged from lesson 103): Tightening too early scares off great-fit customers you did not anticipate (“CRM for investment banks looking for new HNW clients” vs “enterprise CRM for salespeople that hunt”). Call the tuna net a fish net and see what you pull up. When you do tighten, the segment must be actionable from the outside: “SMBs” is not; “single-location food service businesses with fewer than 20 employees in NYC” is.
