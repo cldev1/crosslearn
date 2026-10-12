@@ -250,3 +250,7 @@
 - [Unstick prioritization with sized ranges, not guesses](276-size-bets-with-ranges/)
 - [Your memory is not a recording, so give people permission to evolve](277-memory-is-not-a-recording/)
 - [Use AI simulations to pre-test ideas, then confirm with real users](278-ai-simulations-to-pretest-ideas/)
+- [A decision isn't useful until the people affected by it know it happened](279-who-needs-to-know/)
+- [Building produces the product and the learning — don't lose the second one](280-product-and-the-learning/)
+- [A decision memo has five parts; a sixth part is a second decision hiding inside the first](281-decision-memo-five-parts/)
+- [AI can triage usability test videos, but every finding it adds on its own needs checking](282-ai-usability-review-verify/)

@@ -1,0 +1,21 @@
+<!--
+filters:
+  topic:
+    - discovery
+    - ai-product
+  format: playbook
+  source: measuringu
+-->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AI can triage usability test videos, but every finding it adds on its own needs checking</title>
+<link rel="stylesheet" href="../theme.css"/></head>
+<body class="lesson"><main>
+<p class="back"><a href="../index.html">← Learnfeed</a></p>
+<img src="illustration.png" alt="">
+<h1>AI can triage usability test videos, but every finding it adds on its own needs checking</h1><p><strong>Source:</strong> MeasuringU, Jim Lewis and Jeff Sauro (@MeasuringU)<br><a href="https://x.com/MeasuringU/status/2108936160554733879">original post</a> · <a href="https://measuringu.com/using-ai-to-find-usability-problems-examining-task-failure/">full study</a></p>
+<h2>What it claims</h2><p>MeasuringU had ChatGPT and Gemini analyze usability test videos and compared them with experienced human researchers, one video at a time. In the third case, a participant who failed a booking task, the researcher logged 11 usability problems. Across four runs each, ChatGPT caught 8 of them at least once (5 consistently) and Gemini caught 5. The two AIs also reported 6 problems the human didn't: all 6 turned out to be false alarms (something happened but wasn't really a problem) or hallucinations (it never happened). The AIs found no real problem the human missed. Agreement with the researcher was 47% for ChatGPT and 39% for Gemini, against roughly 50% that MeasuringU treats as typical between two human raters. The earlier two videos showed the same pattern.</p>
+<h2>Why it matters for a PO</h2><p>It is tempting to drop session recordings into an AI and paste its list into the backlog. This study says the overlap with a human is respectable, but the AI-only extras are exactly where it goes wrong, and it still misses some real problems. A PO who turns unverified AI findings into stories will spend the team's capacity fixing things users never struggled with, while a real issue goes unseen. AI is a fast first pass that tells you where to look, not the evidence itself.</p>
+<h2>3 takeaways</h2><ol><li>Treat AI usability findings as leads, not evidence. Overlap with a human was about 40–47%, close to human-to-human agreement but not a replacement.</li><li>Be most suspicious of problems only the AI reported. In this study every one of them was a false alarm or a hallucination.</li><li>Run the analysis more than once and keep a human watching the clip. The AIs found different problems on different runs and still missed three the researcher caught.</li></ol>
+<h2>Practice this week</h2><p>Take one recorded usability or customer session. Run an AI review of it twice with the same prompt, then watch the recording yourself and mark each AI finding as real, false alarm, or did not happen. Only real findings become backlog items, each with a timestamp to the clip. Note what you caught that the AI didn't.</p>
+</main></body></html>
