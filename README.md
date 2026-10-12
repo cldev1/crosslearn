@@ -254,3 +254,6 @@
 - [Building produces the product and the learning — don't lose the second one](280-product-and-the-learning/)
 - [A decision memo has five parts; a sixth part is a second decision hiding inside the first](281-decision-memo-five-parts/)
 - [AI can triage usability test videos, but every finding it adds on its own needs checking](282-ai-usability-review-verify/)
+- [Teach a definition with examples and minimal non-examples](283-examples-and-non-examples/)
+- [Go to where the work actually happens before you decide about it](284-gemba-walk-go-where-value-is-created/)
+- [Great listening needs self-assurance: self-doubt steals your attention](285-listening-needs-self-assurance/)
