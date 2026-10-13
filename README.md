@@ -257,3 +257,5 @@
 - [Teach a definition with examples and minimal non-examples](283-examples-and-non-examples/)
 - [Go to where the work actually happens before you decide about it](284-gemba-walk-go-where-value-is-created/)
 - [Great listening needs self-assurance: self-doubt steals your attention](285-listening-needs-self-assurance/)
+- [Watch unlearning rate: how fast someone can drop a prior belief](286-unlearning-rate/)
+- [The team usually knows a project is dead before the leader does](287-team-knows-dead-before-leader/)
