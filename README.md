@@ -260,3 +260,5 @@
 - [Watch unlearning rate: how fast someone can drop a prior belief](286-unlearning-rate/)
 - [The team usually knows a project is dead before the leader does](287-team-knows-dead-before-leader/)
 - [A one-hour talk cannot buy a habit-driven team — build the gym](288-talk-is-not-the-gym/)
+- [Ambition with AI has four axes: speed, altitude, depth, range](289-ambition-four-axes/)
+- [Start Daily Scrum with the Sprint Goal, not the people](290-daily-scrum-sprint-goal/)
