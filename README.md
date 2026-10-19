@@ -262,3 +262,5 @@
 - [A one-hour talk cannot buy a habit-driven team — build the gym](288-talk-is-not-the-gym/)
 - [Ambition with AI has four axes: speed, altitude, depth, range](289-ambition-four-axes/)
 - [Start Daily Scrum with the Sprint Goal, not the people](290-daily-scrum-sprint-goal/)
+- [Give your early adopters a Labs team so they stop distracting the product team](291-labs-team-for-early-adopters/)
+- [Zombie UI: three ways AI-built work goes generic, premature and uncared for](292-zombie-ui-watch-points/)
