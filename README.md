@@ -264,3 +264,4 @@
 - [Start Daily Scrum with the Sprint Goal, not the people](290-daily-scrum-sprint-goal/)
 - [Give your early adopters a Labs team so they stop distracting the product team](291-labs-team-for-early-adopters/)
 - [Zombie UI: three ways AI-built work goes generic, premature and uncared for](292-zombie-ui-watch-points/)
+- [Your problem list was pruned by what used to be possible](293-unfiled-problems/)

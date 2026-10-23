@@ -1,6 +1,6 @@
 """
 Validation harness for CrossLearn content filters.
-Checks all 264 lessons for valid filters and vocabulary conformance.
+Checks all 265 lessons for valid filters and vocabulary conformance.
 Zero external dependencies (does not require pyyaml).
 
 Retired lessons (merged into a keep lesson) stay as redirect stubs so old URLs
