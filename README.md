@@ -265,3 +265,4 @@
 - [Give your early adopters a Labs team so they stop distracting the product team](291-labs-team-for-early-adopters/)
 - [Zombie UI: three ways AI-built work goes generic, premature and uncared for](292-zombie-ui-watch-points/)
 - [Your problem list was pruned by what used to be possible](293-unfiled-problems/)
+- [No usage data? Estimate cost of delay from time criticality and write the assumption beside the score](294-cost-of-delay-without-data/)
