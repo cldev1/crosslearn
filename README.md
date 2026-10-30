@@ -267,3 +267,4 @@
 - [Your problem list was pruned by what used to be possible](293-unfiled-problems/)
 - [No usage data? Estimate cost of delay from time criticality and write the assumption beside the score](294-cost-of-delay-without-data/)
 - [A real pain point isn't demand: check for pull (Project, Unavoidable, List, Limitations)](295-pull-not-pain/)
+- [Say the standard out loud before you add a process: every process is a tax](296-standard-before-process/)
