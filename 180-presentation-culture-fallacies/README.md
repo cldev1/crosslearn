@@ -30,3 +30,7 @@ PI readout culture is this thread: stuffed slides, confident “three focus area
 ## Practice this week
 
 Take one upcoming readout. Write the argument as a one-page transcript without slides. Circle fallacies and open questions. Do not present until those are closed — and do not treat leftover “time ran out” slides as decided.
+
+## Also from
+
+- **Gergely Orosz (@GergelyOrosz), The Pragmatic Engineer**, [post](https://x.com/GergelyOrosz/status/2116271344157618360) · [article](https://newsletter.pragmaticengineer.com/p/becoming-a-better-writer): Writing matters more as you get more senior; Amazon opens its engineering-manager screen with a writing exercise, and Stripe and TrueLayer use one for Staff+ roles. The distinct move is the edit pass: re-read your PRD, proposal or status update as the person receiving it, then get feedback before sending. Replies add the AI-era warning: AI drafts have no specifics because they can't supply the experience behind them, so keep your own concrete details in product docs.
